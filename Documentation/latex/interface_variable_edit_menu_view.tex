@@ -1,0 +1,120 @@
+\hypertarget{interface_variable_edit_menu_view}{\section{Variable\-Edit\-Menu\-View Class Reference}
+\label{interface_variable_edit_menu_view}\index{Variable\-Edit\-Menu\-View@{Variable\-Edit\-Menu\-View}}
+}
+
+
+The view that will contain the edit menu for Variables.  
+
+
+
+
+{\ttfamily \#import $<$Variable\-Edit\-Menu\-View.\-h$>$}
+
+Inheritance diagram for Variable\-Edit\-Menu\-View\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_variable_edit_menu_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_variable_edit_menu_view_ad1475d40e606d4f009f89321944e3678}{init\-With\-Frame\-:view\-:}
+\item 
+\hypertarget{interface_variable_edit_menu_view_aa9f8d1d0bae6f6dd7ef7269d1c2fbe30}{(void) -\/ \hyperlink{interface_variable_edit_menu_view_aa9f8d1d0bae6f6dd7ef7269d1c2fbe30}{type\-Control\-Change}}\label{interface_variable_edit_menu_view_aa9f8d1d0bae6f6dd7ef7269d1c2fbe30}
+
+\begin{DoxyCompactList}\small\item\em Notifies the logger when a new option from the type segmented control has been changed. \end{DoxyCompactList}\item 
+\hypertarget{interface_variable_edit_menu_view_a6bd6409bbc288f769683443ae909a4ad}{(void) -\/ \hyperlink{interface_variable_edit_menu_view_a6bd6409bbc288f769683443ae909a4ad}{update\-Variable}}\label{interface_variable_edit_menu_view_a6bd6409bbc288f769683443ae909a4ad}
+
+\begin{DoxyCompactList}\small\item\em This method will be called when the save button is called to save the attributes. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_variable_edit_menu_view_ac9394b979597f8df8e15f5abc1cc7a2e}{text\-Field\-Did\-Begin\-Editing\-:}
+\item 
+(void) -\/ \hyperlink{interface_variable_edit_menu_view_aa7337263d1e997c99cdc506fc61dcea3}{text\-Field\-Did\-End\-Editing\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_variable_edit_menu_view_a1a8ec9c257f3a894dc9b3389477f55e9}{text\-Field\-Should\-Return\-:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_variable_edit_menu_view_af91fc4ee7ce5ce8ac3b0f00e38824b04}{U\-I\-Label $\ast$ \hyperlink{interface_variable_edit_menu_view_af91fc4ee7ce5ce8ac3b0f00e38824b04}{name\-Label}}\label{interface_variable_edit_menu_view_af91fc4ee7ce5ce8ac3b0f00e38824b04}
+
+\begin{DoxyCompactList}\small\item\em The label that represents what name\-Text\-Field represents. \end{DoxyCompactList}\item 
+\hypertarget{interface_variable_edit_menu_view_a5cbc9eaf5c10f7b61fa933746ae0bb6e}{U\-I\-Text\-Field $\ast$ \hyperlink{interface_variable_edit_menu_view_a5cbc9eaf5c10f7b61fa933746ae0bb6e}{name\-Text\-Field}}\label{interface_variable_edit_menu_view_a5cbc9eaf5c10f7b61fa933746ae0bb6e}
+
+\begin{DoxyCompactList}\small\item\em The text field that contains the name of the object. \end{DoxyCompactList}\item 
+\hypertarget{interface_variable_edit_menu_view_ad87205d9304809167df2212ab8f146e9}{\hyperlink{interface_variable_view}{Variable\-View} $\ast$ \hyperlink{interface_variable_edit_menu_view_ad87205d9304809167df2212ab8f146e9}{object\-View}}\label{interface_variable_edit_menu_view_ad87205d9304809167df2212ab8f146e9}
+
+\begin{DoxyCompactList}\small\item\em The view of the object that you are editing. \end{DoxyCompactList}\item 
+\hypertarget{interface_variable_edit_menu_view_a326ccc069e5a0781354c0cc85dc4550d}{U\-I\-Segmented\-Control $\ast$ \hyperlink{interface_variable_edit_menu_view_a326ccc069e5a0781354c0cc85dc4550d}{type\-Controls}}\label{interface_variable_edit_menu_view_a326ccc069e5a0781354c0cc85dc4550d}
+
+\begin{DoxyCompactList}\small\item\em The segmented control that allows the user to change the type of variable. \end{DoxyCompactList}\item 
+\hypertarget{interface_variable_edit_menu_view_af06d4a271255059c61da80cfc91f9835}{U\-I\-Label $\ast$ \hyperlink{interface_variable_edit_menu_view_af06d4a271255059c61da80cfc91f9835}{type\-Label}}\label{interface_variable_edit_menu_view_af06d4a271255059c61da80cfc91f9835}
+
+\begin{DoxyCompactList}\small\item\em The label that represents what type\-Contols represents. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The view that will contain the edit menu for Variables. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_variable_edit_menu_view_ad1475d40e606d4f009f89321944e3678}{\index{Variable\-Edit\-Menu\-View@{Variable\-Edit\-Menu\-View}!init\-With\-Frame\-:view\-:@{init\-With\-Frame\-:view\-:}}
+\index{init\-With\-Frame\-:view\-:@{init\-With\-Frame\-:view\-:}!VariableEditMenuView@{Variable\-Edit\-Menu\-View}}
+\subsubsection[{init\-With\-Frame\-:view\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Frame\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Rect)}]{frame}
+\item[{view:(U\-I\-View$\ast$)}]{view}
+\end{DoxyParamCaption}
+}}\label{interface_variable_edit_menu_view_ad1475d40e606d4f009f89321944e3678}
+Initializes the view. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & the frame the view is contained within. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an id of the newly created view. 
+\end{DoxyReturn}
+\hypertarget{interface_variable_edit_menu_view_ac9394b979597f8df8e15f5abc1cc7a2e}{\index{Variable\-Edit\-Menu\-View@{Variable\-Edit\-Menu\-View}!text\-Field\-Did\-Begin\-Editing\-:@{text\-Field\-Did\-Begin\-Editing\-:}}
+\index{text\-Field\-Did\-Begin\-Editing\-:@{text\-Field\-Did\-Begin\-Editing\-:}!VariableEditMenuView@{Variable\-Edit\-Menu\-View}}
+\subsubsection[{text\-Field\-Did\-Begin\-Editing\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) text\-Field\-Did\-Begin\-Editing\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Text\-Field $\ast$)}]{text\-Field}
+\end{DoxyParamCaption}
+}}\label{interface_variable_edit_menu_view_ac9394b979597f8df8e15f5abc1cc7a2e}
+Will log when the keyboard opens up for the user to edit. 
+\begin{DoxyParams}{Parameters}
+{\em text\-Field} & the textfield that makes the call. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_variable_edit_menu_view_aa7337263d1e997c99cdc506fc61dcea3}{\index{Variable\-Edit\-Menu\-View@{Variable\-Edit\-Menu\-View}!text\-Field\-Did\-End\-Editing\-:@{text\-Field\-Did\-End\-Editing\-:}}
+\index{text\-Field\-Did\-End\-Editing\-:@{text\-Field\-Did\-End\-Editing\-:}!VariableEditMenuView@{Variable\-Edit\-Menu\-View}}
+\subsubsection[{text\-Field\-Did\-End\-Editing\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) text\-Field\-Did\-End\-Editing\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Text\-Field $\ast$)}]{text\-Field}
+\end{DoxyParamCaption}
+}}\label{interface_variable_edit_menu_view_aa7337263d1e997c99cdc506fc61dcea3}
+Will log when the keyboard closes. Cannot place event in text\-Field\-Should\-Return becuase i\-O\-S 5 does not call the method. 
+\begin{DoxyParams}{Parameters}
+{\em text\-Field} & the textfield that makes the call. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_variable_edit_menu_view_a1a8ec9c257f3a894dc9b3389477f55e9}{\index{Variable\-Edit\-Menu\-View@{Variable\-Edit\-Menu\-View}!text\-Field\-Should\-Return\-:@{text\-Field\-Should\-Return\-:}}
+\index{text\-Field\-Should\-Return\-:@{text\-Field\-Should\-Return\-:}!VariableEditMenuView@{Variable\-Edit\-Menu\-View}}
+\subsubsection[{text\-Field\-Should\-Return\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) text\-Field\-Should\-Return\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Text\-Field $\ast$)}]{text\-Field}
+\end{DoxyParamCaption}
+}}\label{interface_variable_edit_menu_view_a1a8ec9c257f3a894dc9b3389477f55e9}
+Determines whether the keyboard should close for the text field. 
+\begin{DoxyParams}{Parameters}
+{\em text\-Field} & the textfield that makes the call. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+will always be true and the keyboard will always close when the Done button is pressed. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Variable\-Edit\-Menu\-View.\-h\item 
+Group\-Modeling\-App/Variable\-Edit\-Menu\-View.\-m\end{DoxyCompactItemize}

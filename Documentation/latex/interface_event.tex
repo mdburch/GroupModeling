@@ -1,0 +1,128 @@
+\hypertarget{interface_event}{\section{Event Class Reference}
+\label{interface_event}\index{Event@{Event}}
+}
+
+
+A class used to construct events that occur in the simulation.  
+
+
+
+
+{\ttfamily \#import $<$Event.\-h$>$}
+
+Inheritance diagram for Event\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_event}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_event_a9f84a217411ee0ffbaa3def1332ec8bd}{init\-With\-Desc\-I\-D\-:}
+\item 
+(id) -\/ \hyperlink{interface_event_ae719cd1948e9cfa11caf1eea81012b4c}{init\-With\-Desc\-I\-D\-:and\-Object\-I\-D\-:}
+\item 
+(id) -\/ \hyperlink{interface_event_ae0b25c192d084ad864831170aac1d542}{init\-With\-Desc\-I\-D\-:and\-Details\-:}
+\item 
+(id) -\/ \hyperlink{interface_event_ae185f9bf45394b5d54c542085c91b133}{init\-With\-Desc\-I\-D\-:and\-Object\-I\-D\-:and\-Details\-:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_event_a7999a182561543e6f8a6b11633fdf26f}{N\-S\-Number $\ast$ \hyperlink{interface_event_a7999a182561543e6f8a6b11633fdf26f}{time}}\label{interface_event_a7999a182561543e6f8a6b11633fdf26f}
+
+\begin{DoxyCompactList}\small\item\em The time the event occurred. \end{DoxyCompactList}\item 
+\hypertarget{interface_event_aecb5d4221768a4af5d82df3420a25339}{int \hyperlink{interface_event_aecb5d4221768a4af5d82df3420a25339}{description\-I\-D}}\label{interface_event_aecb5d4221768a4af5d82df3420a25339}
+
+\begin{DoxyCompactList}\small\item\em The id number of the generic event. \end{DoxyCompactList}\item 
+\hypertarget{interface_event_a32f790016241cf78c44782a6007a744f}{int \hyperlink{interface_event_a32f790016241cf78c44782a6007a744f}{object\-I\-D}}\label{interface_event_a32f790016241cf78c44782a6007a744f}
+
+\begin{DoxyCompactList}\small\item\em The id number of the object that was affected by the change. \end{DoxyCompactList}\item 
+\hypertarget{interface_event_a8fc6cd2b92f759c4e2a74e32d615e4dd}{N\-S\-String $\ast$ \hyperlink{interface_event_a8fc6cd2b92f759c4e2a74e32d615e4dd}{details}}\label{interface_event_a8fc6cd2b92f759c4e2a74e32d615e4dd}
+
+\begin{DoxyCompactList}\small\item\em Any details regarding the change. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class used to construct events that occur in the simulation. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_event_a9f84a217411ee0ffbaa3def1332ec8bd}{\index{Event@{Event}!init\-With\-Desc\-I\-D\-:@{init\-With\-Desc\-I\-D\-:}}
+\index{init\-With\-Desc\-I\-D\-:@{init\-With\-Desc\-I\-D\-:}!Event@{Event}}
+\subsubsection[{init\-With\-Desc\-I\-D\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Desc\-I\-D\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{desc\-I\-D}
+\end{DoxyParamCaption}
+}}\label{interface_event_a9f84a217411ee0ffbaa3def1332ec8bd}
+Initializes the \hyperlink{interface_event}{Event} given the description id. Will fill in the other aspects of the class with defaults. Calls init\-With\-Desc\-I\-D\-: and\-Object\-I\-D\-: and\-Details\-:. 
+\begin{DoxyParams}{Parameters}
+{\em desc\-I\-D} & the identification number of the generic description message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the event object. 
+\end{DoxyReturn}
+\hypertarget{interface_event_ae0b25c192d084ad864831170aac1d542}{\index{Event@{Event}!init\-With\-Desc\-I\-D\-:and\-Details\-:@{init\-With\-Desc\-I\-D\-:and\-Details\-:}}
+\index{init\-With\-Desc\-I\-D\-:and\-Details\-:@{init\-With\-Desc\-I\-D\-:and\-Details\-:}!Event@{Event}}
+\subsubsection[{init\-With\-Desc\-I\-D\-:and\-Details\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Desc\-I\-D\-:} 
+\begin{DoxyParamCaption}
+\item[{(int)}]{desc\-I\-D}
+\item[{andDetails:(N\-S\-String$\ast$)}]{details}
+\end{DoxyParamCaption}
+}}\label{interface_event_ae0b25c192d084ad864831170aac1d542}
+Initializes the \hyperlink{interface_event}{Event} given the description id and details. Will fill in the other aspects of the class with defaults. Calls init\-With\-Desc\-I\-D\-: and\-Object\-I\-D\-: and\-Details\-:. 
+\begin{DoxyParams}{Parameters}
+{\em desc\-I\-D} & the identification number of the generic description message. \\
+\hline
+{\em details} & details about the event not captured in the generic message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the event object. 
+\end{DoxyReturn}
+\hypertarget{interface_event_ae719cd1948e9cfa11caf1eea81012b4c}{\index{Event@{Event}!init\-With\-Desc\-I\-D\-:and\-Object\-I\-D\-:@{init\-With\-Desc\-I\-D\-:and\-Object\-I\-D\-:}}
+\index{init\-With\-Desc\-I\-D\-:and\-Object\-I\-D\-:@{init\-With\-Desc\-I\-D\-:and\-Object\-I\-D\-:}!Event@{Event}}
+\subsubsection[{init\-With\-Desc\-I\-D\-:and\-Object\-I\-D\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Desc\-I\-D\-:} 
+\begin{DoxyParamCaption}
+\item[{(int)}]{desc\-I\-D}
+\item[{andObjectID:(int)}]{obj\-I\-D}
+\end{DoxyParamCaption}
+}}\label{interface_event_ae719cd1948e9cfa11caf1eea81012b4c}
+Initializes the \hyperlink{interface_event}{Event} given the description id and object id. Will fill in the other aspects of the class with defaults. Calls init\-With\-Desc\-I\-D\-: and\-Object\-I\-D\-: and\-Details\-:. 
+\begin{DoxyParams}{Parameters}
+{\em desc\-I\-D} & the identification number of the generic description message. \\
+\hline
+{\em obj\-Id} & the identification number of the object changed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the event object. 
+\end{DoxyReturn}
+\hypertarget{interface_event_ae185f9bf45394b5d54c542085c91b133}{\index{Event@{Event}!init\-With\-Desc\-I\-D\-:and\-Object\-I\-D\-:and\-Details\-:@{init\-With\-Desc\-I\-D\-:and\-Object\-I\-D\-:and\-Details\-:}}
+\index{init\-With\-Desc\-I\-D\-:and\-Object\-I\-D\-:and\-Details\-:@{init\-With\-Desc\-I\-D\-:and\-Object\-I\-D\-:and\-Details\-:}!Event@{Event}}
+\subsubsection[{init\-With\-Desc\-I\-D\-:and\-Object\-I\-D\-:and\-Details\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Desc\-I\-D\-:} 
+\begin{DoxyParamCaption}
+\item[{(int)}]{desc\-I\-D}
+\item[{andObjectID:(int)}]{obj\-I\-D}
+\item[{andDetails:(N\-S\-String$\ast$)}]{details}
+\end{DoxyParamCaption}
+}}\label{interface_event_ae185f9bf45394b5d54c542085c91b133}
+Initializes the \hyperlink{interface_event}{Event} given the description id, object id, and details. 
+\begin{DoxyParams}{Parameters}
+{\em desc\-I\-D} & the identification number of the generic description message. \\
+\hline
+{\em obj\-Id} & the identification number of the object changed. \\
+\hline
+{\em details} & details about the event not captured in the generic message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the event object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Event.\-h\item 
+Group\-Modeling\-App/Event.\-m\end{DoxyCompactItemize}

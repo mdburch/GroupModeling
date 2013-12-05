@@ -1,0 +1,80 @@
+\hypertarget{interface_relationship}{\section{Relationship Class Reference}
+\label{interface_relationship}\index{Relationship@{Relationship}}
+}
+
+
+A subclass of \hyperlink{interface_component}{Component} containing the data related to a relationship between two variables of a causal loop diagram. ex. In a diagram on Childhood obesity, there may exist a relationship between the \char`\"{}\-Fast Food Consumption\char`\"{} variable and the \char`\"{}\-Weight Gain\char`\"{} variable. This class represents that relationship.  
+
+
+
+
+{\ttfamily \#import $<$Relationship.\-h$>$}
+
+Inheritance diagram for Relationship\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_relationship}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_relationship_ae3fdc3a923d3d3be4b4aeb821cb90734}{init\-:}
+\item 
+\hypertarget{interface_relationship_a718cdfc549078ec1efb9b7ad284f823c}{(void) -\/ {\bfseries create\-View\-:}}\label{interface_relationship_a718cdfc549078ec1efb9b7ad284f823c}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_relationship_acde7c910d793a8d8913d949834c8c621}{bool \hyperlink{interface_relationship_acde7c910d793a8d8913d949834c8c621}{delay}}\label{interface_relationship_acde7c910d793a8d8913d949834c8c621}
+
+\begin{DoxyCompactList}\small\item\em If the relationship between two variables occurs over a time period. \end{DoxyCompactList}\item 
+\hypertarget{interface_relationship_ac2b0565fb95c9d4080f601e503d752e4}{int \hyperlink{interface_relationship_ac2b0565fb95c9d4080f601e503d752e4}{line\-Thickness}}\label{interface_relationship_ac2b0565fb95c9d4080f601e503d752e4}
+
+\begin{DoxyCompactList}\small\item\em The visual thickness of the relationship arrow. \end{DoxyCompactList}\item 
+\hypertarget{interface_relationship_aeffac59edf881b639bb5e7c7137a7312}{int \hyperlink{interface_relationship_aeffac59edf881b639bb5e7c7137a7312}{polarity}}\label{interface_relationship_aeffac59edf881b639bb5e7c7137a7312}
+
+\begin{DoxyCompactList}\small\item\em The type of relationship. + means that as one variable increases, so does the other. (ex. as a child eats more fast food, that child will gain more weight) -\/ means that as one variable increases, the other variable decreases. (ex. as a child eats healthier, the less weight gain will occur) \end{DoxyCompactList}\item 
+\hypertarget{interface_relationship_a916d37e666ea886144371ff8f37bdabe}{int \hyperlink{interface_relationship_a916d37e666ea886144371ff8f37bdabe}{polarity\-Position}}\label{interface_relationship_a916d37e666ea886144371ff8f37bdabe}
+
+\begin{DoxyCompactList}\small\item\em Where the polarity symbol is positioned. May be at the handle, or the arrowhead. May be on the inside or the outside of the arc representing the relationship. \end{DoxyCompactList}\item 
+\hypertarget{interface_relationship_a886e4aed7b44b7f924aa7a708507761a}{N\-S\-Object $\ast$ \hyperlink{interface_relationship_a886e4aed7b44b7f924aa7a708507761a}{parent\-Object}}\label{interface_relationship_a886e4aed7b44b7f924aa7a708507761a}
+
+\begin{DoxyCompactList}\small\item\em A pointer to the source variable of the relationship. \end{DoxyCompactList}\item 
+\hypertarget{interface_relationship_af4c244bdb8aff91ef4e8c7c3d3761d8e}{N\-S\-Object $\ast$ \hyperlink{interface_relationship_af4c244bdb8aff91ef4e8c7c3d3761d8e}{child\-Object}}\label{interface_relationship_af4c244bdb8aff91ef4e8c7c3d3761d8e}
+
+\begin{DoxyCompactList}\small\item\em A pointer to the influenced variable of the relationship. \end{DoxyCompactList}\item 
+\hypertarget{interface_relationship_a3cfc9e00758de3dfcb469a1dab530bcf}{\hyperlink{interface_link_view}{Link\-View} $\ast$ \hyperlink{interface_relationship_a3cfc9e00758de3dfcb469a1dab530bcf}{view}}\label{interface_relationship_a3cfc9e00758de3dfcb469a1dab530bcf}
+
+\begin{DoxyCompactList}\small\item\em The U\-I\-View that will contain the graphical representation of the link. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A subclass of \hyperlink{interface_component}{Component} containing the data related to a relationship between two variables of a causal loop diagram. ex. In a diagram on Childhood obesity, there may exist a relationship between the \char`\"{}\-Fast Food Consumption\char`\"{} variable and the \char`\"{}\-Weight Gain\char`\"{} variable. This class represents that relationship. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_relationship_ae3fdc3a923d3d3be4b4aeb821cb90734}{\index{Relationship@{Relationship}!init\-:@{init\-:}}
+\index{init\-:@{init\-:}!Relationship@{Relationship}}
+\subsubsection[{init\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array$\ast$)}]{data}
+\end{DoxyParamCaption}
+}}\label{interface_relationship_ae3fdc3a923d3d3be4b4aeb821cb90734}
+Initializes the \hyperlink{interface_relationship}{Relationship}. 
+\begin{DoxyParams}{Parameters}
+{\em data} & an array of strings containing all of the data for the relationship from a Vensim mdl file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created \hyperlink{interface_relationship}{Relationship}. 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000013}{Todo}]Remove name from superclass since relationships don't use it? \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/\-Group\-Modeling\-App/Relationship.\-h\item 
+Group\-Modeling\-App/\-Group\-Modeling\-App/Relationship.\-m\end{DoxyCompactItemize}

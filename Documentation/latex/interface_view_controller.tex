@@ -1,0 +1,281 @@
+\hypertarget{interface_view_controller}{\section{View\-Controller Class Reference}
+\label{interface_view_controller}\index{View\-Controller@{View\-Controller}}
+}
+
+
+The main view controller of the application.  
+
+
+
+
+{\ttfamily \#import $<$View\-Controller.\-h$>$}
+
+Inheritance diagram for View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_view_controller_a4213bb26f5207ee3f402fe463badc691}{init}
+\item 
+(void) -\/ \hyperlink{interface_view_controller_aa5a50adbd2b567d3a8ae3445329b70d1}{view\-Did\-Load}
+\item 
+(\hyperlink{interface_m_f_side_menu_container_view_controller}{M\-F\-Side\-Menu\-Container\-View\-Controller} $\ast$) -\/ \hyperlink{interface_view_controller_ad9f497773e1c2f5e420929a60f3bf7df}{menu\-Container\-View\-Controller}
+\item 
+\hypertarget{interface_view_controller_a9644bcb73520daa217ad0709b0e6bd64}{(void) -\/ \hyperlink{interface_view_controller_a9644bcb73520daa217ad0709b0e6bd64}{setup\-Menu\-Bar\-Button\-Items}}\label{interface_view_controller_a9644bcb73520daa217ad0709b0e6bd64}
+
+\begin{DoxyCompactList}\small\item\em Sets up the menu bar of the view controller. \end{DoxyCompactList}\item 
+(U\-I\-Bar\-Button\-Item $\ast$) -\/ \hyperlink{interface_view_controller_afb11718c8a0c6f7abd85dfbc7adb1cd1}{left\-Menu\-Bar\-Button\-Item}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_view_controller_a78c969d7bca3de65268ac706059e291c}{right\-Menu\-Bar\-Button\-Items}
+\item 
+(void) -\/ \hyperlink{interface_view_controller_a738b842dc5261f08da93880f0b006b55}{left\-Side\-Menu\-Button\-Pressed\-:}
+\item 
+(void) -\/ \hyperlink{interface_view_controller_ae806a41483e90f4716ccec06343c2cdd}{update\-View\-Display\-:}
+\item 
+(void) -\/ \hyperlink{interface_view_controller_a0c84a6ef9750c434993f666f5825c5d7}{load\-File}
+\item 
+(void) -\/ \hyperlink{interface_view_controller_aaf3fc320c9bc72bd6924fa99bca2f3be}{add\-Subview\-To\-Model\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_view_controller_ade65ba8ae784e35b1f2b23a55afbbf9b}{can\-Become\-First\-Responder}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_view_controller_a4a5338d3a62ac53d52a2b31880b6802c}{can\-Perform\-Action\-:with\-Sender\-:}
+\item 
+(void) -\/ \hyperlink{interface_view_controller_a8a501e57528492cf6ba20c9c966282e0}{create\-Update\-Menu\-:}
+\item 
+(C\-G\-Rect) -\/ \hyperlink{interface_view_controller_a3ce01e8eb3a6a32185225e1bfa51454d}{get\-Variable\-Vertex\-View\-:}
+\item 
+(U\-I\-Toolbar $\ast$) -\/ \hyperlink{interface_view_controller_a6a24750238ea3d59bb706b8d46e1f4c4}{create\-Edit\-Menu\-Toolbar\-:}
+\item 
+\hypertarget{interface_view_controller_af83e0aaf6bdf67b4a539d3974ddd6ff5}{(void) -\/ \hyperlink{interface_view_controller_af83e0aaf6bdf67b4a539d3974ddd6ff5}{cancel\-Changes}}\label{interface_view_controller_af83e0aaf6bdf67b4a539d3974ddd6ff5}
+
+\begin{DoxyCompactList}\small\item\em Dismisses the edit menu popover window if the cancel button is pressed. \end{DoxyCompactList}\item 
+\hypertarget{interface_view_controller_acb15a33593297fd02f940207a504f2a7}{(void) -\/ \hyperlink{interface_view_controller_acb15a33593297fd02f940207a504f2a7}{save\-Changes}}\label{interface_view_controller_acb15a33593297fd02f940207a504f2a7}
+
+\begin{DoxyCompactList}\small\item\em Will save the changes made by the user related to the object they changed. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_view_controller_a2ba2c7e577a0ca5fc873237ba423f514}{alert\-View\-:clicked\-Button\-At\-Index\-:}
+\item 
+(void) -\/ \hyperlink{interface_view_controller_ab68e5fd03354e4a1dd1a2a75ff93dbea}{show\-Delete\-Alert\-:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_view_controller_a1160a302c7d1456b2232508e66bf74f3}{U\-I\-Segmented\-Control $\ast$ \hyperlink{interface_view_controller_a1160a302c7d1456b2232508e66bf74f3}{controls}}\label{interface_view_controller_a1160a302c7d1456b2232508e66bf74f3}
+
+\begin{DoxyCompactList}\small\item\em The menu of options to add new objects to the model. \end{DoxyCompactList}\item 
+\hypertarget{interface_view_controller_a6177c3f5ef7ae97e8a88fb845c4d5fd5}{U\-I\-Bar\-Button\-Item $\ast$ \hyperlink{interface_view_controller_a6177c3f5ef7ae97e8a88fb845c4d5fd5}{create\-New\-Button}}\label{interface_view_controller_a6177c3f5ef7ae97e8a88fb845c4d5fd5}
+
+\begin{DoxyCompactList}\small\item\em The button that will allow a user to create a new project. \end{DoxyCompactList}\item 
+\hypertarget{interface_view_controller_a4f48727f24dc50cb5241226fe2e5300b}{U\-I\-Bar\-Button\-Item $\ast$ \hyperlink{interface_view_controller_a4f48727f24dc50cb5241226fe2e5300b}{load\-Button}}\label{interface_view_controller_a4f48727f24dc50cb5241226fe2e5300b}
+
+\begin{DoxyCompactList}\small\item\em The button that will load saved files. \end{DoxyCompactList}\item 
+\hypertarget{interface_view_controller_a4f6ad6ee733bbd0760d2825f6a5ce9f4}{U\-I\-Popover\-Controller $\ast$ \hyperlink{interface_view_controller_a4f6ad6ee733bbd0760d2825f6a5ce9f4}{pop\-Over\-Controller}}\label{interface_view_controller_a4f6ad6ee733bbd0760d2825f6a5ce9f4}
+
+\begin{DoxyCompactList}\small\item\em A pointer to a U\-I\-Popover\-Controller which will contain the edit object menu. \end{DoxyCompactList}\item 
+\hypertarget{interface_view_controller_a7d349fc947db08dd56690582423a4b1b}{U\-I\-View $\ast$ \hyperlink{interface_view_controller_a7d349fc947db08dd56690582423a4b1b}{selected\-View}}\label{interface_view_controller_a7d349fc947db08dd56690582423a4b1b}
+
+\begin{DoxyCompactList}\small\item\em A pointer to the view that has been selected for menu options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main view controller of the application. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_view_controller_aaf3fc320c9bc72bd6924fa99bca2f3be}{\index{View\-Controller@{View\-Controller}!add\-Subview\-To\-Model\-:@{add\-Subview\-To\-Model\-:}}
+\index{add\-Subview\-To\-Model\-:@{add\-Subview\-To\-Model\-:}!ViewController@{View\-Controller}}
+\subsubsection[{add\-Subview\-To\-Model\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Subview\-To\-Model\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-View$\ast$)}]{view}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_aaf3fc320c9bc72bd6924fa99bca2f3be}
+Will add a subview to the model 
+\begin{DoxyParams}{Parameters}
+{\em view} & the view that needs to be added to the model. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_view_controller_a2ba2c7e577a0ca5fc873237ba423f514}{\index{View\-Controller@{View\-Controller}!alert\-View\-:clicked\-Button\-At\-Index\-:@{alert\-View\-:clicked\-Button\-At\-Index\-:}}
+\index{alert\-View\-:clicked\-Button\-At\-Index\-:@{alert\-View\-:clicked\-Button\-At\-Index\-:}!ViewController@{View\-Controller}}
+\subsubsection[{alert\-View\-:clicked\-Button\-At\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) alert\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Alert\-View$\ast$)}]{alert\-View}
+\item[{clickedButtonAtIndex:(int)}]{index}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_a2ba2c7e577a0ca5fc873237ba423f514}
+Handles the action of the response from the alertview. 
+\begin{DoxyParams}{Parameters}
+{\em alert\-View} & the alert that has registered an action. \\
+\hline
+{\em index} & the index of the button selected. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_view_controller_ade65ba8ae784e35b1f2b23a55afbbf9b}{\index{View\-Controller@{View\-Controller}!can\-Become\-First\-Responder@{can\-Become\-First\-Responder}}
+\index{can\-Become\-First\-Responder@{can\-Become\-First\-Responder}!ViewController@{View\-Controller}}
+\subsubsection[{can\-Become\-First\-Responder}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) can\-Become\-First\-Responder 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_ade65ba8ae784e35b1f2b23a55afbbf9b}
+Determines if the reveiver can become the first responder. \begin{DoxyReturn}{Returns}
+a Boolean value indicating whether the receiver can become first responder. 
+\end{DoxyReturn}
+\hypertarget{interface_view_controller_a4a5338d3a62ac53d52a2b31880b6802c}{\index{View\-Controller@{View\-Controller}!can\-Perform\-Action\-:with\-Sender\-:@{can\-Perform\-Action\-:with\-Sender\-:}}
+\index{can\-Perform\-Action\-:with\-Sender\-:@{can\-Perform\-Action\-:with\-Sender\-:}!ViewController@{View\-Controller}}
+\subsubsection[{can\-Perform\-Action\-:with\-Sender\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) can\-Perform\-Action\-: 
+\begin{DoxyParamCaption}
+\item[{(S\-E\-L)}]{action}
+\item[{withSender:(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_a4a5338d3a62ac53d52a2b31880b6802c}
+Requests the receiving responder to enable or disable the specified command in the user interface. 
+\begin{DoxyParams}{Parameters}
+{\em action} & a selector that identifies a method associated with a command. \\
+\hline
+{\em sender} & object calling this method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\-E\-S if the the command identified by action should be enabled or N\-O if it should be disabled. 
+\end{DoxyReturn}
+\hypertarget{interface_view_controller_a6a24750238ea3d59bb706b8d46e1f4c4}{\index{View\-Controller@{View\-Controller}!create\-Edit\-Menu\-Toolbar\-:@{create\-Edit\-Menu\-Toolbar\-:}}
+\index{create\-Edit\-Menu\-Toolbar\-:@{create\-Edit\-Menu\-Toolbar\-:}!ViewController@{View\-Controller}}
+\subsubsection[{create\-Edit\-Menu\-Toolbar\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\-I\-Toolbar $\ast$) create\-Edit\-Menu\-Toolbar\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Rect)}]{frame}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_a6a24750238ea3d59bb706b8d46e1f4c4}
+Creates the toolbar for the edit menu. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & the frame of the toolbar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a toolbar for the edit menu containing a save and a cancel option. 
+\end{DoxyReturn}
+\hypertarget{interface_view_controller_a8a501e57528492cf6ba20c9c966282e0}{\index{View\-Controller@{View\-Controller}!create\-Update\-Menu\-:@{create\-Update\-Menu\-:}}
+\index{create\-Update\-Menu\-:@{create\-Update\-Menu\-:}!ViewController@{View\-Controller}}
+\subsubsection[{create\-Update\-Menu\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) create\-Update\-Menu\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-View$\ast$)}]{view}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_a8a501e57528492cf6ba20c9c966282e0}
+Creates the menu that displays the options to update the object in the model. The current update options include edit and delete. 
+\begin{DoxyParams}{Parameters}
+{\em view} & the view containing the object in the model. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000011}{Todo}]I do not like holding on to the selected view, but I haven't figured out a better solution. \end{DoxyRefDesc}
+\hypertarget{interface_view_controller_a3ce01e8eb3a6a32185225e1bfa51454d}{\index{View\-Controller@{View\-Controller}!get\-Variable\-Vertex\-View\-:@{get\-Variable\-Vertex\-View\-:}}
+\index{get\-Variable\-Vertex\-View\-:@{get\-Variable\-Vertex\-View\-:}!ViewController@{View\-Controller}}
+\subsubsection[{get\-Variable\-Vertex\-View\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Rect) get\-Variable\-Vertex\-View\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Causal\-Link\-View}$\ast$)}]{view}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_a3ce01e8eb3a6a32185225e1bfa51454d}
+Sets up the view that will place the edit menu or update menu over the vertex. 
+\begin{DoxyParams}{Parameters}
+{\em view} & the casual link view of the obejct we want to have a menu appear over. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the rectangle frame over the vertex. 
+\end{DoxyReturn}
+\hypertarget{interface_view_controller_a4213bb26f5207ee3f402fe463badc691}{\index{View\-Controller@{View\-Controller}!init@{init}}
+\index{init@{init}!ViewController@{View\-Controller}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_a4213bb26f5207ee3f402fe463badc691}
+Initializes the View Controller. Will create the views for all of the menu options. \begin{DoxyReturn}{Returns}
+an id of the newly created view controller. 
+\end{DoxyReturn}
+\hypertarget{interface_view_controller_afb11718c8a0c6f7abd85dfbc7adb1cd1}{\index{View\-Controller@{View\-Controller}!left\-Menu\-Bar\-Button\-Item@{left\-Menu\-Bar\-Button\-Item}}
+\index{left\-Menu\-Bar\-Button\-Item@{left\-Menu\-Bar\-Button\-Item}!ViewController@{View\-Controller}}
+\subsubsection[{left\-Menu\-Bar\-Button\-Item}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\-I\-Bar\-Button\-Item $\ast$) left\-Menu\-Bar\-Button\-Item 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_afb11718c8a0c6f7abd85dfbc7adb1cd1}
+Creates the left menu bar button item. This item will be responsible for opening the menu. \begin{DoxyReturn}{Returns}
+the left menu bar button item. 
+\end{DoxyReturn}
+\hypertarget{interface_view_controller_a738b842dc5261f08da93880f0b006b55}{\index{View\-Controller@{View\-Controller}!left\-Side\-Menu\-Button\-Pressed\-:@{left\-Side\-Menu\-Button\-Pressed\-:}}
+\index{left\-Side\-Menu\-Button\-Pressed\-:@{left\-Side\-Menu\-Button\-Pressed\-:}!ViewController@{View\-Controller}}
+\subsubsection[{left\-Side\-Menu\-Button\-Pressed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) left\-Side\-Menu\-Button\-Pressed\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_a738b842dc5261f08da93880f0b006b55}
+Callback for when the left menu button is pressed. 
+\begin{DoxyParams}{Parameters}
+{\em sender} & the id of the sender object. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_view_controller_a0c84a6ef9750c434993f666f5825c5d7}{\index{View\-Controller@{View\-Controller}!load\-File@{load\-File}}
+\index{load\-File@{load\-File}!ViewController@{View\-Controller}}
+\subsubsection[{load\-File}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\-File 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_a0c84a6ef9750c434993f666f5825c5d7}
+Handles the loading of a model file. This will be called when the open button has been pressed. \hypertarget{interface_view_controller_ad9f497773e1c2f5e420929a60f3bf7df}{\index{View\-Controller@{View\-Controller}!menu\-Container\-View\-Controller@{menu\-Container\-View\-Controller}}
+\index{menu\-Container\-View\-Controller@{menu\-Container\-View\-Controller}!ViewController@{View\-Controller}}
+\subsubsection[{menu\-Container\-View\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf M\-F\-Side\-Menu\-Container\-View\-Controller} $\ast$) menu\-Container\-View\-Controller 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_ad9f497773e1c2f5e420929a60f3bf7df}
+Gets the menu container view controller. \begin{DoxyReturn}{Returns}
+the menu container view controller. 
+\end{DoxyReturn}
+\hypertarget{interface_view_controller_a78c969d7bca3de65268ac706059e291c}{\index{View\-Controller@{View\-Controller}!right\-Menu\-Bar\-Button\-Items@{right\-Menu\-Bar\-Button\-Items}}
+\index{right\-Menu\-Bar\-Button\-Items@{right\-Menu\-Bar\-Button\-Items}!ViewController@{View\-Controller}}
+\subsubsection[{right\-Menu\-Bar\-Button\-Items}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) right\-Menu\-Bar\-Button\-Items 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_a78c969d7bca3de65268ac706059e291c}
+Creates the left menu bar button item. This item will be responsible for opening the menu. \begin{DoxyReturn}{Returns}
+an array of items contained in the right menu. 
+\end{DoxyReturn}
+\hypertarget{interface_view_controller_ab68e5fd03354e4a1dd1a2a75ff93dbea}{\index{View\-Controller@{View\-Controller}!show\-Delete\-Alert\-:@{show\-Delete\-Alert\-:}}
+\index{show\-Delete\-Alert\-:@{show\-Delete\-Alert\-:}!ViewController@{View\-Controller}}
+\subsubsection[{show\-Delete\-Alert\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) show\-Delete\-Alert\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-View$\ast$)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_ab68e5fd03354e4a1dd1a2a75ff93dbea}
+Displays an alert message once a user has selected to delete an object. This message will appear to confirm that user did indeed mean to delete the object. 
+\begin{DoxyParams}{Parameters}
+{\em sender} & the view that made the call to display the alert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_view_controller_ae806a41483e90f4716ccec06343c2cdd}{\index{View\-Controller@{View\-Controller}!update\-View\-Display\-:@{update\-View\-Display\-:}}
+\index{update\-View\-Display\-:@{update\-View\-Display\-:}!ViewController@{View\-Controller}}
+\subsubsection[{update\-View\-Display\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\-View\-Display\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{index}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_ae806a41483e90f4716ccec06343c2cdd}
+Update which menu view is showing. 
+\begin{DoxyParams}{Parameters}
+{\em index} & the menu item index that has been clicked. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_view_controller_aa5a50adbd2b567d3a8ae3445329b70d1}{\index{View\-Controller@{View\-Controller}!view\-Did\-Load@{view\-Did\-Load}}
+\index{view\-Did\-Load@{view\-Did\-Load}!ViewController@{View\-Controller}}
+\subsubsection[{view\-Did\-Load}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) view\-Did\-Load 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_view_controller_aa5a50adbd2b567d3a8ae3445329b70d1}
+Called when the view finishes loading. Will set the default shown view and other attrubutes. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/\-Group\-Modeling\-App/View\-Controller.\-h\item 
+Group\-Modeling\-App/\-Group\-Modeling\-App/View\-Controller.\-m\end{DoxyCompactItemize}

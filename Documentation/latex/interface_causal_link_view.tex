@@ -1,0 +1,378 @@
+\hypertarget{interface_causal_link_view}{\section{Causal\-Link\-View Class Reference}
+\label{interface_causal_link_view}\index{Causal\-Link\-View@{Causal\-Link\-View}}
+}
+
+
+A view that containg the graphical representation of a \hyperlink{interface_causal_link}{Causal\-Link}.  
+
+
+
+
+{\ttfamily \#import $<$Causal\-Link\-View.\-h$>$}
+
+Inheritance diagram for Causal\-Link\-View\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_causal_link_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_causal_link_view_af6c10f878fb1c7f420cc964aa0822992}{init\-With\-Parent\-:}
+\item 
+\hypertarget{interface_causal_link_view_aab9db45cbade40771ab30e01ff837142}{(void) -\/ \hyperlink{interface_causal_link_view_aab9db45cbade40771ab30e01ff837142}{init\-Member\-Vars}}\label{interface_causal_link_view_aab9db45cbade40771ab30e01ff837142}
+
+\begin{DoxyCompactList}\small\item\em Initializes all of the member variables. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_causal_link_view_a8c03538769a6fcbd7aa8e672cf4b5c96}{draw\-Rect\-:}
+\item 
+\hypertarget{interface_causal_link_view_a481c18609b8c7f6b790109ce163f0c5a}{(void) -\/ \hyperlink{interface_causal_link_view_a481c18609b8c7f6b790109ce163f0c5a}{draw\-Arc}}\label{interface_causal_link_view_a481c18609b8c7f6b790109ce163f0c5a}
+
+\begin{DoxyCompactList}\small\item\em Draws the \hyperlink{interface_causal_link}{Causal\-Link} arc by creating a quad curve Bezier path. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_causal_link_view_ad98cea31468b62d41184831cf9c779e1}{draw\-Arrowhead}
+\item 
+(void) -\/ \hyperlink{interface_causal_link_view_a59c2ffcd4e00222816f63842ed7311c0}{draw\-Time\-Delay}
+\item 
+(void) -\/ \hyperlink{interface_causal_link_view_ae80de0f1a90ac5fbc4cfada5278af48e}{draw\-Handle}
+\item 
+\hypertarget{interface_causal_link_view_abf9591a3ec825d59181114cc72560e3f}{(void) -\/ \hyperlink{interface_causal_link_view_abf9591a3ec825d59181114cc72560e3f}{draw\-Polarity}}\label{interface_causal_link_view_abf9591a3ec825d59181114cc72560e3f}
+
+\begin{DoxyCompactList}\small\item\em Draws the polarity symbol (+, -\/) outside of the arc at the vertex. \end{DoxyCompactList}\item 
+(float) -\/ \hyperlink{interface_causal_link_view_a12afbc746363f523651de2767d2487b2}{find\-Point\-On\-Quad\-Bezier\-Curve\-:p0\-:p1\-:p2\-:}
+\item 
+(C\-G\-Point) -\/ \hyperlink{interface_causal_link_view_a0493957fa8e8d0ec4f70d9b10321a604}{find\-Base\-Point\-:starting\-Tval\-:line\-Size\-:}
+\item 
+(C\-G\-Point) -\/ \hyperlink{interface_causal_link_view_a910e5f8e9cfba7c8881bf5555984996b}{rotate\-Line\-:base\-:degrees\-:}
+\item 
+(void) -\/ \hyperlink{interface_causal_link_view_a16ce7ec5c4dff09ffb1cfb9306977fc2}{calculate\-Frame}
+\item 
+(void) -\/ \hyperlink{interface_causal_link_view_afcd8e0f9b511eafba30829975f38f8b7}{move\-Arc\-:previous\-Location\-:}
+\item 
+(void) -\/ \hyperlink{interface_causal_link_view_a5ff220a0a810bec7f0eb1265fa10df73}{move\-Variable\-:modify\-Start\-Point\-:}
+\item 
+\hypertarget{interface_causal_link_view_a5e9eaa469086723dfe009fa52542ecd0}{(void) -\/ \hyperlink{interface_causal_link_view_a5e9eaa469086723dfe009fa52542ecd0}{calculate\-New\-Control\-Point}}\label{interface_causal_link_view_a5e9eaa469086723dfe009fa52542ecd0}
+
+\begin{DoxyCompactList}\small\item\em Calculates a new control point because one of the variables related to the link has moved. \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_view_a1998df670fd8f6c2f22575522a4eab8a}{(void) -\/ \hyperlink{interface_causal_link_view_a1998df670fd8f6c2f22575522a4eab8a}{calculate\-Initial\-Arc}}\label{interface_causal_link_view_a1998df670fd8f6c2f22575522a4eab8a}
+
+\begin{DoxyCompactList}\small\item\em Used on the initial import of the Vensim file. The .mdl file contains the handle location, but I handle all movement and the drawing of the causal links with a control point. I use the vertex point provided by the vensim file to calculate the inital control point and then any modification of the arc beyond this point will be handled by the control point. \end{DoxyCompactList}\item 
+(C\-G\-Point) -\/ \hyperlink{interface_causal_link_view_afdedd2313a21ff2514c8f7c975e03f06}{find\-Point\-In\-Bounds\-:}
+\item 
+(void) -\/ \hyperlink{interface_causal_link_view_a339bfeabcfc5f19a0da1c941a6f70c8c}{resize\-Frame\-:new\-Origin\-:width\-:height\-:}
+\item 
+(void) -\/ \hyperlink{interface_causal_link_view_ace06597f5de275e1bb2a4d2d5b978e1f}{update\-Points\-In\-Frame\-:y\-Offset\-:}
+\item 
+(void) -\/ \hyperlink{interface_causal_link_view_a0d92c4b54808a5fa804ba5da408ec6a9}{update\-Slope}
+\item 
+(void) -\/ \hyperlink{interface_causal_link_view_a83f47d49615b69616f780c42780164c9}{update\-Vertex}
+\item 
+\hypertarget{interface_causal_link_view_a61a5c42146452337656a7abc21185686}{(void) -\/ \hyperlink{interface_causal_link_view_a61a5c42146452337656a7abc21185686}{update\-Link}}\label{interface_causal_link_view_a61a5c42146452337656a7abc21185686}
+
+\begin{DoxyCompactList}\small\item\em Will make a call to create the menu of update options for the link. \end{DoxyCompactList}\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_causal_link_view_af48e1d11b9394830d3c3b12a5f84ba61}{point\-Inside\-:with\-Event\-:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(float) + \hyperlink{interface_causal_link_view_a23aef4b7c8b351589ca8e20f2a702bd0}{distance\-Between\-Points\-:second\-Point\-:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_causal_link_view_a8dbba850d3dff258b3106fac49e9bb6e}{U\-I\-Color $\ast$ \hyperlink{interface_causal_link_view_a8dbba850d3dff258b3106fac49e9bb6e}{arc\-Color}}\label{interface_causal_link_view_a8dbba850d3dff258b3106fac49e9bb6e}
+
+\begin{DoxyCompactList}\small\item\em The color of the arc. \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_view_a323485e127244941fe6689cfbb2a2ac4}{bool \hyperlink{interface_causal_link_view_a323485e127244941fe6689cfbb2a2ac4}{is\-Bold}}\label{interface_causal_link_view_a323485e127244941fe6689cfbb2a2ac4}
+
+\begin{DoxyCompactList}\small\item\em If the arc is bolded or not. \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_view_a2f7a630acc6a400de7beaf5689d5ab00}{bool \hyperlink{interface_causal_link_view_a2f7a630acc6a400de7beaf5689d5ab00}{has\-Time\-Delay}}\label{interface_causal_link_view_a2f7a630acc6a400de7beaf5689d5ab00}
+
+\begin{DoxyCompactList}\small\item\em If the arc has a time delay. \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_view_aee10b0d74aca3ca6515a31d8c478f616}{C\-G\-Point \hyperlink{interface_causal_link_view_aee10b0d74aca3ca6515a31d8c478f616}{control\-Point}}\label{interface_causal_link_view_aee10b0d74aca3ca6515a31d8c478f616}
+
+\begin{DoxyCompactList}\small\item\em The point at which the shape of the arc is controlled. \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_view_af5c8aa466e345adfab2e58ba5509edad}{C\-G\-Point \hyperlink{interface_causal_link_view_af5c8aa466e345adfab2e58ba5509edad}{start\-Point}}\label{interface_causal_link_view_af5c8aa466e345adfab2e58ba5509edad}
+
+\begin{DoxyCompactList}\small\item\em The starting point of the arc. \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_view_a8182eda9bbf2964ae5df72b56cabffb0}{C\-G\-Point \hyperlink{interface_causal_link_view_a8182eda9bbf2964ae5df72b56cabffb0}{end\-Point}}\label{interface_causal_link_view_a8182eda9bbf2964ae5df72b56cabffb0}
+
+\begin{DoxyCompactList}\small\item\em The ending point of the arc. \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_view_a77f66ca20ad3eb9bbcd3cfe1a99c0c62}{C\-G\-Point \hyperlink{interface_causal_link_view_a77f66ca20ad3eb9bbcd3cfe1a99c0c62}{vertex\-Point}}\label{interface_causal_link_view_a77f66ca20ad3eb9bbcd3cfe1a99c0c62}
+
+\begin{DoxyCompactList}\small\item\em The vertex point of the arc. \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_view_a4376b99467d16ed71554a4a6ddd4ae0a}{id \hyperlink{interface_causal_link_view_a4376b99467d16ed71554a4a6ddd4ae0a}{parent}}\label{interface_causal_link_view_a4376b99467d16ed71554a4a6ddd4ae0a}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the parent of this view. \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_view_a90933fdc5eab518a50a919db52d55fc2}{N\-S\-String $\ast$ \hyperlink{interface_causal_link_view_a90933fdc5eab518a50a919db52d55fc2}{polarity}}\label{interface_causal_link_view_a90933fdc5eab518a50a919db52d55fc2}
+
+\begin{DoxyCompactList}\small\item\em The type of causal link. + means that as one variable increases, so does the other. (ex. as a child eats more fast food, that child will gain more weight) -\/ means that as one variable increases, the other variable decreases. (ex. as a child eats healthier, the less weight gain will occur) \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_view_a556c38ae1a0c294ce33d9e3e40c656a4}{float \hyperlink{interface_causal_link_view_a556c38ae1a0c294ce33d9e3e40c656a4}{x\-Slope\-Change}}\label{interface_causal_link_view_a556c38ae1a0c294ce33d9e3e40c656a4}
+
+\begin{DoxyCompactList}\small\item\em The slope in the x direction of the vertex point. \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_view_aaa52b4622b33e322e70bdc03892a38e7}{float \hyperlink{interface_causal_link_view_aaa52b4622b33e322e70bdc03892a38e7}{y\-Slope\-Change}}\label{interface_causal_link_view_aaa52b4622b33e322e70bdc03892a38e7}
+
+\begin{DoxyCompactList}\small\item\em The slope in the y direction of the vertex point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A view that containg the graphical representation of a \hyperlink{interface_causal_link}{Causal\-Link}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_causal_link_view_a16ce7ec5c4dff09ffb1cfb9306977fc2}{\index{Causal\-Link\-View@{Causal\-Link\-View}!calculate\-Frame@{calculate\-Frame}}
+\index{calculate\-Frame@{calculate\-Frame}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{calculate\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) calculate\-Frame 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_a16ce7ec5c4dff09ffb1cfb9306977fc2}
+Will calculate what the frame of the view should be based on where the three points of the arc are located. This method will then make a call to resize the frame and then update the points within the frame to take into account the changes. \hypertarget{interface_causal_link_view_a23aef4b7c8b351589ca8e20f2a702bd0}{\index{Causal\-Link\-View@{Causal\-Link\-View}!distance\-Between\-Points\-:second\-Point\-:@{distance\-Between\-Points\-:second\-Point\-:}}
+\index{distance\-Between\-Points\-:second\-Point\-:@{distance\-Between\-Points\-:second\-Point\-:}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{distance\-Between\-Points\-:second\-Point\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (float) distance\-Between\-Points\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{point1}
+\item[{secondPoint:(C\-G\-Point)}]{point2}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_a23aef4b7c8b351589ca8e20f2a702bd0}
+Determines the distance between two coordinate points using the standard distance formula. 
+\begin{DoxyParams}{Parameters}
+{\em point1} & the first coordinate point. \\
+\hline
+{\em point2} & the second coordinate point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance between point1 and point2. 
+\end{DoxyReturn}
+\hypertarget{interface_causal_link_view_ad98cea31468b62d41184831cf9c779e1}{\index{Causal\-Link\-View@{Causal\-Link\-View}!draw\-Arrowhead@{draw\-Arrowhead}}
+\index{draw\-Arrowhead@{draw\-Arrowhead}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{draw\-Arrowhead}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) draw\-Arrowhead 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_ad98cea31468b62d41184831cf9c779e1}
+Draws that arrowhead of the \hyperlink{interface_causal_link}{Causal\-Link}. To draw the arrow head, we follow the path of the bezier curve from the ending point, until it reaches a point outside the bounds of the view of the ending variable. This point is called the head of the arrow. Then we find a point further down the bezier curve that has a distance of A\-R\-R\-O\-W\-H\-E\-A\-D\-\_\-\-S\-I\-Z\-E from the head of the arrow. This point is called the base. Then the arrowhead will be drawn from these two points with a specified A\-R\-R\-O\-W\-H\-E\-A\-D\-\_\-\-A\-N\-G\-L\-E. \hypertarget{interface_causal_link_view_ae80de0f1a90ac5fbc4cfada5278af48e}{\index{Causal\-Link\-View@{Causal\-Link\-View}!draw\-Handle@{draw\-Handle}}
+\index{draw\-Handle@{draw\-Handle}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{draw\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) draw\-Handle 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_ae80de0f1a90ac5fbc4cfada5278af48e}
+Draws the handle of the \hyperlink{interface_causal_link}{Causal\-Link}. The handle will be used to control the size of the arc. \hypertarget{interface_causal_link_view_a8c03538769a6fcbd7aa8e672cf4b5c96}{\index{Causal\-Link\-View@{Causal\-Link\-View}!draw\-Rect\-:@{draw\-Rect\-:}}
+\index{draw\-Rect\-:@{draw\-Rect\-:}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{draw\-Rect\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) draw\-Rect\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Rect)}]{rect}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_a8c03538769a6fcbd7aa8e672cf4b5c96}
+Draws the receiver’s image within the passed-\/in rectangle. This is an overridden method. 
+\begin{DoxyParams}{Parameters}
+{\em rect} & the frame of the view in which objects can be drawn. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_causal_link_view_a59c2ffcd4e00222816f63842ed7311c0}{\index{Causal\-Link\-View@{Causal\-Link\-View}!draw\-Time\-Delay@{draw\-Time\-Delay}}
+\index{draw\-Time\-Delay@{draw\-Time\-Delay}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{draw\-Time\-Delay}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) draw\-Time\-Delay 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_a59c2ffcd4e00222816f63842ed7311c0}
+Draws the time delay for the causal link if one exists. To draw this line the same algorithm is followed for drawing the arrowhead. We start at the vertex point and find another point along the curve of a specified size. Then we rotate the line to find two end points. We then use these two points to draw the line. \hypertarget{interface_causal_link_view_a0493957fa8e8d0ec4f70d9b10321a604}{\index{Causal\-Link\-View@{Causal\-Link\-View}!find\-Base\-Point\-:starting\-Tval\-:line\-Size\-:@{find\-Base\-Point\-:starting\-Tval\-:line\-Size\-:}}
+\index{find\-Base\-Point\-:starting\-Tval\-:line\-Size\-:@{find\-Base\-Point\-:starting\-Tval\-:line\-Size\-:}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{find\-Base\-Point\-:starting\-Tval\-:line\-Size\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) find\-Base\-Point\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{head}
+\item[{startingTval:(float)}]{t}
+\item[{lineSize:(float)}]{size}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_a0493957fa8e8d0ec4f70d9b10321a604}
+Will find the base coordinate point of the arrowhead. We want all arrowheads to be the same size and also want them to be perpendicular to the arc. In order to accomplish this, we follow the bezier arc path away from the head point of the arrowhead. We continue down the path until we reach the desired A\-R\-R\-O\-W\-H\-E\-A\-D\-\_\-\-S\-I\-Z\-E distance away from the head point. 
+\begin{DoxyParams}{Parameters}
+{\em head} & the coordinate location of the head of arrowhead. \\
+\hline
+{\em t} & the time parameter of the quad bezier curve equation to begin searching from. Should be set to the t value associated with the head of the arrow. \\
+\hline
+{\em size} & the size of the line you are looking for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a coordinate point that will serve as the base of the arrowhead. 
+\end{DoxyReturn}
+\hypertarget{interface_causal_link_view_afdedd2313a21ff2514c8f7c975e03f06}{\index{Causal\-Link\-View@{Causal\-Link\-View}!find\-Point\-In\-Bounds\-:@{find\-Point\-In\-Bounds\-:}}
+\index{find\-Point\-In\-Bounds\-:@{find\-Point\-In\-Bounds\-:}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{find\-Point\-In\-Bounds\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) find\-Point\-In\-Bounds\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{ref\-Point}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_afdedd2313a21ff2514c8f7c975e03f06}
+Used to compute new control and vertex points on the arc to make sure the arc will stay in bounds of the application. 
+\begin{DoxyParams}{Parameters}
+{\em ref\-Point} & the reference point that we are trying to modify. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new point location for the reference point. 
+\end{DoxyReturn}
+\hypertarget{interface_causal_link_view_a12afbc746363f523651de2767d2487b2}{\index{Causal\-Link\-View@{Causal\-Link\-View}!find\-Point\-On\-Quad\-Bezier\-Curve\-:p0\-:p1\-:p2\-:@{find\-Point\-On\-Quad\-Bezier\-Curve\-:p0\-:p1\-:p2\-:}}
+\index{find\-Point\-On\-Quad\-Bezier\-Curve\-:p0\-:p1\-:p2\-:@{find\-Point\-On\-Quad\-Bezier\-Curve\-:p0\-:p1\-:p2\-:}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{find\-Point\-On\-Quad\-Bezier\-Curve\-:p0\-:p1\-:p2\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) find\-Point\-On\-Quad\-Bezier\-Curve\-: 
+\begin{DoxyParamCaption}
+\item[{(float)}]{t}
+\item[{p0:(float)}]{p0}
+\item[{p1:(float)}]{p1}
+\item[{p2:(float)}]{p2}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_a12afbc746363f523651de2767d2487b2}
+Finds the x or y coordinate location on the quad bezier curve based on the value of t. Note that you will only pass all x coordinates or all y coordinates. You will not mix coordinates. Uses the equation B(t) = (1-\/t)$^\wedge$2 P0 + 2(1-\/t) $\ast$ t $\ast$ P1 + t$^\wedge$2 $\ast$ P2 
+\begin{DoxyParams}{Parameters}
+{\em t} & the time parameter. Will have a value between 0 and 1. \\
+\hline
+{\em p0} & the x or y coordinate of the starting\-Point on the bezier curve. \\
+\hline
+{\em p1} & the x or y coordinate of the control\-Point on the bezier curve. \\
+\hline
+{\em p2} & the x or y coordinate of the end\-Point on the bezier curve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the x or y coordinate of the coordinate point that lies along the bezier curve. 
+\end{DoxyReturn}
+\hypertarget{interface_causal_link_view_af6c10f878fb1c7f420cc964aa0822992}{\index{Causal\-Link\-View@{Causal\-Link\-View}!init\-With\-Parent\-:@{init\-With\-Parent\-:}}
+\index{init\-With\-Parent\-:@{init\-With\-Parent\-:}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{init\-With\-Parent\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Parent\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{parent}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_af6c10f878fb1c7f420cc964aa0822992}
+Initializes the view. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & a pointer to the parent object that holds the view. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an id of the newly created view. 
+\end{DoxyReturn}
+\hypertarget{interface_causal_link_view_afcd8e0f9b511eafba30829975f38f8b7}{\index{Causal\-Link\-View@{Causal\-Link\-View}!move\-Arc\-:previous\-Location\-:@{move\-Arc\-:previous\-Location\-:}}
+\index{move\-Arc\-:previous\-Location\-:@{move\-Arc\-:previous\-Location\-:}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{move\-Arc\-:previous\-Location\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) move\-Arc\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{location}
+\item[{previousLocation:(C\-G\-Point)}]{prev\-Location}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_afcd8e0f9b511eafba30829975f38f8b7}
+Will handle the moving of the arc up and down. After modifiying the control point, a method call will be made to adjust the frame. 
+\begin{DoxyParams}{Parameters}
+{\em location} & the coordinate location of where the user's finger is located. \\
+\hline
+{\em prev\-Location} & the coordinate location of where the user's finger use to be located. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_causal_link_view_a5ff220a0a810bec7f0eb1265fa10df73}{\index{Causal\-Link\-View@{Causal\-Link\-View}!move\-Variable\-:modify\-Start\-Point\-:@{move\-Variable\-:modify\-Start\-Point\-:}}
+\index{move\-Variable\-:modify\-Start\-Point\-:@{move\-Variable\-:modify\-Start\-Point\-:}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{move\-Variable\-:modify\-Start\-Point\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) move\-Variable\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{new\-Center}
+\item[{modifyStartPoint:(bool)}]{is\-Start\-Point}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_a5ff220a0a810bec7f0eb1265fa10df73}
+This method updates the arc when either the starting or ending point variable has moved. 
+\begin{DoxyParams}{Parameters}
+{\em new\-Center} & the center point location of the variable that moved. \\
+\hline
+{\em is\-Start\-Point} & whether or not the variable that changed was the start\-Point. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_causal_link_view_af48e1d11b9394830d3c3b12a5f84ba61}{\index{Causal\-Link\-View@{Causal\-Link\-View}!point\-Inside\-:with\-Event\-:@{point\-Inside\-:with\-Event\-:}}
+\index{point\-Inside\-:with\-Event\-:@{point\-Inside\-:with\-Event\-:}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{point\-Inside\-:with\-Event\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) point\-Inside\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{point}
+\item[{withEvent:(U\-I\-Event $\ast$)}]{event}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_af48e1d11b9394830d3c3b12a5f84ba61}
+Will allow any of the children of the view to receive touches but the view itself will be transparent to events. 
+\begin{DoxyParams}{Parameters}
+{\em point} & the point where the event occurred. \\
+\hline
+{\em event} & the associated event initiated by the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether or not this view handled the event. 
+\end{DoxyReturn}
+\hypertarget{interface_causal_link_view_a339bfeabcfc5f19a0da1c941a6f70c8c}{\index{Causal\-Link\-View@{Causal\-Link\-View}!resize\-Frame\-:new\-Origin\-:width\-:height\-:@{resize\-Frame\-:new\-Origin\-:width\-:height\-:}}
+\index{resize\-Frame\-:new\-Origin\-:width\-:height\-:@{resize\-Frame\-:new\-Origin\-:width\-:height\-:}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{resize\-Frame\-:new\-Origin\-:width\-:height\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) resize\-Frame\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{old\-Origin}
+\item[{newOrigin:(C\-G\-Point)}]{new\-Origin}
+\item[{width:(float)}]{size\-Width}
+\item[{height:(float)}]{size\-Height}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_a339bfeabcfc5f19a0da1c941a6f70c8c}
+Will set the frame based on the given parameters. Will determine what the transalation of the old frame and the new frame is and then will make a method call to update all of the points within the frame. 
+\begin{DoxyParams}{Parameters}
+{\em old\-Origin} & the old origin of the frame. \\
+\hline
+{\em new\-Origin} & the new origin of the frame. \\
+\hline
+{\em size\-Width} & the new width of the frame. \\
+\hline
+{\em size\-Height} & the new height of the frame. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_causal_link_view_a910e5f8e9cfba7c8881bf5555984996b}{\index{Causal\-Link\-View@{Causal\-Link\-View}!rotate\-Line\-:base\-:degrees\-:@{rotate\-Line\-:base\-:degrees\-:}}
+\index{rotate\-Line\-:base\-:degrees\-:@{rotate\-Line\-:base\-:degrees\-:}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{rotate\-Line\-:base\-:degrees\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) rotate\-Line\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{head}
+\item[{base:(C\-G\-Point)}]{base}
+\item[{degrees:(float)}]{degrees}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_a910e5f8e9cfba7c8881bf5555984996b}
+This will rotate the line that extends from the head point to the base point by a passed in number of degrees. This method is used to find the corner points of the arrowhead by utilizing a linear algebra rotation matrix to perform rotation in Euclidian space. 
+\begin{DoxyParams}{Parameters}
+{\em head} & the head point of the arrowhead. \\
+\hline
+{\em base} & the base point of the arrowhead. \\
+\hline
+{\em degrees} & the number of degree we would like to rotate the line from the head to the base to get the corner point of the arrow. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the corner point of the rotated line, that is rotated around the head point. 
+\end{DoxyReturn}
+\hypertarget{interface_causal_link_view_ace06597f5de275e1bb2a4d2d5b978e1f}{\index{Causal\-Link\-View@{Causal\-Link\-View}!update\-Points\-In\-Frame\-:y\-Offset\-:@{update\-Points\-In\-Frame\-:y\-Offset\-:}}
+\index{update\-Points\-In\-Frame\-:y\-Offset\-:@{update\-Points\-In\-Frame\-:y\-Offset\-:}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{update\-Points\-In\-Frame\-:y\-Offset\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\-Points\-In\-Frame\-: 
+\begin{DoxyParamCaption}
+\item[{(float)}]{x\-Offset}
+\item[{yOffset:(float)}]{y\-Offset}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_ace06597f5de275e1bb2a4d2d5b978e1f}
+Will translate all of the points in the frame based on the offset of the frame changes. 
+\begin{DoxyParams}{Parameters}
+{\em x\-Offset} & the change in the x coordinate between the old and new frames. \\
+\hline
+{\em y\-Offset} & the change in the y coordinate between the old and new frames. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_causal_link_view_a0d92c4b54808a5fa804ba5da408ec6a9}{\index{Causal\-Link\-View@{Causal\-Link\-View}!update\-Slope@{update\-Slope}}
+\index{update\-Slope@{update\-Slope}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{update\-Slope}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\-Slope 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_a0d92c4b54808a5fa804ba5da408ec6a9}
+This will update the slope of the arc. It will iteratively decrease the size of the slope until it is within range of normal movement of a finger gesture. \hypertarget{interface_causal_link_view_a83f47d49615b69616f780c42780164c9}{\index{Causal\-Link\-View@{Causal\-Link\-View}!update\-Vertex@{update\-Vertex}}
+\index{update\-Vertex@{update\-Vertex}!CausalLinkView@{Causal\-Link\-View}}
+\subsubsection[{update\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\-Vertex 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_view_a83f47d49615b69616f780c42780164c9}
+This method will recompute the vertex based on the starting point, ending point, and control point. This method should be called any time any one of the three points moves. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Causal\-Link\-View.\-h\item 
+Group\-Modeling\-App/Causal\-Link\-View.\-m\end{DoxyCompactItemize}

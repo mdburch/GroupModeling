@@ -1,0 +1,109 @@
+\hypertarget{interface_component}{\section{Component Class Reference}
+\label{interface_component}\index{Component@{Component}}
+}
+
+
+A superclass that holds all generic data about all objects in the causal diagram model.  
+
+
+
+
+{\ttfamily \#import $<$Component.\-h$>$}
+
+Inheritance diagram for Component\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_component}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_component_a4213bb26f5207ee3f402fe463badc691}{(id) -\/ {\bfseries init}}\label{interface_component_a4213bb26f5207ee3f402fe463badc691}
+
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(int) + \hyperlink{interface_component_a3d13675a50c2e37e16e1b7858e5510e4}{generate\-I\-D}
+\item 
+\hypertarget{interface_component_a729723fbabf97aacfb842008ac0a354a}{(void) + \hyperlink{interface_component_a729723fbabf97aacfb842008ac0a354a}{reset\-I\-D\-Counter}}\label{interface_component_a729723fbabf97aacfb842008ac0a354a}
+
+\begin{DoxyCompactList}\small\item\em Called to set the id counter back to zero when either a new file is created or opened. \end{DoxyCompactList}\item 
+(int) + \hyperlink{interface_component_a5dd925a5e48c04cad74e8beb21d293ff}{get\-Largest\-I\-D\-Num}
+\item 
+(void) + \hyperlink{interface_component_ae07661532eb80738c2008859e8a198b7}{set\-Largest\-I\-D\-Num\-:}
+\item 
+(N\-S\-String $\ast$) + \hyperlink{interface_component_a875d9dcfa3e019c2cf685524707e0427}{sanitize\-String\-:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_component_aa1014a20b8eef81a91c90ed7740d4a10}{int \hyperlink{interface_component_aa1014a20b8eef81a91c90ed7740d4a10}{id\-Num}}\label{interface_component_aa1014a20b8eef81a91c90ed7740d4a10}
+
+\begin{DoxyCompactList}\small\item\em The id number of the component in the model. This should be unique for every instance of the component in the model. \end{DoxyCompactList}\item 
+\hypertarget{interface_component_ab15484f6d515849f3363dd48a9aea09a}{int \hyperlink{interface_component_ab15484f6d515849f3363dd48a9aea09a}{object\-Type}}\label{interface_component_ab15484f6d515849f3363dd48a9aea09a}
+
+\begin{DoxyCompactList}\small\item\em Specifiying the type of the object. Should be a \hyperlink{interface_variable}{Variable} = 10, \hyperlink{interface_causal_link}{Causal\-Link} = 1, or a \hyperlink{interface_loop}{Loop} = 12. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A superclass that holds all generic data about all objects in the causal diagram model. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_component_a3d13675a50c2e37e16e1b7858e5510e4}{\index{Component@{Component}!generate\-I\-D@{generate\-I\-D}}
+\index{generate\-I\-D@{generate\-I\-D}!Component@{Component}}
+\subsubsection[{generate\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) generate\-I\-D 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_component_a3d13675a50c2e37e16e1b7858e5510e4}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]would be nice to remove this static variable Called for every subclass instance to keep track of how many objects there are currently in the model. The main use of this method will be to generate identification numbers for newly created objects by the user. Should only be called once by the component model in the init. \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+the unique id number for the component. 
+\end{DoxyReturn}
+\hypertarget{interface_component_a5dd925a5e48c04cad74e8beb21d293ff}{\index{Component@{Component}!get\-Largest\-I\-D\-Num@{get\-Largest\-I\-D\-Num}}
+\index{get\-Largest\-I\-D\-Num@{get\-Largest\-I\-D\-Num}!Component@{Component}}
+\subsubsection[{get\-Largest\-I\-D\-Num}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) get\-Largest\-I\-D\-Num 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_component_a5dd925a5e48c04cad74e8beb21d293ff}
+Returns the largest id number. \begin{DoxyReturn}{Returns}
+the largest id number which will be the value of id\-Iter. 
+\end{DoxyReturn}
+\hypertarget{interface_component_a875d9dcfa3e019c2cf685524707e0427}{\index{Component@{Component}!sanitize\-String\-:@{sanitize\-String\-:}}
+\index{sanitize\-String\-:@{sanitize\-String\-:}!Component@{Component}}
+\subsubsection[{sanitize\-String\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\-S\-String$\ast$) sanitize\-String\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{str}
+\end{DoxyParamCaption}
+}}\label{interface_component_a875d9dcfa3e019c2cf685524707e0427}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]For some reason string\-By\-Replacing\-Occurrences\-Of\-String causes Doxygen to not be able to find the .m file. So i have documentation duplicated in both files right now... Used to sanitize strings that may contain extraneous escape characters. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the string that needs to be returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string that does not contain any extra backslashes or double-\/quotes. 
+\end{DoxyReturn}
+\hypertarget{interface_component_ae07661532eb80738c2008859e8a198b7}{\index{Component@{Component}!set\-Largest\-I\-D\-Num\-:@{set\-Largest\-I\-D\-Num\-:}}
+\index{set\-Largest\-I\-D\-Num\-:@{set\-Largest\-I\-D\-Num\-:}!Component@{Component}}
+\subsubsection[{set\-Largest\-I\-D\-Num\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) set\-Largest\-I\-D\-Num\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{num}
+\end{DoxyParamCaption}
+}}\label{interface_component_ae07661532eb80738c2008859e8a198b7}
+Sets the id\-Iter to the current largest id num on import. 
+\begin{DoxyParams}{Parameters}
+{\em num} & the largest id number. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Component.\-h\end{DoxyCompactItemize}

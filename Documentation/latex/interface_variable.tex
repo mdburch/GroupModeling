@@ -1,0 +1,189 @@
+\hypertarget{interface_variable}{\section{Variable Class Reference}
+\label{interface_variable}\index{Variable@{Variable}}
+}
+
+
+A subclass of \hyperlink{interface_component}{Component} containing the data related to a variable of a causal loop diagram. ex. In a diagram on Childhood obesity, \char`\"{}\-Fast Food\char`\"{} may be a variable in the model influencing childhood obesity.  
+
+
+
+
+{\ttfamily \#import $<$Variable.\-h$>$}
+
+Inheritance diagram for Variable\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_variable}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_variable_a94f7b8f580fb81fe04cbdb35e5058336}{add\-Indegree\-Link\-:}
+\item 
+(void) -\/ \hyperlink{interface_variable_ae0173c90b0ab12d38f7ad61696ed8e54}{add\-Outdegree\-Link\-:}
+\item 
+(id) -\/ \hyperlink{interface_variable_ae3fdc3a923d3d3be4b4aeb821cb90734}{init\-:}
+\item 
+(id) -\/ \hyperlink{interface_variable_a9755af4c66523c228c80713cab6396fe}{init\-With\-Location\-:}
+\item 
+(int) -\/ \hyperlink{interface_variable_a79b759708a8f8644dd6913b4ae5762e5}{get\-Variable\-Height}
+\item 
+(int) -\/ \hyperlink{interface_variable_a388e832a7faf40b36f9a7a6f592d58d7}{get\-Variable\-Width}
+\item 
+(void) -\/ \hyperlink{interface_variable_a36d0d6828a9b4691b0db41445af18317}{remove\-Indgree\-Link\-:}
+\item 
+(void) -\/ \hyperlink{interface_variable_a025b64b058ba0294e2ef0bf10cbc70e7}{remove\-Outdgree\-Link\-:}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_variable_a1ff5e4a4052dff234ff327980ae2f92e}{create\-Var\-Map}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_variable_a4c7e0685f86eef33404c7ada436db10a}{create\-Variable\-Output\-String}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_variable_acccd26f3cbfd25fc87ff63a9e5ebd6cf}{N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_variable_acccd26f3cbfd25fc87ff63a9e5ebd6cf}{indegree\-Links}}\label{interface_variable_acccd26f3cbfd25fc87ff63a9e5ebd6cf}
+
+\begin{DoxyCompactList}\small\item\em An array of \hyperlink{interface_causal_link}{Causal\-Link} objects that point to this variable. \end{DoxyCompactList}\item 
+\hypertarget{interface_variable_aafe54a40e314c1bb23ea7d5cb5456586}{N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_variable_aafe54a40e314c1bb23ea7d5cb5456586}{outdegree\-Links}}\label{interface_variable_aafe54a40e314c1bb23ea7d5cb5456586}
+
+\begin{DoxyCompactList}\small\item\em An array of \hyperlink{interface_causal_link}{Causal\-Link} objects that extend from this variable. \end{DoxyCompactList}\item 
+\hypertarget{interface_variable_a0e3597199260a059ec632e5d54adb06e}{int \hyperlink{interface_variable_a0e3597199260a059ec632e5d54adb06e}{text\-Position}}\label{interface_variable_a0e3597199260a059ec632e5d54adb06e}
+
+\begin{DoxyCompactList}\small\item\em Where the text holding the variable name is located in relation to the variable object. \end{DoxyCompactList}\item 
+\hypertarget{interface_variable_a7e8a4af98b5a08b166ccd5d637cb380a}{\hyperlink{interface_variable_view}{Variable\-View} $\ast$ \hyperlink{interface_variable_a7e8a4af98b5a08b166ccd5d637cb380a}{view}}\label{interface_variable_a7e8a4af98b5a08b166ccd5d637cb380a}
+
+\begin{DoxyCompactList}\small\item\em The U\-I\-View that will contain the graphical representation of the variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A subclass of \hyperlink{interface_component}{Component} containing the data related to a variable of a causal loop diagram. ex. In a diagram on Childhood obesity, \char`\"{}\-Fast Food\char`\"{} may be a variable in the model influencing childhood obesity. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_variable_a94f7b8f580fb81fe04cbdb35e5058336}{\index{Variable@{Variable}!add\-Indegree\-Link\-:@{add\-Indegree\-Link\-:}}
+\index{add\-Indegree\-Link\-:@{add\-Indegree\-Link\-:}!Variable@{Variable}}
+\subsubsection[{add\-Indegree\-Link\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Indegree\-Link\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{link}
+\end{DoxyParamCaption}
+}}\label{interface_variable_a94f7b8f580fb81fe04cbdb35e5058336}
+Add a \hyperlink{interface_causal_link}{Causal\-Link} to the list of indegree links to this variable. 
+\begin{DoxyParams}{Parameters}
+{\em link} & the \hyperlink{interface_causal_link}{Causal\-Link} that should be added. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_variable_ae0173c90b0ab12d38f7ad61696ed8e54}{\index{Variable@{Variable}!add\-Outdegree\-Link\-:@{add\-Outdegree\-Link\-:}}
+\index{add\-Outdegree\-Link\-:@{add\-Outdegree\-Link\-:}!Variable@{Variable}}
+\subsubsection[{add\-Outdegree\-Link\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Outdegree\-Link\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{link}
+\end{DoxyParamCaption}
+}}\label{interface_variable_ae0173c90b0ab12d38f7ad61696ed8e54}
+Add a \hyperlink{interface_causal_link}{Causal\-Link} to the list of outdegree links to this variable. 
+\begin{DoxyParams}{Parameters}
+{\em link} & the \hyperlink{interface_causal_link}{Causal\-Link} that should be added. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_variable_a4c7e0685f86eef33404c7ada436db10a}{\index{Variable@{Variable}!create\-Variable\-Output\-String@{create\-Variable\-Output\-String}}
+\index{create\-Variable\-Output\-String@{create\-Variable\-Output\-String}!Variable@{Variable}}
+\subsubsection[{create\-Variable\-Output\-String}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) create\-Variable\-Output\-String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_variable_a4c7e0685f86eef33404c7ada436db10a}
+Constructs the output string for a \hyperlink{interface_variable}{Variable}. The string is constructed to be readable by Vensim. Follows the string pattern\-: \mbox{[}Object Type\mbox{]},\mbox{[}Object id\mbox{]},\mbox{[}Object Name\mbox{]},\mbox{[}X Location\mbox{]},\mbox{[}Y Location\mbox{]},?,?,\mbox{[}\hyperlink{interface_variable}{Variable} Type\mbox{]},3,0,0,\mbox{[}Text Position\mbox{]},0,0,0 \begin{DoxyReturn}{Returns}
+the string of data for the variable. 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]I do not put the extra characters vensim uses for " \end{DoxyRefDesc}
+\hypertarget{interface_variable_a1ff5e4a4052dff234ff327980ae2f92e}{\index{Variable@{Variable}!create\-Var\-Map@{create\-Var\-Map}}
+\index{create\-Var\-Map@{create\-Var\-Map}!Variable@{Variable}}
+\subsubsection[{create\-Var\-Map}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) create\-Var\-Map 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_variable_a1ff5e4a4052dff234ff327980ae2f92e}
+Constructs the variable map, identifying which variables influence the current variable. Vensim constructs maps to display how the variables are related. Example of the output created\-: Big \hyperlink{interface_variable}{Variable} = A F\-U\-N\-C\-T\-I\-O\-N O\-F( variable 1,variable 2) $\sim$ $\sim$ $|$ \begin{DoxyReturn}{Returns}
+an array that contains the three lines that represent the map for the variable. 
+\end{DoxyReturn}
+\hypertarget{interface_variable_a79b759708a8f8644dd6913b4ae5762e5}{\index{Variable@{Variable}!get\-Variable\-Height@{get\-Variable\-Height}}
+\index{get\-Variable\-Height@{get\-Variable\-Height}!Variable@{Variable}}
+\subsubsection[{get\-Variable\-Height}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) get\-Variable\-Height 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_variable_a79b759708a8f8644dd6913b4ae5762e5}
+Gets the height of the variable view. \begin{DoxyReturn}{Returns}
+the height of the variable view. 
+\end{DoxyReturn}
+\hypertarget{interface_variable_a388e832a7faf40b36f9a7a6f592d58d7}{\index{Variable@{Variable}!get\-Variable\-Width@{get\-Variable\-Width}}
+\index{get\-Variable\-Width@{get\-Variable\-Width}!Variable@{Variable}}
+\subsubsection[{get\-Variable\-Width}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) get\-Variable\-Width 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_variable_a388e832a7faf40b36f9a7a6f592d58d7}
+Gets the width of the variable view. \begin{DoxyReturn}{Returns}
+the width of the variable view. 
+\end{DoxyReturn}
+\hypertarget{interface_variable_ae3fdc3a923d3d3be4b4aeb821cb90734}{\index{Variable@{Variable}!init\-:@{init\-:}}
+\index{init\-:@{init\-:}!Variable@{Variable}}
+\subsubsection[{init\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array$\ast$)}]{data}
+\end{DoxyParamCaption}
+}}\label{interface_variable_ae3fdc3a923d3d3be4b4aeb821cb90734}
+Initializes the \hyperlink{interface_variable}{Variable} when you are loading data from a mdl file. 
+\begin{DoxyParams}{Parameters}
+{\em data} & an array of strings containing all of the data for the variable from a Vensim mdl file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created \hyperlink{interface_variable}{Variable}. 
+\end{DoxyReturn}
+\hypertarget{interface_variable_a9755af4c66523c228c80713cab6396fe}{\index{Variable@{Variable}!init\-With\-Location\-:@{init\-With\-Location\-:}}
+\index{init\-With\-Location\-:@{init\-With\-Location\-:}!Variable@{Variable}}
+\subsubsection[{init\-With\-Location\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Location\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{location}
+\end{DoxyParamCaption}
+}}\label{interface_variable_a9755af4c66523c228c80713cab6396fe}
+Initizlizes the \hyperlink{interface_variable}{Variable} when you are adding a brand new variable. 
+\begin{DoxyParams}{Parameters}
+{\em location} & the location of the new object in the frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created \hyperlink{interface_variable}{Variable}. 
+\end{DoxyReturn}
+\hypertarget{interface_variable_a36d0d6828a9b4691b0db41445af18317}{\index{Variable@{Variable}!remove\-Indgree\-Link\-:@{remove\-Indgree\-Link\-:}}
+\index{remove\-Indgree\-Link\-:@{remove\-Indgree\-Link\-:}!Variable@{Variable}}
+\subsubsection[{remove\-Indgree\-Link\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\-Indgree\-Link\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{link}
+\end{DoxyParamCaption}
+}}\label{interface_variable_a36d0d6828a9b4691b0db41445af18317}
+Removes a \hyperlink{interface_causal_link}{Causal\-Link} from the list of indegree links for this variable. 
+\begin{DoxyParams}{Parameters}
+{\em link} & the \hyperlink{interface_causal_link}{Causal\-Link} that should be deleted. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_variable_a025b64b058ba0294e2ef0bf10cbc70e7}{\index{Variable@{Variable}!remove\-Outdgree\-Link\-:@{remove\-Outdgree\-Link\-:}}
+\index{remove\-Outdgree\-Link\-:@{remove\-Outdgree\-Link\-:}!Variable@{Variable}}
+\subsubsection[{remove\-Outdgree\-Link\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\-Outdgree\-Link\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{link}
+\end{DoxyParamCaption}
+}}\label{interface_variable_a025b64b058ba0294e2ef0bf10cbc70e7}
+Removes a \hyperlink{interface_causal_link}{Causal\-Link} from the list of outdegree links for this variable. 
+\begin{DoxyParams}{Parameters}
+{\em link} & the \hyperlink{interface_causal_link}{Causal\-Link} that should be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Variable.\-h\item 
+Group\-Modeling\-App/Variable.\-m\end{DoxyCompactItemize}

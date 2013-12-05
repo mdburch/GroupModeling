@@ -1,0 +1,71 @@
+\hypertarget{interface_feedback_loop}{\section{Feedback\-Loop Class Reference}
+\label{interface_feedback_loop}\index{Feedback\-Loop@{Feedback\-Loop}}
+}
+
+
+A subclass of \hyperlink{interface_component}{Component} containing the data related to a feedback loop of a causal loop diagram. ex. In a diagram on K-\/12 school attendance, a feedback loop would occur where as \char`\"{}\-Students Desire to Go to School\char`\"{} increases so does their \char`\"{}\-Mean daily attendance rate\char`\"{} and as their \char`\"{}\-Mean Daily attendance rate\char`\"{} increases so does a \char`\"{}\-Students Desire to Go to School\char`\"{}.  
+
+
+
+
+{\ttfamily \#import $<$Feedback\-Loop.\-h$>$}
+
+Inheritance diagram for Feedback\-Loop\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_feedback_loop}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_feedback_loop_a247de3efb61bb927f8e2e8cc9552bd72}{init\-:var\-Name\-:view\-Controller\-:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_feedback_loop_a52584f3c190fabcb0171a7e7d4e3bb30}{int \hyperlink{interface_feedback_loop_a52584f3c190fabcb0171a7e7d4e3bb30}{symbol}}\label{interface_feedback_loop_a52584f3c190fabcb0171a7e7d4e3bb30}
+
+\begin{DoxyCompactList}\small\item\em Specifiying whether there is a clockwise = 4 or counterclockise = 5 feedback loop. \end{DoxyCompactList}\item 
+\hypertarget{interface_feedback_loop_a0e3597199260a059ec632e5d54adb06e}{int \hyperlink{interface_feedback_loop_a0e3597199260a059ec632e5d54adb06e}{text\-Position}}\label{interface_feedback_loop_a0e3597199260a059ec632e5d54adb06e}
+
+\begin{DoxyCompactList}\small\item\em Where the text holding the feedback loop name is located in relation to the feedback loop object. \end{DoxyCompactList}\item 
+\hypertarget{interface_feedback_loop_a46b809706af30aafdb3ff35b2173286b}{\hyperlink{interface_loop_view}{Loop\-View} $\ast$ \hyperlink{interface_feedback_loop_a46b809706af30aafdb3ff35b2173286b}{view}}\label{interface_feedback_loop_a46b809706af30aafdb3ff35b2173286b}
+
+\begin{DoxyCompactList}\small\item\em The U\-I\-View that will contain the graphical representation of the loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A subclass of \hyperlink{interface_component}{Component} containing the data related to a feedback loop of a causal loop diagram. ex. In a diagram on K-\/12 school attendance, a feedback loop would occur where as \char`\"{}\-Students Desire to Go to School\char`\"{} increases so does their \char`\"{}\-Mean daily attendance rate\char`\"{} and as their \char`\"{}\-Mean Daily attendance rate\char`\"{} increases so does a \char`\"{}\-Students Desire to Go to School\char`\"{}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_feedback_loop_a247de3efb61bb927f8e2e8cc9552bd72}{\index{Feedback\-Loop@{Feedback\-Loop}!init\-:var\-Name\-:view\-Controller\-:@{init\-:var\-Name\-:view\-Controller\-:}}
+\index{init\-:var\-Name\-:view\-Controller\-:@{init\-:var\-Name\-:view\-Controller\-:}!FeedbackLoop@{Feedback\-Loop}}
+\subsubsection[{init\-:var\-Name\-:view\-Controller\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array$\ast$)}]{data}
+\item[{varName:(N\-S\-String$\ast$)}]{my\-Name}
+\item[{viewController:(U\-I\-View$\ast$)}]{parent\-View}
+\end{DoxyParamCaption}
+}}\label{interface_feedback_loop_a247de3efb61bb927f8e2e8cc9552bd72}
+Initializes the \hyperlink{interface_feedback_loop}{Feedback\-Loop}. 
+\begin{DoxyParams}{Parameters}
+{\em data} & an array of strings containing all of the data for the feedback loop from a Vensim mdl file. \\
+\hline
+{\em my\-Name} & the name associated with the feedback loop. Unlike Variables and Relationships, Feedback Loops name is located on a different line in the Vensim mdl file from the rest of the loop attributes. \\
+\hline
+{\em vc} & the view controller that this instance of \hyperlink{interface_variable}{Variable} will add its subview. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created \hyperlink{interface_feedback_loop}{Feedback\-Loop}. 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]Name and location are being handled by the view now. Some proof to remove these variables from the component \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/\-Group\-Modeling\-App/Feedback\-Loop.\-h\item 
+Group\-Modeling\-App/\-Group\-Modeling\-App/Feedback\-Loop.\-m\end{DoxyCompactItemize}

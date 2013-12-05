@@ -1,0 +1,166 @@
+\hypertarget{interface_file_i_o}{\section{File\-I\-O Class Reference}
+\label{interface_file_i_o}\index{File\-I\-O@{File\-I\-O}}
+}
+
+
+A class that handles the parsing of mdl files to import into the application. Also is responsible for exporting the model back into a Vensim file for saving state and for use in Vensim again.  
+
+
+
+
+{\ttfamily \#import $<$File\-I\-O.\-h$>$}
+
+Inheritance diagram for File\-I\-O\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_file_i_o}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_file_i_o_a2bb3d58ae1f0fac924e831a424e1365b}{import\-Model\-:}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_file_i_o_a521b8da51a857f38be6622a220cf70c5}{open\-File}
+\item 
+(N\-S\-U\-R\-L $\ast$) -\/ \hyperlink{interface_file_i_o_ae00d68df671c5290f0e6774adf469f49}{export\-Model}
+\item 
+\hypertarget{interface_file_i_o_ab012ca0b3749e8e0fb26a09a92d28d02}{(void) -\/ \hyperlink{interface_file_i_o_ab012ca0b3749e8e0fb26a09a92d28d02}{export\-Event\-Logging}}\label{interface_file_i_o_ab012ca0b3749e8e0fb26a09a92d28d02}
+
+\begin{DoxyCompactList}\small\item\em Will export the model event logging data and write it to a file event\-Logging.\-txt. \end{DoxyCompactList}\item 
+(N\-S\-Number $\ast$) -\/ \hyperlink{interface_file_i_o_a628a9ac631ce93a2e49ac8155b62eaf1}{get\-File\-I\-D}
+\item 
+(N\-S\-Number $\ast$) -\/ \hyperlink{interface_file_i_o_a305324f84521a6c2966a744c620c6009}{get\-Next\-Available\-File\-I\-D}
+\item 
+(void) -\/ \hyperlink{interface_file_i_o_a00a3fe9bd4e7c407327987606c18028a}{process\-Component\-:loop\-Name\-:}
+\item 
+\hypertarget{interface_file_i_o_a0282f6418e27f223af8dc89cc5142d31}{(void) -\/ \hyperlink{interface_file_i_o_a0282f6418e27f223af8dc89cc5142d31}{update\-Causal\-Link\-Connections}}\label{interface_file_i_o_a0282f6418e27f223af8dc89cc5142d31}
+
+\begin{DoxyCompactList}\small\item\em Once the file has been read in completely we can finish processing the data. The causal link parent and child objects upon import point to a string id of the parent and child, instead we would like the parent and child to point to the instance of those Variables. Likewise, each variable would like to keep track of which Causal\-Links are indegree and outdegree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_file_i_o}{File\-I\-O} $\ast$) + \hyperlink{interface_file_i_o_a010550b3de2e660a2a14d4dce2990078}{shared\-File\-I\-O}
+\item 
+(N\-S\-Data $\ast$) + \hyperlink{interface_file_i_o_ac570de2e8f37bc126a9f9536f34bc09d}{sha1\-:}
+\item 
+(N\-S\-String $\ast$) + \hyperlink{interface_file_i_o_a3e844772cd8f89ba85d4bd369a093fd8}{base64for\-Data\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that handles the parsing of mdl files to import into the application. Also is responsible for exporting the model back into a Vensim file for saving state and for use in Vensim again. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_file_i_o_a3e844772cd8f89ba85d4bd369a093fd8}{\index{File\-I\-O@{File\-I\-O}!base64for\-Data\-:@{base64for\-Data\-:}}
+\index{base64for\-Data\-:@{base64for\-Data\-:}!FileIO@{File\-I\-O}}
+\subsubsection[{base64for\-Data\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\-S\-String $\ast$) base64for\-Data\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Data$\ast$)}]{the\-Data}
+\end{DoxyParamCaption}
+}}\label{interface_file_i_o_a3e844772cd8f89ba85d4bd369a093fd8}
+Converts the hashed dat to a base64 string for comparison with what is stored in the database. 
+\begin{DoxyParams}{Parameters}
+{\em the\-Data} & the hash value to be converted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the converted nsdata to base64 string 
+\end{DoxyReturn}
+\hypertarget{interface_file_i_o_ae00d68df671c5290f0e6774adf469f49}{\index{File\-I\-O@{File\-I\-O}!export\-Model@{export\-Model}}
+\index{export\-Model@{export\-Model}!FileIO@{File\-I\-O}}
+\subsubsection[{export\-Model}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-R\-L $\ast$) export\-Model 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_file_i_o_ae00d68df671c5290f0e6774adf469f49}
+Will export the model and write it to a file output.\-mdl. \begin{DoxyReturn}{Returns}
+the url location of the file. 
+\end{DoxyReturn}
+Add the current max I\-D, used for tracking events. Stored as -\/\#\#. \hypertarget{interface_file_i_o_a628a9ac631ce93a2e49ac8155b62eaf1}{\index{File\-I\-O@{File\-I\-O}!get\-File\-I\-D@{get\-File\-I\-D}}
+\index{get\-File\-I\-D@{get\-File\-I\-D}!FileIO@{File\-I\-O}}
+\subsubsection[{get\-File\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Number $\ast$) get\-File\-I\-D 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_file_i_o_a628a9ac631ce93a2e49ac8155b62eaf1}
+Get the parent file global idenitifer (gid) so we can keep track of when a specific user modifies the same file or any derivative of the original file. The gid will be unique per user + parent file combination. \begin{DoxyReturn}{Returns}
+a gid value for this eventlog record. 
+\end{DoxyReturn}
+\hypertarget{interface_file_i_o_a305324f84521a6c2966a744c620c6009}{\index{File\-I\-O@{File\-I\-O}!get\-Next\-Available\-File\-I\-D@{get\-Next\-Available\-File\-I\-D}}
+\index{get\-Next\-Available\-File\-I\-D@{get\-Next\-Available\-File\-I\-D}!FileIO@{File\-I\-O}}
+\subsubsection[{get\-Next\-Available\-File\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Number $\ast$) get\-Next\-Available\-File\-I\-D 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_file_i_o_a305324f84521a6c2966a744c620c6009}
+If a new file has been created, or a user has not edited an existing file before, we will need to create a new gid for this user/file combination. \begin{DoxyReturn}{Returns}
+the next available file gid in the database. 
+\end{DoxyReturn}
+\hypertarget{interface_file_i_o_a2bb3d58ae1f0fac924e831a424e1365b}{\index{File\-I\-O@{File\-I\-O}!import\-Model\-:@{import\-Model\-:}}
+\index{import\-Model\-:@{import\-Model\-:}!FileIO@{File\-I\-O}}
+\subsubsection[{import\-Model\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) import\-Model\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array$\ast$)}]{lines}
+\end{DoxyParamCaption}
+}}\label{interface_file_i_o_a2bb3d58ae1f0fac924e831a424e1365b}
+Opens a Vensim mdl file and parses through it to populate the model. Will update the \hyperlink{interface_model}{Model} object with its simulation control parameters, default model parameters, and all components including any \hyperlink{interface_variable}{Variable}, \hyperlink{interface_causal_link}{Causal\-Link}, and \hyperlink{interface_loop}{Loop}. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]The name of the loop being on the next line kind of a pain \end{DoxyRefDesc}
+\hypertarget{interface_file_i_o_a521b8da51a857f38be6622a220cf70c5}{\index{File\-I\-O@{File\-I\-O}!open\-File@{open\-File}}
+\index{open\-File@{open\-File}!FileIO@{File\-I\-O}}
+\subsubsection[{open\-File}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) open\-File 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_file_i_o_a521b8da51a857f38be6622a220cf70c5}
+Will open the selected Vensim file to import and use. \begin{DoxyNote}{Note}
+this is only used when wanting to test in the simulator. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+a string contraining the entire file 
+\end{DoxyReturn}
+\hypertarget{interface_file_i_o_a00a3fe9bd4e7c407327987606c18028a}{\index{File\-I\-O@{File\-I\-O}!process\-Component\-:loop\-Name\-:@{process\-Component\-:loop\-Name\-:}}
+\index{process\-Component\-:loop\-Name\-:@{process\-Component\-:loop\-Name\-:}!FileIO@{File\-I\-O}}
+\subsubsection[{process\-Component\-:loop\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) process\-Component\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{string}
+\item[{loopName:(N\-S\-String$\ast$)}]{loop\-Name}
+\end{DoxyParamCaption}
+}}\label{interface_file_i_o_a00a3fe9bd4e7c407327987606c18028a}
+Will create a new component of type \hyperlink{interface_causal_link}{Causal\-Link}, \hyperlink{interface_variable}{Variable}, or \hyperlink{interface_loop}{Loop} and add it to the model. 
+\begin{DoxyParams}{Parameters}
+{\em string} & the input string from the Vensim mdl file that provides specification for the component. \\
+\hline
+{\em loop\-Name} & the provided name for a loop. This will be ignored for causal links and variables. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_file_i_o_ac570de2e8f37bc126a9f9536f34bc09d}{\index{File\-I\-O@{File\-I\-O}!sha1\-:@{sha1\-:}}
+\index{sha1\-:@{sha1\-:}!FileIO@{File\-I\-O}}
+\subsubsection[{sha1\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\-S\-Data $\ast$) sha1\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Data $\ast$)}]{data}
+\end{DoxyParamCaption}
+}}\label{interface_file_i_o_ac570de2e8f37bc126a9f9536f34bc09d}
+Will compute a sha1 hash function on some data. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the data to be hashed. \\
+\hline
+{\em a} & sha1 hash of data. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_file_i_o_a010550b3de2e660a2a14d4dce2990078}{\index{File\-I\-O@{File\-I\-O}!shared\-File\-I\-O@{shared\-File\-I\-O}}
+\index{shared\-File\-I\-O@{shared\-File\-I\-O}!FileIO@{File\-I\-O}}
+\subsubsection[{shared\-File\-I\-O}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf File\-I\-O} $\ast$) shared\-File\-I\-O 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_file_i_o_a010550b3de2e660a2a14d4dce2990078}
+Forces the \hyperlink{interface_model}{Model} to be a singleton class. \begin{DoxyReturn}{Returns}
+a pointer to the single instance of the model. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/File\-I\-O.\-h\item 
+Group\-Modeling\-App/File\-I\-O.\-m\end{DoxyCompactItemize}

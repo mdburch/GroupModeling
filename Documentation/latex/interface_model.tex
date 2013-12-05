@@ -1,0 +1,306 @@
+\hypertarget{interface_model}{\section{Model Class Reference}
+\label{interface_model}\index{Model@{Model}}
+}
+
+
+This class is responsible for holding all aspects of a causal loop diagram model. This includes all causal links, variables, feedback loops, simulation parameters, and default parameters.  
+
+
+
+
+{\ttfamily \#import $<$Model.\-h$>$}
+
+Inheritance diagram for Model\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_model}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_model_a1aa9ffd361768e65dff67ca34bece31e}{clear\-Model}
+\begin{DoxyCompactList}\small\item\em Clears the model when you need to create or load a brand new file. \end{DoxyCompactList}\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_model_a91805a3382a6a5e971b6ba41cf239d13}{construct\-Location\-Details\-:}
+\item 
+(N\-S\-Mutable\-Array $\ast$) -\/ \hyperlink{interface_model_a11e5b56412cf5554242194f97c3f0289}{create\-Variable\-Map}
+\item 
+(N\-S\-Mutable\-Array $\ast$) -\/ \hyperlink{interface_model_a4a8949c3a08298f59357fd8e23da5b4e}{create\-Components\-Export}
+\item 
+(int) -\/ \hyperlink{interface_model_adc802e370fc8db1828ab0720ccf1b421}{add\-Casual\-Link\-With\-Parent\-:and\-Child\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_a47282c90df52a90537c270e38f7ab896}{add\-Component\-:}
+\item 
+(int) -\/ \hyperlink{interface_model_af6d6ffe8413a0199fa4810a378023496}{delete\-Causal\-Link\-:}
+\item 
+(int) -\/ \hyperlink{interface_model_aa4479c88b7241e0f24079c0318d37b54}{delete\-Loop\-:}
+\item 
+(int) -\/ \hyperlink{interface_model_a6a9cee44b5ea8954538199c1ceb07eff}{delete\-Variable\-:}
+\item 
+(U\-I\-View $\ast$) -\/ \hyperlink{interface_model_ab40d7b555b5fd0c7306b1035fa959158}{get\-View\-Controller\-View}
+\item 
+(U\-I\-View\-Controller $\ast$) -\/ \hyperlink{interface_model_aa36ee992fc98c9ef079d6b8954299479}{get\-View\-Controller}
+\item 
+(\hyperlink{interface_variable}{Variable} $\ast$) -\/ \hyperlink{interface_model_a9ccc4c0d1f6d72f49cdd2e105607d71a}{get\-Variable\-:}
+\item 
+(\hyperlink{interface_variable}{Variable} $\ast$) -\/ \hyperlink{interface_model_ab7e33b4b1a19e36620ba81922065ec22}{get\-Variable\-At\-Point\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_aface1baeb2283622b46ce5725fbd3064}{move\-Variable\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_a9417e1d438a60f39d050eb0dfc500a72}{set\-Variable\-Color\-:}
+\item 
+(C\-G\-Rect) -\/ \hyperlink{interface_model_a462b730c3f085149c45b1901fbb924ca}{find\-Model\-Frame}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_model}{Model} $\ast$) + \hyperlink{interface_model_a4f1d39e1881443e4ecd87d660e9c91b4}{shared\-Model}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_model_a84e232bb9b9692876f48dc2e95c8c2ab}{N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_model_a84e232bb9b9692876f48dc2e95c8c2ab}{components}}\label{interface_model_a84e232bb9b9692876f48dc2e95c8c2ab}
+
+\begin{DoxyCompactList}\small\item\em An array that contains all variables, causal links, and feedback loops of the model. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_a4be35dd9732f61e8d31f36497e615ac4}{\hyperlink{interface_default_parameters}{Default\-Parameters} $\ast$ \hyperlink{interface_model_a4be35dd9732f61e8d31f36497e615ac4}{default\-Params}}\label{interface_model_a4be35dd9732f61e8d31f36497e615ac4}
+
+\begin{DoxyCompactList}\small\item\em An instance of \hyperlink{interface_default_parameters}{Default\-Parameters} which contains the Vensim default parameters for the model such as font and size. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_a2be19c9425d7cfdc74424a9afbdbd9de}{\hyperlink{interface_control_parameters}{Control\-Parameters} $\ast$ \hyperlink{interface_model_a2be19c9425d7cfdc74424a9afbdbd9de}{control\-Params}}\label{interface_model_a2be19c9425d7cfdc74424a9afbdbd9de}
+
+\begin{DoxyCompactList}\small\item\em An instance of \hyperlink{interface_control_parameters}{Control\-Parameters} which contains the Vensim control parameters which specify how the simulation runs. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_ad6dba38c5d11da948afdddbd0a6e2caa}{N\-S\-Data $\ast$ \hyperlink{interface_model_ad6dba38c5d11da948afdddbd0a6e2caa}{starting\-Hash}}\label{interface_model_ad6dba38c5d11da948afdddbd0a6e2caa}
+
+\begin{DoxyCompactList}\small\item\em A hash string of the file that was imported from Dropbox. Will be null if brand new file. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_a3a3aa4972b9e878cf839228535944a82}{N\-S\-Data $\ast$ \hyperlink{interface_model_a3a3aa4972b9e878cf839228535944a82}{ending\-Hash}}\label{interface_model_a3a3aa4972b9e878cf839228535944a82}
+
+\begin{DoxyCompactList}\small\item\em A hash string of the file that was exported to Dropbox. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is responsible for holding all aspects of a causal loop diagram model. This includes all causal links, variables, feedback loops, simulation parameters, and default parameters. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_model_adc802e370fc8db1828ab0720ccf1b421}{\index{Model@{Model}!add\-Casual\-Link\-With\-Parent\-:and\-Child\-:@{add\-Casual\-Link\-With\-Parent\-:and\-Child\-:}}
+\index{add\-Casual\-Link\-With\-Parent\-:and\-Child\-:@{add\-Casual\-Link\-With\-Parent\-:and\-Child\-:}!Model@{Model}}
+\subsubsection[{add\-Casual\-Link\-With\-Parent\-:and\-Child\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) add\-Casual\-Link\-With\-Parent\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Variable}$\ast$)}]{parent}
+\item[{andChild:({\bf Variable}$\ast$)}]{child}
+\end{DoxyParamCaption}
+}}\label{interface_model_adc802e370fc8db1828ab0720ccf1b421}
+Will add a new causal\-Link to the model given a parent and a child. The link will be a straight line from the parent to the child. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & the parent \hyperlink{interface_variable}{Variable} of the causal link. \\
+\hline
+{\em child} & the child \hyperlink{interface_variable}{Variable} of the causal link. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id number of the newly created causal link. 
+\end{DoxyReturn}
+\hypertarget{interface_model_a47282c90df52a90537c270e38f7ab896}{\index{Model@{Model}!add\-Component\-:@{add\-Component\-:}}
+\index{add\-Component\-:@{add\-Component\-:}!Model@{Model}}
+\subsubsection[{add\-Component\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Component\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{obj}
+\end{DoxyParamCaption}
+}}\label{interface_model_a47282c90df52a90537c270e38f7ab896}
+Adds a newly created object to the list of components existing in the model. 
+\begin{DoxyParams}{Parameters}
+{\em obj} & an object that needs to be added to the model. Will be either a \hyperlink{interface_causal_link}{Causal\-Link}, \hyperlink{interface_variable}{Variable} or a \hyperlink{interface_loop}{Loop}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_a1aa9ffd361768e65dff67ca34bece31e}{\index{Model@{Model}!clear\-Model@{clear\-Model}}
+\index{clear\-Model@{clear\-Model}!Model@{Model}}
+\subsubsection[{clear\-Model}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear\-Model 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_a1aa9ffd361768e65dff67ca34bece31e}
+
+
+Clears the model when you need to create or load a brand new file. 
+
+\begin{DoxyNote}{Note}
+do not think i want to do this here... Will erase initial condtions when a user tries to open a file. Need to detemine when event lists are cleared. 
+\end{DoxyNote}
+\hypertarget{interface_model_a91805a3382a6a5e971b6ba41cf239d13}{\index{Model@{Model}!construct\-Location\-Details\-:@{construct\-Location\-Details\-:}}
+\index{construct\-Location\-Details\-:@{construct\-Location\-Details\-:}!Model@{Model}}
+\subsubsection[{construct\-Location\-Details\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) construct\-Location\-Details\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{location}
+\end{DoxyParamCaption}
+}}\label{interface_model_a91805a3382a6a5e971b6ba41cf239d13}
+Constructs the details message for all moving events. 
+\begin{DoxyParams}{Parameters}
+{\em location} & the point where the object is located. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string with the location. 
+\end{DoxyReturn}
+\hypertarget{interface_model_a4a8949c3a08298f59357fd8e23da5b4e}{\index{Model@{Model}!create\-Components\-Export@{create\-Components\-Export}}
+\index{create\-Components\-Export@{create\-Components\-Export}!Model@{Model}}
+\subsubsection[{create\-Components\-Export}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array $\ast$) create\-Components\-Export 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_a4a8949c3a08298f59357fd8e23da5b4e}
+Constructs a list of output strings for every component. \begin{DoxyReturn}{Returns}
+an array of output strings for all components. 
+\end{DoxyReturn}
+\hypertarget{interface_model_a11e5b56412cf5554242194f97c3f0289}{\index{Model@{Model}!create\-Variable\-Map@{create\-Variable\-Map}}
+\index{create\-Variable\-Map@{create\-Variable\-Map}!Model@{Model}}
+\subsubsection[{create\-Variable\-Map}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array $\ast$) create\-Variable\-Map 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_a11e5b56412cf5554242194f97c3f0289}
+Iterates over all of the Variables in the model and constructs the Vensim Function of() map for each one. \begin{DoxyReturn}{Returns}
+an array of strings that hold all of the output text of the variable maps. 
+\end{DoxyReturn}
+\hypertarget{interface_model_af6d6ffe8413a0199fa4810a378023496}{\index{Model@{Model}!delete\-Causal\-Link\-:@{delete\-Causal\-Link\-:}}
+\index{delete\-Causal\-Link\-:@{delete\-Causal\-Link\-:}!Model@{Model}}
+\subsubsection[{delete\-Causal\-Link\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) delete\-Causal\-Link\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{link\-View}
+\end{DoxyParamCaption}
+}}\label{interface_model_af6d6ffe8413a0199fa4810a378023496}
+Searches the list of components for a \hyperlink{interface_causal_link}{Causal\-Link} component with a specified \hyperlink{interface_causal_link_view}{Causal\-Link\-View}. 
+\begin{DoxyParams}{Parameters}
+{\em link\-View} & the view associated with the Casual\-Link. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id numbder of the causal link that was deleted for logging purposes. 
+\end{DoxyReturn}
+\hypertarget{interface_model_aa4479c88b7241e0f24079c0318d37b54}{\index{Model@{Model}!delete\-Loop\-:@{delete\-Loop\-:}}
+\index{delete\-Loop\-:@{delete\-Loop\-:}!Model@{Model}}
+\subsubsection[{delete\-Loop\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) delete\-Loop\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{loop\-View}
+\end{DoxyParamCaption}
+}}\label{interface_model_aa4479c88b7241e0f24079c0318d37b54}
+Searched the list of components for a \hyperlink{interface_loop}{Loop} component with a specified \hyperlink{interface_loop_view}{Loop\-View}. 
+\begin{DoxyParams}{Parameters}
+{\em loop\-View} & the view associated with the \hyperlink{interface_loop}{Loop}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id numbder of the loop that was deleted for logging purposes. 
+\end{DoxyReturn}
+\hypertarget{interface_model_a6a9cee44b5ea8954538199c1ceb07eff}{\index{Model@{Model}!delete\-Variable\-:@{delete\-Variable\-:}}
+\index{delete\-Variable\-:@{delete\-Variable\-:}!Model@{Model}}
+\subsubsection[{delete\-Variable\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) delete\-Variable\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{variable\-View}
+\end{DoxyParamCaption}
+}}\label{interface_model_a6a9cee44b5ea8954538199c1ceb07eff}
+Searched the list of components for a \hyperlink{interface_variable}{Variable} component with a specified \hyperlink{interface_variable_view}{Variable\-View}. 
+\begin{DoxyParams}{Parameters}
+{\em variable\-View} & the view associated with the \hyperlink{interface_variable}{Variable}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id numbder of the variable that was deleted for logging purposes. 
+\end{DoxyReturn}
+\hypertarget{interface_model_a462b730c3f085149c45b1901fbb924ca}{\index{Model@{Model}!find\-Model\-Frame@{find\-Model\-Frame}}
+\index{find\-Model\-Frame@{find\-Model\-Frame}!Model@{Model}}
+\subsubsection[{find\-Model\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Rect) find\-Model\-Frame 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_a462b730c3f085149c45b1901fbb924ca}
+Will find the smallest frame that will contain the entire model. Used for taking pictures of the model. \begin{DoxyReturn}{Returns}
+a C\-G\-Rect of the frame of the entire model. 
+\end{DoxyReturn}
+\hypertarget{interface_model_a9ccc4c0d1f6d72f49cdd2e105607d71a}{\index{Model@{Model}!get\-Variable\-:@{get\-Variable\-:}}
+\index{get\-Variable\-:@{get\-Variable\-:}!Model@{Model}}
+\subsubsection[{get\-Variable\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Variable} $\ast$) get\-Variable\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Number$\ast$)}]{id\-Number}
+\end{DoxyParamCaption}
+}}\label{interface_model_a9ccc4c0d1f6d72f49cdd2e105607d71a}
+Searches the list of components for a \hyperlink{interface_variable}{Variable} component with a specified id. 
+\begin{DoxyParams}{Parameters}
+{\em id\-Number} & the id number of the \hyperlink{interface_variable}{Variable} that is being searched for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to a variable object with an id of id\-Number. 
+\end{DoxyReturn}
+\hypertarget{interface_model_ab7e33b4b1a19e36620ba81922065ec22}{\index{Model@{Model}!get\-Variable\-At\-Point\-:@{get\-Variable\-At\-Point\-:}}
+\index{get\-Variable\-At\-Point\-:@{get\-Variable\-At\-Point\-:}!Model@{Model}}
+\subsubsection[{get\-Variable\-At\-Point\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Variable} $\ast$) get\-Variable\-At\-Point\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{point}
+\end{DoxyParamCaption}
+}}\label{interface_model_ab7e33b4b1a19e36620ba81922065ec22}
+Searches the list of components for a \hyperlink{interface_variable}{Variable} component that contains the provided point. 
+\begin{DoxyParams}{Parameters}
+{\em point} & the point within the superview frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to a \hyperlink{interface_variable}{Variable} object that contains the point, nil if none do. 
+\end{DoxyReturn}
+\hypertarget{interface_model_aa36ee992fc98c9ef079d6b8954299479}{\index{Model@{Model}!get\-View\-Controller@{get\-View\-Controller}}
+\index{get\-View\-Controller@{get\-View\-Controller}!Model@{Model}}
+\subsubsection[{get\-View\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\-I\-View\-Controller $\ast$) get\-View\-Controller 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_aa36ee992fc98c9ef079d6b8954299479}
+Gets the view controller. \begin{DoxyReturn}{Returns}
+a pointer to the currently displayed view controller. 
+\end{DoxyReturn}
+\hypertarget{interface_model_ab40d7b555b5fd0c7306b1035fa959158}{\index{Model@{Model}!get\-View\-Controller\-View@{get\-View\-Controller\-View}}
+\index{get\-View\-Controller\-View@{get\-View\-Controller\-View}!Model@{Model}}
+\subsubsection[{get\-View\-Controller\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\-I\-View $\ast$) get\-View\-Controller\-View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_ab40d7b555b5fd0c7306b1035fa959158}
+Gets the root view controller view. \begin{DoxyReturn}{Returns}
+the currently displayed view controller view from the app delegate. 
+\end{DoxyReturn}
+\hypertarget{interface_model_aface1baeb2283622b46ce5725fbd3064}{\index{Model@{Model}!move\-Variable\-:@{move\-Variable\-:}}
+\index{move\-Variable\-:@{move\-Variable\-:}!Model@{Model}}
+\subsubsection[{move\-Variable\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) move\-Variable\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{variable\-View}
+\end{DoxyParamCaption}
+}}\label{interface_model_aface1baeb2283622b46ce5725fbd3064}
+Searches the list of components for a \hyperlink{interface_variable}{Variable} component with a specified \hyperlink{interface_variable_view}{Variable\-View} and will move the attached Causal\-Links. 
+\begin{DoxyParams}{Parameters}
+{\em variable\-View} & the view associated with the \hyperlink{interface_variable}{Variable}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_a9417e1d438a60f39d050eb0dfc500a72}{\index{Model@{Model}!set\-Variable\-Color\-:@{set\-Variable\-Color\-:}}
+\index{set\-Variable\-Color\-:@{set\-Variable\-Color\-:}!Model@{Model}}
+\subsubsection[{set\-Variable\-Color\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Variable\-Color\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{location}
+\end{DoxyParamCaption}
+}}\label{interface_model_a9417e1d438a60f39d050eb0dfc500a72}
+Will iterate over all of the variables in the model and make a call to determine if the provided point lies within the bounds of the variable's view frame to change the box color. This is used when a user is creating a new causal link. 
+\begin{DoxyParams}{Parameters}
+{\em location} & the point in the coordinate space user to determine if a variable contains that point. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_a4f1d39e1881443e4ecd87d660e9c91b4}{\index{Model@{Model}!shared\-Model@{shared\-Model}}
+\index{shared\-Model@{shared\-Model}!Model@{Model}}
+\subsubsection[{shared\-Model}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Model} $\ast$) shared\-Model 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_a4f1d39e1881443e4ecd87d660e9c91b4}
+Forces the \hyperlink{interface_model}{Model} to be a singleton class. \begin{DoxyReturn}{Returns}
+a pointer to the single instance of the model. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Model.\-h\item 
+Group\-Modeling\-App/Model.\-m\end{DoxyCompactItemize}

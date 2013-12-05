@@ -1,0 +1,65 @@
+\hypertarget{interface_control_parameters}{\section{Control\-Parameters Class Reference}
+\label{interface_control_parameters}\index{Control\-Parameters@{Control\-Parameters}}
+}
+
+
+This class currently holds an array with the control parameters, but was created to allow for expansion if we would want to parse the array into its individual control parameters and be able to update them individually.  
+
+
+
+
+{\ttfamily \#import $<$Control\-Parameters.\-h$>$}
+
+Inheritance diagram for Control\-Parameters\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_control_parameters}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_control_parameters_a4213bb26f5207ee3f402fe463badc691}{init}
+\item 
+(void) -\/ \hyperlink{interface_control_parameters_ab0bbfe8242a098b77c936f8a10df7947}{add\-Parameter\-:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_control_parameters_aa66ff297704a6ceeb0b02d1421d9a2c4}{N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_control_parameters_aa66ff297704a6ceeb0b02d1421d9a2c4}{params}}\label{interface_control_parameters_aa66ff297704a6ceeb0b02d1421d9a2c4}
+
+\begin{DoxyCompactList}\small\item\em An array containing all of the simulation control parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class currently holds an array with the control parameters, but was created to allow for expansion if we would want to parse the array into its individual control parameters and be able to update them individually. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_control_parameters_ab0bbfe8242a098b77c936f8a10df7947}{\index{Control\-Parameters@{Control\-Parameters}!add\-Parameter\-:@{add\-Parameter\-:}}
+\index{add\-Parameter\-:@{add\-Parameter\-:}!ControlParameters@{Control\-Parameters}}
+\subsubsection[{add\-Parameter\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Parameter\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{str}
+\end{DoxyParamCaption}
+}}\label{interface_control_parameters_ab0bbfe8242a098b77c936f8a10df7947}
+Adds a new string of the control parameters to the params array. 
+\begin{DoxyParams}{Parameters}
+{\em str} & a string of the control parameters to be appended to the existing simulation control parameters. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_control_parameters_a4213bb26f5207ee3f402fe463badc691}{\index{Control\-Parameters@{Control\-Parameters}!init@{init}}
+\index{init@{init}!ControlParameters@{Control\-Parameters}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_control_parameters_a4213bb26f5207ee3f402fe463badc691}
+Initializes the \hyperlink{interface_control_parameters}{Control\-Parameters}. \begin{DoxyReturn}{Returns}
+a pointer to the newly created \hyperlink{interface_control_parameters}{Control\-Parameters} object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Control\-Parameters.\-h\item 
+Group\-Modeling\-App/Control\-Parameters.\-m\end{DoxyCompactItemize}

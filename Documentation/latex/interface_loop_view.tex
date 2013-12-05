@@ -1,0 +1,144 @@
+\hypertarget{interface_loop_view}{\section{Loop\-View Class Reference}
+\label{interface_loop_view}\index{Loop\-View@{Loop\-View}}
+}
+
+
+A view that contains the graphical representation of a \hyperlink{interface_loop}{Loop}.  
+
+
+
+
+{\ttfamily \#import $<$Loop\-View.\-h$>$}
+
+Inheritance diagram for Loop\-View\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_loop_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_loop_view_a1e7227b1d41e651a603e80315935a3ee}{init\-With\-Frame\-:and\-Parent\-:}
+\item 
+(void) -\/ \hyperlink{interface_loop_view_a8c03538769a6fcbd7aa8e672cf4b5c96}{draw\-Rect\-:}
+\item 
+(void) -\/ \hyperlink{interface_loop_view_a2357112d7fefe9f720ac82c881236830}{touches\-Began\-:with\-Event\-:}
+\item 
+(void) -\/ \hyperlink{interface_loop_view_a06bf1152e9fa0dd16bf7f46128ae0cff}{touches\-Moved\-:with\-Event\-:}
+\item 
+(void) -\/ \hyperlink{interface_loop_view_ad9cc995e0aa0c5e28ab827a06c897c36}{touches\-Ended\-:with\-Event\-:}
+\item 
+(void) -\/ \hyperlink{interface_loop_view_a38393b10eebe5376725616eb446df377}{handle\-Single\-Tap\-:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_loop_view_a4b93d352d2fca75b34e1b5a50e03f587}{N\-S\-String $\ast$ \hyperlink{interface_loop_view_a4b93d352d2fca75b34e1b5a50e03f587}{name}}\label{interface_loop_view_a4b93d352d2fca75b34e1b5a50e03f587}
+
+\begin{DoxyCompactList}\small\item\em The name of the loop. \end{DoxyCompactList}\item 
+\hypertarget{interface_loop_view_a0df1d66872ef90fe830b9118e0c76202}{bool \hyperlink{interface_loop_view_a0df1d66872ef90fe830b9118e0c76202}{is\-Clockwise}}\label{interface_loop_view_a0df1d66872ef90fe830b9118e0c76202}
+
+\begin{DoxyCompactList}\small\item\em Determines if the symbol is a clockwise loop. \end{DoxyCompactList}\item 
+\hypertarget{interface_loop_view_a4376b99467d16ed71554a4a6ddd4ae0a}{id \hyperlink{interface_loop_view_a4376b99467d16ed71554a4a6ddd4ae0a}{parent}}\label{interface_loop_view_a4376b99467d16ed71554a4a6ddd4ae0a}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the parent of this view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A view that contains the graphical representation of a \hyperlink{interface_loop}{Loop}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_loop_view_a8c03538769a6fcbd7aa8e672cf4b5c96}{\index{Loop\-View@{Loop\-View}!draw\-Rect\-:@{draw\-Rect\-:}}
+\index{draw\-Rect\-:@{draw\-Rect\-:}!LoopView@{Loop\-View}}
+\subsubsection[{draw\-Rect\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) draw\-Rect\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Rect)}]{rect}
+\end{DoxyParamCaption}
+}}\label{interface_loop_view_a8c03538769a6fcbd7aa8e672cf4b5c96}
+Draws the receiver’s image within the passed-\/in rectangle. This is an overridden method. 
+\begin{DoxyParams}{Parameters}
+{\em rect} & the frame of the view in which objects can be drawn. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_loop_view_a38393b10eebe5376725616eb446df377}{\index{Loop\-View@{Loop\-View}!handle\-Single\-Tap\-:@{handle\-Single\-Tap\-:}}
+\index{handle\-Single\-Tap\-:@{handle\-Single\-Tap\-:}!LoopView@{Loop\-View}}
+\subsubsection[{handle\-Single\-Tap\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) handle\-Single\-Tap\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Tap\-Gesture\-Recognizer $\ast$)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_loop_view_a38393b10eebe5376725616eb446df377}
+Will open up the menu of options for the object on a single tap. 
+\begin{DoxyParams}{Parameters}
+{\em sender} & the recognizer that fired the method call. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_loop_view_a1e7227b1d41e651a603e80315935a3ee}{\index{Loop\-View@{Loop\-View}!init\-With\-Frame\-:and\-Parent\-:@{init\-With\-Frame\-:and\-Parent\-:}}
+\index{init\-With\-Frame\-:and\-Parent\-:@{init\-With\-Frame\-:and\-Parent\-:}!LoopView@{Loop\-View}}
+\subsubsection[{init\-With\-Frame\-:and\-Parent\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Frame\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Rect)}]{frame}
+\item[{andParent:(id)}]{parent}
+\end{DoxyParamCaption}
+}}\label{interface_loop_view_a1e7227b1d41e651a603e80315935a3ee}
+Initializes the view. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & the frame the view is contained within. \\
+\hline
+{\em parent} & a pointer to the parent object that holds the view. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an id of the newly created view 
+\end{DoxyReturn}
+\hypertarget{interface_loop_view_a2357112d7fefe9f720ac82c881236830}{\index{Loop\-View@{Loop\-View}!touches\-Began\-:with\-Event\-:@{touches\-Began\-:with\-Event\-:}}
+\index{touches\-Began\-:with\-Event\-:@{touches\-Began\-:with\-Event\-:}!LoopView@{Loop\-View}}
+\subsubsection[{touches\-Began\-:with\-Event\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) touches\-Began\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Set $\ast$)}]{touches}
+\item[{withEvent:(U\-I\-Event $\ast$)}]{event}
+\end{DoxyParamCaption}
+}}\label{interface_loop_view_a2357112d7fefe9f720ac82c881236830}
+Logs event at the beginning of moving the loop. 
+\begin{DoxyParams}{Parameters}
+{\em touches} & the set of touch events registered by the application. \\
+\hline
+{\em event} & the U\-I\-Event that fired the the method call. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_loop_view_ad9cc995e0aa0c5e28ab827a06c897c36}{\index{Loop\-View@{Loop\-View}!touches\-Ended\-:with\-Event\-:@{touches\-Ended\-:with\-Event\-:}}
+\index{touches\-Ended\-:with\-Event\-:@{touches\-Ended\-:with\-Event\-:}!LoopView@{Loop\-View}}
+\subsubsection[{touches\-Ended\-:with\-Event\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) touches\-Ended\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Set $\ast$)}]{touches}
+\item[{withEvent:(U\-I\-Event $\ast$)}]{event}
+\end{DoxyParamCaption}
+}}\label{interface_loop_view_ad9cc995e0aa0c5e28ab827a06c897c36}
+Logs event at the end of moving the loop. 
+\begin{DoxyParams}{Parameters}
+{\em touches} & the set of touch events registered by the application. \\
+\hline
+{\em event} & the U\-I\-Event that fired the the method call. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_loop_view_a06bf1152e9fa0dd16bf7f46128ae0cff}{\index{Loop\-View@{Loop\-View}!touches\-Moved\-:with\-Event\-:@{touches\-Moved\-:with\-Event\-:}}
+\index{touches\-Moved\-:with\-Event\-:@{touches\-Moved\-:with\-Event\-:}!LoopView@{Loop\-View}}
+\subsubsection[{touches\-Moved\-:with\-Event\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) touches\-Moved\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Set $\ast$)}]{touches}
+\item[{withEvent:(U\-I\-Event $\ast$)}]{event}
+\end{DoxyParamCaption}
+}}\label{interface_loop_view_a06bf1152e9fa0dd16bf7f46128ae0cff}
+Handles moving the loop object across the view when the user drags the object. 
+\begin{DoxyParams}{Parameters}
+{\em touches} & the set of touch events registered by the application. \\
+\hline
+{\em event} & the U\-I\-Event that fired the the method call. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Loop\-View.\-h\item 
+Group\-Modeling\-App/Loop\-View.\-m\end{DoxyCompactItemize}

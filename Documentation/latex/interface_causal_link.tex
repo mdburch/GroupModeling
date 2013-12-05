@@ -1,0 +1,168 @@
+\hypertarget{interface_causal_link}{\section{Causal\-Link Class Reference}
+\label{interface_causal_link}\index{Causal\-Link@{Causal\-Link}}
+}
+
+
+A subclass of \hyperlink{interface_component}{Component} containing the data related to a causal link between two variables of a causal loop diagram. ex. In a diagram on Childhood obesity, there may exist a relationship between the \char`\"{}\-Fast Food Consumption\char`\"{} variable and the \char`\"{}\-Weight Gain\char`\"{} variable. This class represents that causal link.  
+
+
+
+
+{\ttfamily \#import $<$Causal\-Link.\-h$>$}
+
+Inheritance diagram for Causal\-Link\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_causal_link}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_causal_link_ae3fdc3a923d3d3be4b4aeb821cb90734}{init\-:}
+\item 
+(id) -\/ \hyperlink{interface_causal_link_a80971dff11e8048c269097f9e94279fc}{init\-With\-Parent\-:and\-Child\-:}
+\item 
+(void) -\/ \hyperlink{interface_causal_link_ae6b612c2817771b1fd4d12b1b0ac56d3}{create\-View}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_causal_link_aeaeca5d45f4b917997bfea36c86dc4b1}{create\-Causal\-Link\-Output\-String}
+\item 
+(U\-I\-Color $\ast$) -\/ \hyperlink{interface_causal_link_a81afff0a3a22627c88301943c5228a6a}{convert\-To\-U\-I\-Color\-:and\-Green\-:and\-Blue\-:}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_causal_link_acdb5a57ca0f4f77aee198dff20a2ea57}{convert\-From\-U\-I\-Color\-:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\-S\-String $\ast$) + \hyperlink{interface_causal_link_a58132842dd002d42efcdef8bd0d7ee79}{get\-Color\-Name\-:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_causal_link_a92793d006bbec1b2ac27bb8f580fe2af}{id \hyperlink{interface_causal_link_a92793d006bbec1b2ac27bb8f580fe2af}{parent\-Object}}\label{interface_causal_link_a92793d006bbec1b2ac27bb8f580fe2af}
+
+\begin{DoxyCompactList}\small\item\em A pointer to the source variable of the causal link. \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_a89bb83f507d8a9c64e76958adfe99676}{id \hyperlink{interface_causal_link_a89bb83f507d8a9c64e76958adfe99676}{child\-Object}}\label{interface_causal_link_a89bb83f507d8a9c64e76958adfe99676}
+
+\begin{DoxyCompactList}\small\item\em A pointer to the influenced variable of the causal link. \end{DoxyCompactList}\item 
+\hypertarget{interface_causal_link_a698e70e52e27741aee1a7e5bfe44c468}{\hyperlink{interface_causal_link_view}{Causal\-Link\-View} $\ast$ \hyperlink{interface_causal_link_a698e70e52e27741aee1a7e5bfe44c468}{view}}\label{interface_causal_link_a698e70e52e27741aee1a7e5bfe44c468}
+
+\begin{DoxyCompactList}\small\item\em The U\-I\-View that will contain the graphical representation of the causal link. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A subclass of \hyperlink{interface_component}{Component} containing the data related to a causal link between two variables of a causal loop diagram. ex. In a diagram on Childhood obesity, there may exist a relationship between the \char`\"{}\-Fast Food Consumption\char`\"{} variable and the \char`\"{}\-Weight Gain\char`\"{} variable. This class represents that causal link. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_causal_link_acdb5a57ca0f4f77aee198dff20a2ea57}{\index{Causal\-Link@{Causal\-Link}!convert\-From\-U\-I\-Color\-:@{convert\-From\-U\-I\-Color\-:}}
+\index{convert\-From\-U\-I\-Color\-:@{convert\-From\-U\-I\-Color\-:}!CausalLink@{Causal\-Link}}
+\subsubsection[{convert\-From\-U\-I\-Color\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) convert\-From\-U\-I\-Color\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Color$\ast$)}]{color}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_acdb5a57ca0f4f77aee198dff20a2ea57}
+Converts a U\-I\-Color to its R\-G\-B equivalent. 
+\begin{DoxyParams}{Parameters}
+{\em color} & the U\-I\-Color you want to get the corresponding R\-G\-B value for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an rgb string value for color ,R-\/\-G-\/\-B. 
+\end{DoxyReturn}
+\hypertarget{interface_causal_link_a81afff0a3a22627c88301943c5228a6a}{\index{Causal\-Link@{Causal\-Link}!convert\-To\-U\-I\-Color\-:and\-Green\-:and\-Blue\-:@{convert\-To\-U\-I\-Color\-:and\-Green\-:and\-Blue\-:}}
+\index{convert\-To\-U\-I\-Color\-:and\-Green\-:and\-Blue\-:@{convert\-To\-U\-I\-Color\-:and\-Green\-:and\-Blue\-:}!CausalLink@{Causal\-Link}}
+\subsubsection[{convert\-To\-U\-I\-Color\-:and\-Green\-:and\-Blue\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\-I\-Color $\ast$) convert\-To\-U\-I\-Color\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{red}
+\item[{andGreen:(int)}]{green}
+\item[{andBlue:(int)}]{blue}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_a81afff0a3a22627c88301943c5228a6a}
+Converts an R\-G\-B value to a U\-I\-Color. The R\-G\-B values used in the code are the R\-G\-B equivalent of colors used in Vensim. 
+\begin{DoxyParams}{Parameters}
+{\em red} & the red value from 0-\/255. \\
+\hline
+{\em green} & the green value from 0-\/255. \\
+\hline
+{\em blue} & the blue value from 0-\/255. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the U\-I\-Color associated with the R\-G\-B values passed in, black if a match not found. 
+\end{DoxyReturn}
+\hypertarget{interface_causal_link_aeaeca5d45f4b917997bfea36c86dc4b1}{\index{Causal\-Link@{Causal\-Link}!create\-Causal\-Link\-Output\-String@{create\-Causal\-Link\-Output\-String}}
+\index{create\-Causal\-Link\-Output\-String@{create\-Causal\-Link\-Output\-String}!CausalLink@{Causal\-Link}}
+\subsubsection[{create\-Causal\-Link\-Output\-String}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) create\-Causal\-Link\-Output\-String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_aeaeca5d45f4b917997bfea36c86dc4b1}
+Constructs the output string for a \hyperlink{interface_causal_link}{Causal\-Link}. The string is constructed to be readable by Vensim. Follows the string pattern\-: \mbox{[}Object Type\mbox{]},\mbox{[}Object id\mbox{]}, \mbox{[}Starting Object id\mbox{]},\mbox{[}Ending Object id\mbox{]},1,0,\mbox{[}Polarity\mbox{]},\mbox{[}Line thickness\mbox{]},3,\mbox{[}Delay/\-Polarity Position\mbox{]},0,\mbox{[}Arrow Color\mbox{]},\mbox{[}Font Size\mbox{]},\mbox{[}Font Color\mbox{]},\mbox{[}Handle Position\mbox{]} \begin{DoxyReturn}{Returns}
+the Vensim string of data for the \hyperlink{interface_causal_link}{Causal\-Link}. 
+\end{DoxyReturn}
+\hypertarget{interface_causal_link_ae6b612c2817771b1fd4d12b1b0ac56d3}{\index{Causal\-Link@{Causal\-Link}!create\-View@{create\-View}}
+\index{create\-View@{create\-View}!CausalLink@{Causal\-Link}}
+\subsubsection[{create\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) create\-View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_ae6b612c2817771b1fd4d12b1b0ac56d3}
+When initially importing the file, a \hyperlink{interface_causal_link}{Causal\-Link} does not know the location of its parent and child, but knows the id of the parent and child. Once the file has been parsed through completely, \hyperlink{interface_file_i_o}{File\-I\-O} will revisit the Causal\-Links and set the parent\-Object and the child\-Object to the corresponding \hyperlink{interface_variable}{Variable} instances. This method updates the start\-Point, end\-Point, control\-Point located in the view based on the updated parent and child objects. After the points of the arc have been set, the frame of the view will be calculated and the view will be added to the parentview. 
+\begin{DoxyParams}{Parameters}
+{\em parent\-View} & the superview that the \hyperlink{interface_causal_link}{Causal\-Link} view will be added as a subview. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_causal_link_a58132842dd002d42efcdef8bd0d7ee79}{\index{Causal\-Link@{Causal\-Link}!get\-Color\-Name\-:@{get\-Color\-Name\-:}}
+\index{get\-Color\-Name\-:@{get\-Color\-Name\-:}!CausalLink@{Causal\-Link}}
+\subsubsection[{get\-Color\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\-S\-String $\ast$) get\-Color\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Color$\ast$)}]{color}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_a58132842dd002d42efcdef8bd0d7ee79}
+Gets the textual representation of a color. 
+\begin{DoxyParams}{Parameters}
+{\em color} & the uicolor that you want to get the name of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the name of the color as a string. 
+\end{DoxyReturn}
+\hypertarget{interface_causal_link_ae3fdc3a923d3d3be4b4aeb821cb90734}{\index{Causal\-Link@{Causal\-Link}!init\-:@{init\-:}}
+\index{init\-:@{init\-:}!CausalLink@{Causal\-Link}}
+\subsubsection[{init\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array$\ast$)}]{data}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_ae3fdc3a923d3d3be4b4aeb821cb90734}
+Initializes the \hyperlink{interface_causal_link}{Causal\-Link}. 
+\begin{DoxyParams}{Parameters}
+{\em data} & an array of strings containing all of the data for the causal link from a Vensim mdl file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created causal link. 
+\end{DoxyReturn}
+The parent and child objects will point to integers initially. Once the entire model is parsed, the \hyperlink{interface_file_i_o}{File\-I\-O} class will update these objects to point to the associated variable objects. \hypertarget{interface_causal_link_a80971dff11e8048c269097f9e94279fc}{\index{Causal\-Link@{Causal\-Link}!init\-With\-Parent\-:and\-Child\-:@{init\-With\-Parent\-:and\-Child\-:}}
+\index{init\-With\-Parent\-:and\-Child\-:@{init\-With\-Parent\-:and\-Child\-:}!CausalLink@{Causal\-Link}}
+\subsubsection[{init\-With\-Parent\-:and\-Child\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Parent\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Variable}$\ast$)}]{parent}
+\item[{andChild:({\bf Variable}$\ast$)}]{child}
+\end{DoxyParamCaption}
+}}\label{interface_causal_link_a80971dff11e8048c269097f9e94279fc}
+Initializes the \hyperlink{interface_causal_link}{Causal\-Link}. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & the parent variable object that the causal link begins from. \\
+\hline
+{\em child} & the child object that the causal link points to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created causal link. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Causal\-Link.\-h\item 
+Group\-Modeling\-App/Causal\-Link.\-m\end{DoxyCompactItemize}

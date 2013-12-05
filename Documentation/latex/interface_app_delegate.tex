@@ -1,0 +1,71 @@
+\hypertarget{interface_app_delegate}{\section{App\-Delegate Class Reference}
+\label{interface_app_delegate}\index{App\-Delegate@{App\-Delegate}}
+}
+
+
+The U\-I\-Responder class defines an interface for objects that respond to and handle events. It is the superclass of U\-I\-Application, U\-I\-View and its subclasses (which include U\-I\-Window). Instances of these classes are sometimes referred to as responder objects or, simply, responders.  
+
+
+
+
+{\ttfamily \#import $<$App\-Delegate.\-h$>$}
+
+Inheritance diagram for App\-Delegate\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_app_delegate}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_app_delegate_a8cf55cdca24f5077db73eab11a17dedf}{application\-:open\-U\-R\-L\-:source\-Application\-:annotation\-:}
+\item 
+\hypertarget{interface_app_delegate_a2fe81b234fcf8951be6ebc785d4f1a42}{(void) -\/ \hyperlink{interface_app_delegate_a2fe81b234fcf8951be6ebc785d4f1a42}{detect\-Orientation}}\label{interface_app_delegate_a2fe81b234fcf8951be6ebc785d4f1a42}
+
+\begin{DoxyCompactList}\small\item\em Notifies the logger that the user is rotating the i\-Pad. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_app_delegate_a26c59ea8851d81cef0871b61ce2e1b43}{\hyperlink{interface_m_f_side_menu_container_view_controller}{M\-F\-Side\-Menu\-Container\-View\-Controller} $\ast$ \hyperlink{interface_app_delegate_a26c59ea8851d81cef0871b61ce2e1b43}{container}}\label{interface_app_delegate_a26c59ea8851d81cef0871b61ce2e1b43}
+
+\begin{DoxyCompactList}\small\item\em A pointer to our canvas to create models. \end{DoxyCompactList}\item 
+\hypertarget{interface_app_delegate_ae04748cdefebda525b266731b6c120a2}{U\-I\-Window $\ast$ \hyperlink{interface_app_delegate_ae04748cdefebda525b266731b6c120a2}{window}}\label{interface_app_delegate_ae04748cdefebda525b266731b6c120a2}
+
+\begin{DoxyCompactList}\small\item\em The window of the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The U\-I\-Responder class defines an interface for objects that respond to and handle events. It is the superclass of U\-I\-Application, U\-I\-View and its subclasses (which include U\-I\-Window). Instances of these classes are sometimes referred to as responder objects or, simply, responders. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_app_delegate_a8cf55cdca24f5077db73eab11a17dedf}{\index{App\-Delegate@{App\-Delegate}!application\-:open\-U\-R\-L\-:source\-Application\-:annotation\-:@{application\-:open\-U\-R\-L\-:source\-Application\-:annotation\-:}}
+\index{application\-:open\-U\-R\-L\-:source\-Application\-:annotation\-:@{application\-:open\-U\-R\-L\-:source\-Application\-:annotation\-:}!AppDelegate@{App\-Delegate}}
+\subsubsection[{application\-:open\-U\-R\-L\-:source\-Application\-:annotation\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) application\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Application $\ast$)}]{app}
+\item[{openURL:(N\-S\-U\-R\-L $\ast$)}]{url}
+\item[{sourceApplication:(N\-S\-String $\ast$)}]{source}
+\item[{annotation:(id)}]{annotation}
+\end{DoxyParamCaption}
+}}\label{interface_app_delegate_a8cf55cdca24f5077db73eab11a17dedf}
+Method used to handle the linkage between my app and Dropbox. 
+\begin{DoxyParams}{Parameters}
+{\em app} & the application making the call. \\
+\hline
+{\em url} & the url of the file we would like to choose. \\
+\hline
+{\em source} & the source application. \\
+\hline
+{\em annotation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean value if whether or not the url can be opened. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/App\-Delegate.\-h\item 
+Group\-Modeling\-App/App\-Delegate.\-m\end{DoxyCompactItemize}

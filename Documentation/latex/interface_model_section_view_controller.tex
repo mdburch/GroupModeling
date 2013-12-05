@@ -1,0 +1,463 @@
+\hypertarget{interface_model_section_view_controller}{\section{Model\-Section\-View\-Controller Class Reference}
+\label{interface_model_section_view_controller}\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}}
+}
+
+
+The view controller that handles interaction with the model section.  
+
+
+
+
+{\ttfamily \#import $<$Model\-Section\-View\-Controller.\-h$>$}
+
+Inheritance diagram for Model\-Section\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.403509cm]{interface_model_section_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_model_section_view_controller_a4213bb26f5207ee3f402fe463badc691}{init}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_aa58593cee765899b690466d15042bf77}{reachability\-Changed\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_ab5dd369587af6b3abdd89f312624875f}{check\-Internet\-Connection\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_a8331227f39fd462d9e4eb04f06c2a91b}{load\-Model}
+\item 
+\hypertarget{interface_model_section_view_controller_a6383afe43bdf71c9197a5723793b1fb8}{(void) -\/ \hyperlink{interface_model_section_view_controller_a6383afe43bdf71c9197a5723793b1fb8}{new\-Model}}\label{interface_model_section_view_controller_a6383afe43bdf71c9197a5723793b1fb8}
+
+\begin{DoxyCompactList}\small\item\em Will create a blank sheet so that the user can create a new model. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_a0052cb4e8c2d69372b8750f3cba55b7f}{take\-Picture\-Of\-Model}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_a0910163cad75578d1000ea69340980bf}{image\-:did\-Finish\-Saving\-With\-Error\-:context\-Info\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_aa5a50adbd2b567d3a8ae3445329b70d1}{view\-Did\-Load}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_a8991afe6ce31445caafbbc84338898c1}{reenable\-Save\-Button}
+\item 
+\hypertarget{interface_model_section_view_controller_a887a799bad6860d3fd09e0d52cb78d12}{(void) -\/ \hyperlink{interface_model_section_view_controller_a887a799bad6860d3fd09e0d52cb78d12}{save\-Model}}\label{interface_model_section_view_controller_a887a799bad6860d3fd09e0d52cb78d12}
+
+\begin{DoxyCompactList}\small\item\em Will save the current model. \end{DoxyCompactList}\item 
+(\hyperlink{interface_m_f_side_menu_container_view_controller}{M\-F\-Side\-Menu\-Container\-View\-Controller} $\ast$) -\/ \hyperlink{interface_model_section_view_controller_ad9f497773e1c2f5e420929a60f3bf7df}{menu\-Container\-View\-Controller}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_a9644bcb73520daa217ad0709b0e6bd64}{setup\-Menu\-Bar\-Button\-Items}
+\begin{DoxyCompactList}\small\item\em Sets up the menu bar of the view controller. \end{DoxyCompactList}\item 
+(U\-I\-Bar\-Button\-Item $\ast$) -\/ \hyperlink{interface_model_section_view_controller_afb11718c8a0c6f7abd85dfbc7adb1cd1}{left\-Menu\-Bar\-Button\-Item}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_model_section_view_controller_a78c969d7bca3de65268ac706059e291c}{right\-Menu\-Bar\-Button\-Items}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_a738b842dc5261f08da93880f0b006b55}{left\-Side\-Menu\-Button\-Pressed\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_model_section_view_controller_ade65ba8ae784e35b1f2b23a55afbbf9b}{can\-Become\-First\-Responder}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_model_section_view_controller_a4a5338d3a62ac53d52a2b31880b6802c}{can\-Perform\-Action\-:with\-Sender\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_a8a501e57528492cf6ba20c9c966282e0}{create\-Update\-Menu\-:}
+\item 
+\hypertarget{interface_model_section_view_controller_aa7642eed869c29236ca6198804aa9624}{(void) -\/ \hyperlink{interface_model_section_view_controller_aa7642eed869c29236ca6198804aa9624}{did\-Hide\-Update\-Menu}}\label{interface_model_section_view_controller_aa7642eed869c29236ca6198804aa9624}
+
+\begin{DoxyCompactList}\small\item\em Will log a message stating the update menu closed. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_a831a0780f91825e4c91b2116d8806c33}{create\-Edit\-Menu\-:}
+\item 
+(C\-G\-Rect) -\/ \hyperlink{interface_model_section_view_controller_a3ce01e8eb3a6a32185225e1bfa51454d}{get\-Variable\-Vertex\-View\-:}
+\item 
+(U\-I\-Toolbar $\ast$) -\/ \hyperlink{interface_model_section_view_controller_a6a24750238ea3d59bb706b8d46e1f4c4}{create\-Edit\-Menu\-Toolbar\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_ade8553713185dc0c75c1d6f543eaa54f}{popover\-Controller\-Did\-Dismiss\-Popover\-:}
+\item 
+\hypertarget{interface_model_section_view_controller_acb15a33593297fd02f940207a504f2a7}{(void) -\/ \hyperlink{interface_model_section_view_controller_acb15a33593297fd02f940207a504f2a7}{save\-Changes}}\label{interface_model_section_view_controller_acb15a33593297fd02f940207a504f2a7}
+
+\begin{DoxyCompactList}\small\item\em Will save the changes made by the user related to the object they changed. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_a2ba2c7e577a0ca5fc873237ba423f514}{alert\-View\-:clicked\-Button\-At\-Index\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_ab68e5fd03354e4a1dd1a2a75ff93dbea}{show\-Delete\-Alert\-:}
+\item 
+(int) -\/ \hyperlink{interface_model_section_view_controller_a1dcc9249f1500714ff1b5a63b8de3982}{get\-Selected\-View\-I\-D\-Num}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_afc53a5989b05a1405e9ac226bb05d52c}{document\-Interaction\-Controller\-Will\-Present\-Open\-In\-Menu\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_abc178903c0b14db15612cb4a3108aacc}{document\-Interaction\-Controller\-Did\-Dismiss\-Open\-In\-Menu\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_controller_abdb08679098f7e6ac87ead9b47dd67fa}{document\-Interaction\-Controller\-:will\-Begin\-Sending\-To\-Application\-:}
+\item 
+\hypertarget{interface_model_section_view_controller_ae780db37d3f6bcefbebeced10969ed12}{(void) -\/ \hyperlink{interface_model_section_view_controller_ae780db37d3f6bcefbebeced10969ed12}{menu\-Change}}\label{interface_model_section_view_controller_ae780db37d3f6bcefbebeced10969ed12}
+
+\begin{DoxyCompactList}\small\item\em Notifies the logger when a new option from the segmented control has been changed. \end{DoxyCompactList}\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_model_section_view_controller_a165de32a7bdbc801f76d3a61012d0679}{get\-Menu\-Details}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_model_section_view_controller_a1160a302c7d1456b2232508e66bf74f3}{U\-I\-Segmented\-Control $\ast$ \hyperlink{interface_model_section_view_controller_a1160a302c7d1456b2232508e66bf74f3}{controls}}\label{interface_model_section_view_controller_a1160a302c7d1456b2232508e66bf74f3}
+
+\begin{DoxyCompactList}\small\item\em The menu of options to add new objects to the model. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_a6177c3f5ef7ae97e8a88fb845c4d5fd5}{U\-I\-Bar\-Button\-Item $\ast$ \hyperlink{interface_model_section_view_controller_a6177c3f5ef7ae97e8a88fb845c4d5fd5}{create\-New\-Button}}\label{interface_model_section_view_controller_a6177c3f5ef7ae97e8a88fb845c4d5fd5}
+
+\begin{DoxyCompactList}\small\item\em The button that will allow a user to create a new project. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_a770f2666d890b557d2e94ba5e1c2cbbf}{U\-I\-Segmented\-Control $\ast$ \hyperlink{interface_model_section_view_controller_a770f2666d890b557d2e94ba5e1c2cbbf}{load\-Seg\-Control}}\label{interface_model_section_view_controller_a770f2666d890b557d2e94ba5e1c2cbbf}
+
+\begin{DoxyCompactList}\small\item\em Segmented control for loading a model. Need it so we can disable actions and change the image. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_a4f48727f24dc50cb5241226fe2e5300b}{U\-I\-Bar\-Button\-Item $\ast$ \hyperlink{interface_model_section_view_controller_a4f48727f24dc50cb5241226fe2e5300b}{load\-Button}}\label{interface_model_section_view_controller_a4f48727f24dc50cb5241226fe2e5300b}
+
+\begin{DoxyCompactList}\small\item\em The button that will load saved files. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_a21477dfcf454e9177d5fb3bd04b389e9}{U\-I\-Bar\-Button\-Item $\ast$ \hyperlink{interface_model_section_view_controller_a21477dfcf454e9177d5fb3bd04b389e9}{take\-Picture\-Button}}\label{interface_model_section_view_controller_a21477dfcf454e9177d5fb3bd04b389e9}
+
+\begin{DoxyCompactList}\small\item\em The button that will save files. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_a1e94870fc426dba899cad9070651e562}{U\-I\-Segmented\-Control $\ast$ \hyperlink{interface_model_section_view_controller_a1e94870fc426dba899cad9070651e562}{save\-Seg\-Control}}\label{interface_model_section_view_controller_a1e94870fc426dba899cad9070651e562}
+
+\begin{DoxyCompactList}\small\item\em Segmented control for saving a model. Need it so we can disable actions and change the image. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_a30e5aecd252bb0cf8095e3d435b07b29}{U\-I\-Bar\-Button\-Item $\ast$ \hyperlink{interface_model_section_view_controller_a30e5aecd252bb0cf8095e3d435b07b29}{save\-Button}}\label{interface_model_section_view_controller_a30e5aecd252bb0cf8095e3d435b07b29}
+
+\begin{DoxyCompactList}\small\item\em The button that will save files. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_a4f6ad6ee733bbd0760d2825f6a5ce9f4}{U\-I\-Popover\-Controller $\ast$ \hyperlink{interface_model_section_view_controller_a4f6ad6ee733bbd0760d2825f6a5ce9f4}{pop\-Over\-Controller}}\label{interface_model_section_view_controller_a4f6ad6ee733bbd0760d2825f6a5ce9f4}
+
+\begin{DoxyCompactList}\small\item\em A pointer to a U\-I\-Popover\-Controller which will contain the edit object menu. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_a7d349fc947db08dd56690582423a4b1b}{U\-I\-View $\ast$ \hyperlink{interface_model_section_view_controller_a7d349fc947db08dd56690582423a4b1b}{selected\-View}}\label{interface_model_section_view_controller_a7d349fc947db08dd56690582423a4b1b}
+
+\begin{DoxyCompactList}\small\item\em A pointer to the view that has been selected for menu options. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_a9c639830cd11257200b4bdb107ce30d7}{\hyperlink{interface_model_section_view}{Model\-Section\-View} $\ast$ \hyperlink{interface_model_section_view_controller_a9c639830cd11257200b4bdb107ce30d7}{model\-View}}\label{interface_model_section_view_controller_a9c639830cd11257200b4bdb107ce30d7}
+
+\begin{DoxyCompactList}\small\item\em A pointer to the \hyperlink{interface_model}{Model} view. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_add10e7d857093908d7e78eda4888c848}{\hyperlink{interface_reachability}{Reachability} $\ast$ \hyperlink{interface_model_section_view_controller_add10e7d857093908d7e78eda4888c848}{internet\-Reachability}}\label{interface_model_section_view_controller_add10e7d857093908d7e78eda4888c848}
+
+\begin{DoxyCompactList}\small\item\em A pointer to a check the internet connection of the device. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_a40778056811a8d1ad7c407333b490120}{U\-I\-Document\-Interaction\-Controller $\ast$ \hyperlink{interface_model_section_view_controller_a40778056811a8d1ad7c407333b490120}{document\-Interaction\-Controller}}\label{interface_model_section_view_controller_a40778056811a8d1ad7c407333b490120}
+
+\begin{DoxyCompactList}\small\item\em A pointer to the doc interaction controller to save the file. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_a108fcdbf1198ced2d10fe789ba64f585}{dispatch\-\_\-queue\-\_\-t \hyperlink{interface_model_section_view_controller_a108fcdbf1198ced2d10fe789ba64f585}{log\-Queue}}\label{interface_model_section_view_controller_a108fcdbf1198ced2d10fe789ba64f585}
+
+\begin{DoxyCompactList}\small\item\em An asynchronous queue that will be used to push the log files to parse. \end{DoxyCompactList}\item 
+\hypertarget{interface_model_section_view_controller_a2e838e7ff8d293aa399d4c7b714b3dbc}{bool \hyperlink{interface_model_section_view_controller_a2e838e7ff8d293aa399d4c7b714b3dbc}{is\-Log\-File\-Saving}}\label{interface_model_section_view_controller_a2e838e7ff8d293aa399d4c7b714b3dbc}
+
+\begin{DoxyCompactList}\small\item\em Will specifiy if a log file is being pushed so we do not have the save button enabled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The view controller that handles interaction with the model section. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_model_section_view_controller_a2ba2c7e577a0ca5fc873237ba423f514}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!alert\-View\-:clicked\-Button\-At\-Index\-:@{alert\-View\-:clicked\-Button\-At\-Index\-:}}
+\index{alert\-View\-:clicked\-Button\-At\-Index\-:@{alert\-View\-:clicked\-Button\-At\-Index\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{alert\-View\-:clicked\-Button\-At\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) alert\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Alert\-View$\ast$)}]{alert\-View}
+\item[{clickedButtonAtIndex:(int)}]{index}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a2ba2c7e577a0ca5fc873237ba423f514}
+Handles the action of the response from the alertviews which include deleting, creating an image and creating a new model. 
+\begin{DoxyParams}{Parameters}
+{\em alert\-View} & the alert that has registered an action. \\
+\hline
+{\em index} & the index of the button selected. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_controller_ade65ba8ae784e35b1f2b23a55afbbf9b}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!can\-Become\-First\-Responder@{can\-Become\-First\-Responder}}
+\index{can\-Become\-First\-Responder@{can\-Become\-First\-Responder}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{can\-Become\-First\-Responder}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) can\-Become\-First\-Responder 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_ade65ba8ae784e35b1f2b23a55afbbf9b}
+Determines if the reveiver can become the first responder. \begin{DoxyReturn}{Returns}
+a Boolean value indicating whether the receiver can become first responder. 
+\end{DoxyReturn}
+\hypertarget{interface_model_section_view_controller_a4a5338d3a62ac53d52a2b31880b6802c}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!can\-Perform\-Action\-:with\-Sender\-:@{can\-Perform\-Action\-:with\-Sender\-:}}
+\index{can\-Perform\-Action\-:with\-Sender\-:@{can\-Perform\-Action\-:with\-Sender\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{can\-Perform\-Action\-:with\-Sender\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) can\-Perform\-Action\-: 
+\begin{DoxyParamCaption}
+\item[{(S\-E\-L)}]{action}
+\item[{withSender:(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a4a5338d3a62ac53d52a2b31880b6802c}
+Requests the receiving responder to enable or disable the specified command in the user interface. 
+\begin{DoxyParams}{Parameters}
+{\em action} & a selector that identifies a method associated with a command. \\
+\hline
+{\em sender} & object calling this method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\-E\-S if the the command identified by action should be enabled or N\-O if it should be disabled. 
+\end{DoxyReturn}
+\hypertarget{interface_model_section_view_controller_ab5dd369587af6b3abdd89f312624875f}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!check\-Internet\-Connection\-:@{check\-Internet\-Connection\-:}}
+\index{check\-Internet\-Connection\-:@{check\-Internet\-Connection\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{check\-Internet\-Connection\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) check\-Internet\-Connection\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Reachability} $\ast$)}]{reachability}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_ab5dd369587af6b3abdd89f312624875f}
+Will handle \hyperlink{interface_reachability}{Reachability} notifications about internet connection. Will disable the open and save model icons when there is no internet. 
+\begin{DoxyParams}{Parameters}
+{\em reachability} & the Reachablity notification. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_controller_a831a0780f91825e4c91b2116d8806c33}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!create\-Edit\-Menu\-:@{create\-Edit\-Menu\-:}}
+\index{create\-Edit\-Menu\-:@{create\-Edit\-Menu\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{create\-Edit\-Menu\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) create\-Edit\-Menu\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-View$\ast$)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a831a0780f91825e4c91b2116d8806c33}
+Creates the menu for editing an object. 
+\begin{DoxyParams}{Parameters}
+{\em sender} & the view that called to create the menu. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_controller_a6a24750238ea3d59bb706b8d46e1f4c4}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!create\-Edit\-Menu\-Toolbar\-:@{create\-Edit\-Menu\-Toolbar\-:}}
+\index{create\-Edit\-Menu\-Toolbar\-:@{create\-Edit\-Menu\-Toolbar\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{create\-Edit\-Menu\-Toolbar\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\-I\-Toolbar $\ast$) create\-Edit\-Menu\-Toolbar\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Rect)}]{frame}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a6a24750238ea3d59bb706b8d46e1f4c4}
+Creates the toolbar for the edit menu. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & the frame of the toolbar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a toolbar for the edit menu containing a save and a cancel option. 
+\end{DoxyReturn}
+\hypertarget{interface_model_section_view_controller_a8a501e57528492cf6ba20c9c966282e0}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!create\-Update\-Menu\-:@{create\-Update\-Menu\-:}}
+\index{create\-Update\-Menu\-:@{create\-Update\-Menu\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{create\-Update\-Menu\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) create\-Update\-Menu\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-View$\ast$)}]{view}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a8a501e57528492cf6ba20c9c966282e0}
+Creates the menu that displays the options to update the object in the model. The current update options include edit and delete. 
+\begin{DoxyParams}{Parameters}
+{\em view} & the view containing the object in the model. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_controller_abdb08679098f7e6ac87ead9b47dd67fa}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!document\-Interaction\-Controller\-:will\-Begin\-Sending\-To\-Application\-:@{document\-Interaction\-Controller\-:will\-Begin\-Sending\-To\-Application\-:}}
+\index{document\-Interaction\-Controller\-:will\-Begin\-Sending\-To\-Application\-:@{document\-Interaction\-Controller\-:will\-Begin\-Sending\-To\-Application\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{document\-Interaction\-Controller\-:will\-Begin\-Sending\-To\-Application\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) document\-Interaction\-Controller\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Document\-Interaction\-Controller $\ast$)}]{controller}
+\item[{willBeginSendingToApplication:(N\-S\-String $\ast$)}]{application}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_abdb08679098f7e6ac87ead9b47dd67fa}
+Logs when an option in the open menu has been selected. 
+\begin{DoxyParams}{Parameters}
+{\em controller} & the document interaction controller that will display the results. \\
+\hline
+{\em application} & a string of the application that we are being directed to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_controller_abc178903c0b14db15612cb4a3108aacc}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!document\-Interaction\-Controller\-Did\-Dismiss\-Open\-In\-Menu\-:@{document\-Interaction\-Controller\-Did\-Dismiss\-Open\-In\-Menu\-:}}
+\index{document\-Interaction\-Controller\-Did\-Dismiss\-Open\-In\-Menu\-:@{document\-Interaction\-Controller\-Did\-Dismiss\-Open\-In\-Menu\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{document\-Interaction\-Controller\-Did\-Dismiss\-Open\-In\-Menu\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) document\-Interaction\-Controller\-Did\-Dismiss\-Open\-In\-Menu\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Document\-Interaction\-Controller $\ast$)}]{controller}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_abc178903c0b14db15612cb4a3108aacc}
+Logs when the open in menu to save the file has been closed. 
+\begin{DoxyParams}{Parameters}
+{\em controller} & the document interaction controller that will display the results. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_controller_afc53a5989b05a1405e9ac226bb05d52c}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!document\-Interaction\-Controller\-Will\-Present\-Open\-In\-Menu\-:@{document\-Interaction\-Controller\-Will\-Present\-Open\-In\-Menu\-:}}
+\index{document\-Interaction\-Controller\-Will\-Present\-Open\-In\-Menu\-:@{document\-Interaction\-Controller\-Will\-Present\-Open\-In\-Menu\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{document\-Interaction\-Controller\-Will\-Present\-Open\-In\-Menu\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) document\-Interaction\-Controller\-Will\-Present\-Open\-In\-Menu\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Document\-Interaction\-Controller $\ast$)}]{controller}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_afc53a5989b05a1405e9ac226bb05d52c}
+Logs when the open in menu to save the file is presented. 
+\begin{DoxyParams}{Parameters}
+{\em controller} & the document interaction controller that will display the results. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_controller_a165de32a7bdbc801f76d3a61012d0679}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!get\-Menu\-Details@{get\-Menu\-Details}}
+\index{get\-Menu\-Details@{get\-Menu\-Details}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{get\-Menu\-Details}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) get\-Menu\-Details 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a165de32a7bdbc801f76d3a61012d0679}
+Used to get the name of the class that an update/edit menu is being created for. Will be either \hyperlink{interface_variable}{Variable}, Causal Link, or \hyperlink{interface_loop}{Loop}. \begin{DoxyReturn}{Returns}
+the name of the class that is being updated. 
+\end{DoxyReturn}
+\hypertarget{interface_model_section_view_controller_a1dcc9249f1500714ff1b5a63b8de3982}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!get\-Selected\-View\-I\-D\-Num@{get\-Selected\-View\-I\-D\-Num}}
+\index{get\-Selected\-View\-I\-D\-Num@{get\-Selected\-View\-I\-D\-Num}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{get\-Selected\-View\-I\-D\-Num}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) get\-Selected\-View\-I\-D\-Num 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a1dcc9249f1500714ff1b5a63b8de3982}
+Given the selected view, it will return the associated id number for the object associated with that view. \begin{DoxyReturn}{Returns}
+the id number of the selected view's parent. 
+\end{DoxyReturn}
+\hypertarget{interface_model_section_view_controller_a3ce01e8eb3a6a32185225e1bfa51454d}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!get\-Variable\-Vertex\-View\-:@{get\-Variable\-Vertex\-View\-:}}
+\index{get\-Variable\-Vertex\-View\-:@{get\-Variable\-Vertex\-View\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{get\-Variable\-Vertex\-View\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Rect) get\-Variable\-Vertex\-View\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Causal\-Link\-View}$\ast$)}]{view}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a3ce01e8eb3a6a32185225e1bfa51454d}
+Sets up the view that will place the edit menu or update menu over the vertex. 
+\begin{DoxyParams}{Parameters}
+{\em view} & the casual link view of the obejct we want to have a menu appear over. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the rectangle frame over the vertex. 
+\end{DoxyReturn}
+\hypertarget{interface_model_section_view_controller_a0910163cad75578d1000ea69340980bf}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!image\-:did\-Finish\-Saving\-With\-Error\-:context\-Info\-:@{image\-:did\-Finish\-Saving\-With\-Error\-:context\-Info\-:}}
+\index{image\-:did\-Finish\-Saving\-With\-Error\-:context\-Info\-:@{image\-:did\-Finish\-Saving\-With\-Error\-:context\-Info\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{image\-:did\-Finish\-Saving\-With\-Error\-:context\-Info\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) image\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Image $\ast$)}]{image}
+\item[{didFinishSavingWithError:(N\-S\-Error $\ast$)}]{error}
+\item[{contextInfo:(void$\ast$)}]{context\-Info}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a0910163cad75578d1000ea69340980bf}
+Called after an image of the model has been saved to notify the user if the image was successfully saved. 
+\begin{DoxyParams}{Parameters}
+{\em image} & the image that was saved. \\
+\hline
+{\em did\-Finish\-Saving\-With\-Error} & whether or not there was an error when the picture was saved. \\
+\hline
+{\em context\-Info} & an optional pointer to any context-\/specific data that you want passed to the completion selector. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_controller_a4213bb26f5207ee3f402fe463badc691}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!init@{init}}
+\index{init@{init}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a4213bb26f5207ee3f402fe463badc691}
+Initializes the View Controller. Will create the views for all of the menu options. \begin{DoxyReturn}{Returns}
+an id of the newly created view controller. 
+\end{DoxyReturn}
+\hypertarget{interface_model_section_view_controller_afb11718c8a0c6f7abd85dfbc7adb1cd1}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!left\-Menu\-Bar\-Button\-Item@{left\-Menu\-Bar\-Button\-Item}}
+\index{left\-Menu\-Bar\-Button\-Item@{left\-Menu\-Bar\-Button\-Item}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{left\-Menu\-Bar\-Button\-Item}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\-I\-Bar\-Button\-Item $\ast$) left\-Menu\-Bar\-Button\-Item 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_afb11718c8a0c6f7abd85dfbc7adb1cd1}
+Creates the left menu bar button item. This item will be responsible for opening the menu. \begin{DoxyReturn}{Returns}
+the left menu bar button item. 
+\end{DoxyReturn}
+\hypertarget{interface_model_section_view_controller_a738b842dc5261f08da93880f0b006b55}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!left\-Side\-Menu\-Button\-Pressed\-:@{left\-Side\-Menu\-Button\-Pressed\-:}}
+\index{left\-Side\-Menu\-Button\-Pressed\-:@{left\-Side\-Menu\-Button\-Pressed\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{left\-Side\-Menu\-Button\-Pressed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) left\-Side\-Menu\-Button\-Pressed\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a738b842dc5261f08da93880f0b006b55}
+Callback for when the left menu button is pressed. 
+\begin{DoxyParams}{Parameters}
+{\em sender} & the id of the sender object. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_controller_a8331227f39fd462d9e4eb04f06c2a91b}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!load\-Model@{load\-Model}}
+\index{load\-Model@{load\-Model}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{load\-Model}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\-Model 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a8331227f39fd462d9e4eb04f06c2a91b}
+Called when the load model button has been pressed. This method will redirect the user to Dropbox to open a model file. \hypertarget{interface_model_section_view_controller_ad9f497773e1c2f5e420929a60f3bf7df}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!menu\-Container\-View\-Controller@{menu\-Container\-View\-Controller}}
+\index{menu\-Container\-View\-Controller@{menu\-Container\-View\-Controller}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{menu\-Container\-View\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf M\-F\-Side\-Menu\-Container\-View\-Controller} $\ast$) menu\-Container\-View\-Controller 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_ad9f497773e1c2f5e420929a60f3bf7df}
+Gets the menu container view controller. \begin{DoxyReturn}{Returns}
+the menu container view controller. 
+\end{DoxyReturn}
+\hypertarget{interface_model_section_view_controller_ade8553713185dc0c75c1d6f543eaa54f}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!popover\-Controller\-Did\-Dismiss\-Popover\-:@{popover\-Controller\-Did\-Dismiss\-Popover\-:}}
+\index{popover\-Controller\-Did\-Dismiss\-Popover\-:@{popover\-Controller\-Did\-Dismiss\-Popover\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{popover\-Controller\-Did\-Dismiss\-Popover\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) popover\-Controller\-Did\-Dismiss\-Popover\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Popover\-Controller $\ast$)}]{popover\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_ade8553713185dc0c75c1d6f543eaa54f}
+Dismisses the edit menu popover window if the cancel button is pressed. 
+\begin{DoxyParams}{Parameters}
+{\em popover\-Controller} & the popover controller that needs to be dismissed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_controller_aa58593cee765899b690466d15042bf77}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!reachability\-Changed\-:@{reachability\-Changed\-:}}
+\index{reachability\-Changed\-:@{reachability\-Changed\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{reachability\-Changed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) reachability\-Changed\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Notification $\ast$)}]{note}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_aa58593cee765899b690466d15042bf77}
+Will receive notifications from \hyperlink{interface_reachability}{Reachability} and pass it off to check if the message is about internet connection. 
+\begin{DoxyParams}{Parameters}
+{\em note} & the notification. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_controller_a8991afe6ce31445caafbbc84338898c1}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!reenable\-Save\-Button@{reenable\-Save\-Button}}
+\index{reenable\-Save\-Button@{reenable\-Save\-Button}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{reenable\-Save\-Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) reenable\-Save\-Button 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a8991afe6ce31445caafbbc84338898c1}
+Will be used to re-\/enable the save button when the log file has been sent to Parse. We restrict the user from pushing more than one time when there is a event logging record on the queue trying to be pushed to Parse. \hypertarget{interface_model_section_view_controller_a78c969d7bca3de65268ac706059e291c}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!right\-Menu\-Bar\-Button\-Items@{right\-Menu\-Bar\-Button\-Items}}
+\index{right\-Menu\-Bar\-Button\-Items@{right\-Menu\-Bar\-Button\-Items}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{right\-Menu\-Bar\-Button\-Items}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) right\-Menu\-Bar\-Button\-Items 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a78c969d7bca3de65268ac706059e291c}
+Creates the left menu bar button item. This item will be responsible for opening the menu. \begin{DoxyReturn}{Returns}
+an array of items contained in the right menu. 
+\end{DoxyReturn}
+\hypertarget{interface_model_section_view_controller_a9644bcb73520daa217ad0709b0e6bd64}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!setup\-Menu\-Bar\-Button\-Items@{setup\-Menu\-Bar\-Button\-Items}}
+\index{setup\-Menu\-Bar\-Button\-Items@{setup\-Menu\-Bar\-Button\-Items}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{setup\-Menu\-Bar\-Button\-Items}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setup\-Menu\-Bar\-Button\-Items 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a9644bcb73520daa217ad0709b0e6bd64}
+
+
+Sets up the menu bar of the view controller. 
+
+\begin{DoxyNote}{Note}
+Commented out because we do not need the menu right now. 
+\end{DoxyNote}
+\hypertarget{interface_model_section_view_controller_ab68e5fd03354e4a1dd1a2a75ff93dbea}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!show\-Delete\-Alert\-:@{show\-Delete\-Alert\-:}}
+\index{show\-Delete\-Alert\-:@{show\-Delete\-Alert\-:}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{show\-Delete\-Alert\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) show\-Delete\-Alert\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-View$\ast$)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_ab68e5fd03354e4a1dd1a2a75ff93dbea}
+Displays an alert message once a user has selected to delete an object. This message will appear to confirm that user did indeed mean to delete the object. 
+\begin{DoxyParams}{Parameters}
+{\em sender} & the view that made the call to display the alert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_controller_a0052cb4e8c2d69372b8750f3cba55b7f}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!take\-Picture\-Of\-Model@{take\-Picture\-Of\-Model}}
+\index{take\-Picture\-Of\-Model@{take\-Picture\-Of\-Model}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{take\-Picture\-Of\-Model}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) take\-Picture\-Of\-Model 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_a0052cb4e8c2d69372b8750f3cba55b7f}
+Method that is called when the take picture of model button has been selected. Will save the picture to the user's photo album. \hypertarget{interface_model_section_view_controller_aa5a50adbd2b567d3a8ae3445329b70d1}{\index{Model\-Section\-View\-Controller@{Model\-Section\-View\-Controller}!view\-Did\-Load@{view\-Did\-Load}}
+\index{view\-Did\-Load@{view\-Did\-Load}!ModelSectionViewController@{Model\-Section\-View\-Controller}}
+\subsubsection[{view\-Did\-Load}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) view\-Did\-Load 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_controller_aa5a50adbd2b567d3a8ae3445329b70d1}
+Called when the view finishes loading. Will set the default shown view and other attrubutes. A pointer to a variable to see if we have internet connection. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Model\-Section\-View\-Controller.\-h\item 
+Group\-Modeling\-App/Model\-Section\-View\-Controller.\-m\end{DoxyCompactItemize}

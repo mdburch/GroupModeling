@@ -1,0 +1,157 @@
+\hypertarget{interface_model_section_view}{\section{Model\-Section\-View Class Reference}
+\label{interface_model_section_view}\index{Model\-Section\-View@{Model\-Section\-View}}
+}
+
+
+A view that displays the \hyperlink{interface_model}{Model} and allows for modifications to the model.  
+
+
+
+
+{\ttfamily \#import $<$Model\-Section\-View.\-h$>$}
+
+Inheritance diagram for Model\-Section\-View\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_model_section_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_model_section_view_a4213bb26f5207ee3f402fe463badc691}{init}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_a8c03538769a6fcbd7aa8e672cf4b5c96}{draw\-Rect\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_abe37687ff567bae7bca561f22b7a1802}{handle\-Double\-Tap\-:}
+\item 
+(U\-I\-View $\ast$) -\/ \hyperlink{interface_model_section_view_ac1af4c1c7381cee5560d9ddebdf8203a}{hit\-Test\-:with\-Event\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_aad6be714d494a1b1bfd3e148ac1ff13b}{scroll\-View\-Will\-Begin\-Dragging\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_a863eaf47ffa7b051ba103a60fc8bfdf8}{scroll\-View\-Did\-Scroll\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_ab8c0489df0e1103bd844273e1f31cd9e}{scroll\-View\-Did\-End\-Dragging\-:will\-Decelerate\-:}
+\item 
+(void) -\/ \hyperlink{interface_model_section_view_a33f55893a32225b60aba8e51445250c6}{scroll\-View\-Did\-End\-Decelerating\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A view that displays the \hyperlink{interface_model}{Model} and allows for modifications to the model. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_model_section_view_a8c03538769a6fcbd7aa8e672cf4b5c96}{\index{Model\-Section\-View@{Model\-Section\-View}!draw\-Rect\-:@{draw\-Rect\-:}}
+\index{draw\-Rect\-:@{draw\-Rect\-:}!ModelSectionView@{Model\-Section\-View}}
+\subsubsection[{draw\-Rect\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) draw\-Rect\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Rect)}]{rect}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_a8c03538769a6fcbd7aa8e672cf4b5c96}
+Draws the receiver’s image within the passed-\/in rectangle. This is an overridden method. 
+\begin{DoxyParams}{Parameters}
+{\em rect} & the frame of the view in which objects can be drawn. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_abe37687ff567bae7bca561f22b7a1802}{\index{Model\-Section\-View@{Model\-Section\-View}!handle\-Double\-Tap\-:@{handle\-Double\-Tap\-:}}
+\index{handle\-Double\-Tap\-:@{handle\-Double\-Tap\-:}!ModelSectionView@{Model\-Section\-View}}
+\subsubsection[{handle\-Double\-Tap\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) handle\-Double\-Tap\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Tap\-Gesture\-Recognizer $\ast$)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_abe37687ff567bae7bca561f22b7a1802}
+Will add a new object on a double tap. 
+\begin{DoxyParams}{Parameters}
+{\em sender} & the recognizer that fired the method call. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_ac1af4c1c7381cee5560d9ddebdf8203a}{\index{Model\-Section\-View@{Model\-Section\-View}!hit\-Test\-:with\-Event\-:@{hit\-Test\-:with\-Event\-:}}
+\index{hit\-Test\-:with\-Event\-:@{hit\-Test\-:with\-Event\-:}!ModelSectionView@{Model\-Section\-View}}
+\subsubsection[{hit\-Test\-:with\-Event\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\-I\-View $\ast$) hit\-Test\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{point}
+\item[{withEvent:(U\-I\-Event $\ast$)}]{event}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_ac1af4c1c7381cee5560d9ddebdf8203a}
+Used to determine if the event is for the scroll view or any associated subview 
+\begin{DoxyParams}{Parameters}
+{\em point} & the point at which the user has touched. \\
+\hline
+{\em event} & the event that triggered this method call. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the view object that is the farthest descendent the current view and contains point. Returns nil if the point lies completely outside the receiver’s view hierarchy. 
+\end{DoxyReturn}
+\hypertarget{interface_model_section_view_a4213bb26f5207ee3f402fe463badc691}{\index{Model\-Section\-View@{Model\-Section\-View}!init@{init}}
+\index{init@{init}!ModelSectionView@{Model\-Section\-View}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_a4213bb26f5207ee3f402fe463badc691}
+Initializes the view. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & the frame the view is contained within. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an id of the newly created view. 
+\end{DoxyReturn}
+\hypertarget{interface_model_section_view_a33f55893a32225b60aba8e51445250c6}{\index{Model\-Section\-View@{Model\-Section\-View}!scroll\-View\-Did\-End\-Decelerating\-:@{scroll\-View\-Did\-End\-Decelerating\-:}}
+\index{scroll\-View\-Did\-End\-Decelerating\-:@{scroll\-View\-Did\-End\-Decelerating\-:}!ModelSectionView@{Model\-Section\-View}}
+\subsubsection[{scroll\-View\-Did\-End\-Decelerating\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) scroll\-View\-Did\-End\-Decelerating\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Scroll\-View $\ast$)}]{scroll\-View}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_a33f55893a32225b60aba8e51445250c6}
+Notifies the logger that the scroll window has stopped scrolling. The user may have simply released their finger or swiped their finger. 
+\begin{DoxyParams}{Parameters}
+{\em scroll\-View} & the scrollview for which the event has occured. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_ab8c0489df0e1103bd844273e1f31cd9e}{\index{Model\-Section\-View@{Model\-Section\-View}!scroll\-View\-Did\-End\-Dragging\-:will\-Decelerate\-:@{scroll\-View\-Did\-End\-Dragging\-:will\-Decelerate\-:}}
+\index{scroll\-View\-Did\-End\-Dragging\-:will\-Decelerate\-:@{scroll\-View\-Did\-End\-Dragging\-:will\-Decelerate\-:}!ModelSectionView@{Model\-Section\-View}}
+\subsubsection[{scroll\-View\-Did\-End\-Dragging\-:will\-Decelerate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) scroll\-View\-Did\-End\-Dragging\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Scroll\-View $\ast$)}]{scroll\-View}
+\item[{willDecelerate:(B\-O\-O\-L)}]{decelerate}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_ab8c0489df0e1103bd844273e1f31cd9e}
+Notifies the logger that the user has stopped dragging the scrollview. 
+\begin{DoxyParams}{Parameters}
+{\em scroll\-View} & the scrollview for which the event has occured. \\
+\hline
+{\em decelerate} & T\-R\-U\-E if the scrolling will continue because the user has swiped their finger. F\-A\-L\-S\-E if the user simply released their finger. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_a863eaf47ffa7b051ba103a60fc8bfdf8}{\index{Model\-Section\-View@{Model\-Section\-View}!scroll\-View\-Did\-Scroll\-:@{scroll\-View\-Did\-Scroll\-:}}
+\index{scroll\-View\-Did\-Scroll\-:@{scroll\-View\-Did\-Scroll\-:}!ModelSectionView@{Model\-Section\-View}}
+\subsubsection[{scroll\-View\-Did\-Scroll\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) scroll\-View\-Did\-Scroll\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Scroll\-View $\ast$)}]{scroll\-View}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_a863eaf47ffa7b051ba103a60fc8bfdf8}
+Notifies the logger that the user is scrolling. 
+\begin{DoxyParams}{Parameters}
+{\em scroll\-View} & the scrollview for which the event has occured. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_model_section_view_aad6be714d494a1b1bfd3e148ac1ff13b}{\index{Model\-Section\-View@{Model\-Section\-View}!scroll\-View\-Will\-Begin\-Dragging\-:@{scroll\-View\-Will\-Begin\-Dragging\-:}}
+\index{scroll\-View\-Will\-Begin\-Dragging\-:@{scroll\-View\-Will\-Begin\-Dragging\-:}!ModelSectionView@{Model\-Section\-View}}
+\subsubsection[{scroll\-View\-Will\-Begin\-Dragging\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) scroll\-View\-Will\-Begin\-Dragging\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Scroll\-View $\ast$)}]{scroll\-View}
+\end{DoxyParamCaption}
+}}\label{interface_model_section_view_aad6be714d494a1b1bfd3e148ac1ff13b}
+Notifies the logger that the user has begun scrolling. 
+\begin{DoxyParams}{Parameters}
+{\em scroll\-View} & the scrollview for which the event has occured. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Model\-Section\-View.\-h\item 
+Group\-Modeling\-App/Model\-Section\-View.\-m\end{DoxyCompactItemize}

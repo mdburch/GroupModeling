@@ -1,0 +1,165 @@
+\hypertarget{interface_side_menu_view_controller}{\section{Side\-Menu\-View\-Controller Class Reference}
+\label{interface_side_menu_view_controller}\index{Side\-Menu\-View\-Controller@{Side\-Menu\-View\-Controller}}
+}
+
+
+A view controller that handles the side menu bar.  
+
+
+
+
+{\ttfamily \#import $<$Side\-Menu\-View\-Controller.\-h$>$}
+
+Inheritance diagram for Side\-Menu\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_side_menu_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_m_f_side_menu_container_view_controller}{M\-F\-Side\-Menu\-Container\-View\-Controller} $\ast$) -\/ \hyperlink{interface_side_menu_view_controller_ad9f497773e1c2f5e420929a60f3bf7df}{menu\-Container\-View\-Controller}
+\item 
+(id) -\/ \hyperlink{interface_side_menu_view_controller_a4213bb26f5207ee3f402fe463badc691}{init}
+\item 
+\hypertarget{interface_side_menu_view_controller_a2c868393a6f59adcf2a8973ca95d631b}{(void) -\/ \hyperlink{interface_side_menu_view_controller_a2c868393a6f59adcf2a8973ca95d631b}{load\-Database}}\label{interface_side_menu_view_controller_a2c868393a6f59adcf2a8973ca95d631b}
+
+\begin{DoxyCompactList}\small\item\em Loads the menu items. \end{DoxyCompactList}\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_side_menu_view_controller_a5757190cb856a85c44de064864982f27}{table\-View\-:title\-For\-Header\-In\-Section\-:}
+\item 
+(N\-S\-Integer) -\/ \hyperlink{interface_side_menu_view_controller_a06b0471f3085f21304b18e41c6bfac6f}{number\-Of\-Sections\-In\-Table\-View\-:}
+\item 
+(N\-S\-Integer) -\/ \hyperlink{interface_side_menu_view_controller_aab440a4915232be470a3170a94dc5c82}{table\-View\-:number\-Of\-Rows\-In\-Section\-:}
+\item 
+(U\-I\-Table\-View\-Cell $\ast$) -\/ \hyperlink{interface_side_menu_view_controller_a8b22b55c4ff90cc2a2a96f2a38695ffe}{table\-View\-:cell\-For\-Row\-At\-Index\-Path\-:}
+\item 
+(void) -\/ \hyperlink{interface_side_menu_view_controller_a6741a2fd8b94b02a8b6adb99b30ba7d1}{table\-View\-:did\-Select\-Row\-At\-Index\-Path\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_side_menu_view_controller_a90224d9e597665265fbf07aac6847cc5}{N\-S\-Mutable\-Array $\ast$ {\bfseries menu\-Options}}\label{interface_side_menu_view_controller_a90224d9e597665265fbf07aac6847cc5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A view controller that handles the side menu bar. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_side_menu_view_controller_a4213bb26f5207ee3f402fe463badc691}{\index{Side\-Menu\-View\-Controller@{Side\-Menu\-View\-Controller}!init@{init}}
+\index{init@{init}!SideMenuViewController@{Side\-Menu\-View\-Controller}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_side_menu_view_controller_a4213bb26f5207ee3f402fe463badc691}
+Initializes the view controller. 
+\begin{DoxyParams}{Parameters}
+{\em style} & the style of the view controller. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an id of the newly created view controller. 
+\end{DoxyReturn}
+\hypertarget{interface_side_menu_view_controller_ad9f497773e1c2f5e420929a60f3bf7df}{\index{Side\-Menu\-View\-Controller@{Side\-Menu\-View\-Controller}!menu\-Container\-View\-Controller@{menu\-Container\-View\-Controller}}
+\index{menu\-Container\-View\-Controller@{menu\-Container\-View\-Controller}!SideMenuViewController@{Side\-Menu\-View\-Controller}}
+\subsubsection[{menu\-Container\-View\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf M\-F\-Side\-Menu\-Container\-View\-Controller} $\ast$) menu\-Container\-View\-Controller 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_side_menu_view_controller_ad9f497773e1c2f5e420929a60f3bf7df}
+Gets the menu container view controller. \begin{DoxyReturn}{Returns}
+the menu container view controller. 
+\end{DoxyReturn}
+\hypertarget{interface_side_menu_view_controller_a06b0471f3085f21304b18e41c6bfac6f}{\index{Side\-Menu\-View\-Controller@{Side\-Menu\-View\-Controller}!number\-Of\-Sections\-In\-Table\-View\-:@{number\-Of\-Sections\-In\-Table\-View\-:}}
+\index{number\-Of\-Sections\-In\-Table\-View\-:@{number\-Of\-Sections\-In\-Table\-View\-:}!SideMenuViewController@{Side\-Menu\-View\-Controller}}
+\subsubsection[{number\-Of\-Sections\-In\-Table\-View\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Integer) number\-Of\-Sections\-In\-Table\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Table\-View $\ast$)}]{table\-View}
+\end{DoxyParamCaption}
+}}\label{interface_side_menu_view_controller_a06b0471f3085f21304b18e41c6bfac6f}
+Returns the number of sections in the table view. 
+\begin{DoxyParams}{Parameters}
+{\em table\-View} & the reference table view. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of the sections in the table view. 
+\end{DoxyReturn}
+\hypertarget{interface_side_menu_view_controller_a8b22b55c4ff90cc2a2a96f2a38695ffe}{\index{Side\-Menu\-View\-Controller@{Side\-Menu\-View\-Controller}!table\-View\-:cell\-For\-Row\-At\-Index\-Path\-:@{table\-View\-:cell\-For\-Row\-At\-Index\-Path\-:}}
+\index{table\-View\-:cell\-For\-Row\-At\-Index\-Path\-:@{table\-View\-:cell\-For\-Row\-At\-Index\-Path\-:}!SideMenuViewController@{Side\-Menu\-View\-Controller}}
+\subsubsection[{table\-View\-:cell\-For\-Row\-At\-Index\-Path\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\-I\-Table\-View\-Cell $\ast$) table\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Table\-View $\ast$)}]{table\-View}
+\item[{cellForRowAtIndexPath:(N\-S\-Index\-Path $\ast$)}]{index\-Path}
+\end{DoxyParamCaption}
+}}\label{interface_side_menu_view_controller_a8b22b55c4ff90cc2a2a96f2a38695ffe}
+Sets the label text of the cell based on what is contained in the database. 
+\begin{DoxyParams}{Parameters}
+{\em table\-View} & the reference table view. \\
+\hline
+{\em index\-Path} & the index path that contains where in the list you are. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the newly created/reused cell. 
+\end{DoxyReturn}
+\hypertarget{interface_side_menu_view_controller_a6741a2fd8b94b02a8b6adb99b30ba7d1}{\index{Side\-Menu\-View\-Controller@{Side\-Menu\-View\-Controller}!table\-View\-:did\-Select\-Row\-At\-Index\-Path\-:@{table\-View\-:did\-Select\-Row\-At\-Index\-Path\-:}}
+\index{table\-View\-:did\-Select\-Row\-At\-Index\-Path\-:@{table\-View\-:did\-Select\-Row\-At\-Index\-Path\-:}!SideMenuViewController@{Side\-Menu\-View\-Controller}}
+\subsubsection[{table\-View\-:did\-Select\-Row\-At\-Index\-Path\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) table\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Table\-View $\ast$)}]{table\-View}
+\item[{didSelectRowAtIndexPath:(N\-S\-Index\-Path $\ast$)}]{index\-Path}
+\end{DoxyParamCaption}
+}}\label{interface_side_menu_view_controller_a6741a2fd8b94b02a8b6adb99b30ba7d1}
+Will update the view that is showing when a new menu option is selected. 
+\begin{DoxyParams}{Parameters}
+{\em table\-View} & the reference table view. \\
+\hline
+{\em index\-Path} & the index path that contains where in the list you are. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_side_menu_view_controller_aab440a4915232be470a3170a94dc5c82}{\index{Side\-Menu\-View\-Controller@{Side\-Menu\-View\-Controller}!table\-View\-:number\-Of\-Rows\-In\-Section\-:@{table\-View\-:number\-Of\-Rows\-In\-Section\-:}}
+\index{table\-View\-:number\-Of\-Rows\-In\-Section\-:@{table\-View\-:number\-Of\-Rows\-In\-Section\-:}!SideMenuViewController@{Side\-Menu\-View\-Controller}}
+\subsubsection[{table\-View\-:number\-Of\-Rows\-In\-Section\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Integer) table\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Table\-View $\ast$)}]{table\-View}
+\item[{numberOfRowsInSection:(N\-S\-Integer)}]{section}
+\end{DoxyParamCaption}
+}}\label{interface_side_menu_view_controller_aab440a4915232be470a3170a94dc5c82}
+Returns the number of rows in a section in the table view. 
+\begin{DoxyParams}{Parameters}
+{\em table\-View} & the reference table view. \\
+\hline
+{\em section} & the current section of the table view. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of the sections in the table view. 
+\end{DoxyReturn}
+\hypertarget{interface_side_menu_view_controller_a5757190cb856a85c44de064864982f27}{\index{Side\-Menu\-View\-Controller@{Side\-Menu\-View\-Controller}!table\-View\-:title\-For\-Header\-In\-Section\-:@{table\-View\-:title\-For\-Header\-In\-Section\-:}}
+\index{table\-View\-:title\-For\-Header\-In\-Section\-:@{table\-View\-:title\-For\-Header\-In\-Section\-:}!SideMenuViewController@{Side\-Menu\-View\-Controller}}
+\subsubsection[{table\-View\-:title\-For\-Header\-In\-Section\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) table\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Table\-View $\ast$)}]{table\-View}
+\item[{titleForHeaderInSection:(N\-S\-Integer)}]{section}
+\end{DoxyParamCaption}
+}}\label{interface_side_menu_view_controller_a5757190cb856a85c44de064864982f27}
+Returns the title of the section header for the table. 
+\begin{DoxyParams}{Parameters}
+{\em table\-View} & the reference table view. \\
+\hline
+{\em section} & the integer representing the section. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string values to set for the header title. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Side\-Menu\-View\-Controller.\-h\item 
+Group\-Modeling\-App/Side\-Menu\-View\-Controller.\-m\end{DoxyCompactItemize}

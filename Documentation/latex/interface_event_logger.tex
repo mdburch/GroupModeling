@@ -1,0 +1,100 @@
+\hypertarget{interface_event_logger}{\section{Event\-Logger Class Reference}
+\label{interface_event_logger}\index{Event\-Logger@{Event\-Logger}}
+}
+
+
+A class used to keep a record of all of the events the user makes during a modeling session.  
+
+
+
+
+{\ttfamily \#import $<$Event\-Logger.\-h$>$}
+
+Inheritance diagram for Event\-Logger\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_event_logger}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_event_logger_aa085061d6f02d4b8b40c8b347c676f9f}{add\-Event\-:}
+\item 
+(N\-S\-Mutable\-Array $\ast$) -\/ \hyperlink{interface_event_logger_ac66e3dc819bc1cf129a2141875b440a3}{create\-Events\-Output}
+\item 
+(void) -\/ \hyperlink{interface_event_logger_a0ad12aea4a582b9d7393847f90718307}{clear\-Events\-List\-:}
+\item 
+\hypertarget{interface_event_logger_a60120e85b3b04e0212654fd51bc1a679}{(void) -\/ \hyperlink{interface_event_logger_a60120e85b3b04e0212654fd51bc1a679}{populate\-Event\-Key}}\label{interface_event_logger_a60120e85b3b04e0212654fd51bc1a679}
+
+\begin{DoxyCompactList}\small\item\em Maps the event description to the corresponding description id and adds it to the events key array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_event_logger}{Event\-Logger} $\ast$) + \hyperlink{interface_event_logger_a6343b40276111dd1d7275bbde3a3e508}{shared\-Event\-Logger}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_event_logger_a67a1a529ac51538c28ff99617238ebcc}{N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_event_logger_a67a1a529ac51538c28ff99617238ebcc}{events}}\label{interface_event_logger_a67a1a529ac51538c28ff99617238ebcc}
+
+\begin{DoxyCompactList}\small\item\em An array containing all of the events that occur in the app. \end{DoxyCompactList}\item 
+\hypertarget{interface_event_logger_a85a7cbe7f3811f03518390b615822105}{N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{interface_event_logger_a85a7cbe7f3811f03518390b615822105}{events\-Key}}\label{interface_event_logger_a85a7cbe7f3811f03518390b615822105}
+
+\begin{DoxyCompactList}\small\item\em An array containing the mapping of event ids to their description. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class used to keep a record of all of the events the user makes during a modeling session. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_event_logger_aa085061d6f02d4b8b40c8b347c676f9f}{\index{Event\-Logger@{Event\-Logger}!add\-Event\-:@{add\-Event\-:}}
+\index{add\-Event\-:@{add\-Event\-:}!EventLogger@{Event\-Logger}}
+\subsubsection[{add\-Event\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Event\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Event}$\ast$)}]{new\-Event}
+\end{DoxyParamCaption}
+}}\label{interface_event_logger_aa085061d6f02d4b8b40c8b347c676f9f}
+Will add a record in the event log with the time stamp and the event that occurred. 
+\begin{DoxyParams}{Parameters}
+{\em new\-Event} & an instance of an \hyperlink{interface_event}{Event} containing the details of the event that should be added. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_event_logger_a0ad12aea4a582b9d7393847f90718307}{\index{Event\-Logger@{Event\-Logger}!clear\-Events\-List\-:@{clear\-Events\-List\-:}}
+\index{clear\-Events\-List\-:@{clear\-Events\-List\-:}!EventLogger@{Event\-Logger}}
+\subsubsection[{clear\-Events\-List\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear\-Events\-List\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{num}
+\end{DoxyParamCaption}
+}}\label{interface_event_logger_a0ad12aea4a582b9d7393847f90718307}
+Removes all of the events in the list. 
+\begin{DoxyParams}{Parameters}
+{\em num} & the last event that was saved to the database. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_event_logger_ac66e3dc819bc1cf129a2141875b440a3}{\index{Event\-Logger@{Event\-Logger}!create\-Events\-Output@{create\-Events\-Output}}
+\index{create\-Events\-Output@{create\-Events\-Output}!EventLogger@{Event\-Logger}}
+\subsubsection[{create\-Events\-Output}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array $\ast$) create\-Events\-Output 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_event_logger_ac66e3dc819bc1cf129a2141875b440a3}
+Constructs the file of events for the analysis. \begin{DoxyReturn}{Returns}
+an array of events with formatted output. 
+\end{DoxyReturn}
+\hypertarget{interface_event_logger_a6343b40276111dd1d7275bbde3a3e508}{\index{Event\-Logger@{Event\-Logger}!shared\-Event\-Logger@{shared\-Event\-Logger}}
+\index{shared\-Event\-Logger@{shared\-Event\-Logger}!EventLogger@{Event\-Logger}}
+\subsubsection[{shared\-Event\-Logger}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Event\-Logger} $\ast$) shared\-Event\-Logger 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_event_logger_a6343b40276111dd1d7275bbde3a3e508}
+Forces the \hyperlink{interface_event_logger}{Event\-Logger} to be a singleton class. \begin{DoxyReturn}{Returns}
+a pointer to the single instance of the event logger. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Event\-Logger.\-h\item 
+Group\-Modeling\-App/Event\-Logger.\-m\end{DoxyCompactItemize}

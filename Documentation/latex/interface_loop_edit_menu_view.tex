@@ -1,0 +1,120 @@
+\hypertarget{interface_loop_edit_menu_view}{\section{Loop\-Edit\-Menu\-View Class Reference}
+\label{interface_loop_edit_menu_view}\index{Loop\-Edit\-Menu\-View@{Loop\-Edit\-Menu\-View}}
+}
+
+
+The view that will contain the edit menu for Loops.  
+
+
+
+
+{\ttfamily \#import $<$Loop\-Edit\-Menu\-View.\-h$>$}
+
+Inheritance diagram for Loop\-Edit\-Menu\-View\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_loop_edit_menu_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_loop_edit_menu_view_ad1475d40e606d4f009f89321944e3678}{init\-With\-Frame\-:view\-:}
+\item 
+\hypertarget{interface_loop_edit_menu_view_ae0f43dc61fe8f377acde5d5c252b6c0e}{(void) -\/ \hyperlink{interface_loop_edit_menu_view_ae0f43dc61fe8f377acde5d5c252b6c0e}{update\-Loop}}\label{interface_loop_edit_menu_view_ae0f43dc61fe8f377acde5d5c252b6c0e}
+
+\begin{DoxyCompactList}\small\item\em This method will be called when the save button is called to save the attributes. \end{DoxyCompactList}\item 
+\hypertarget{interface_loop_edit_menu_view_a8395f57f6403f4f8775c1062aca14bc6}{(void) -\/ \hyperlink{interface_loop_edit_menu_view_a8395f57f6403f4f8775c1062aca14bc6}{symbol\-Control\-Change}}\label{interface_loop_edit_menu_view_a8395f57f6403f4f8775c1062aca14bc6}
+
+\begin{DoxyCompactList}\small\item\em Notifies the logger when a new option from the symbol segmented control has been changed. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_loop_edit_menu_view_ac9394b979597f8df8e15f5abc1cc7a2e}{text\-Field\-Did\-Begin\-Editing\-:}
+\item 
+(void) -\/ \hyperlink{interface_loop_edit_menu_view_aa7337263d1e997c99cdc506fc61dcea3}{text\-Field\-Did\-End\-Editing\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_loop_edit_menu_view_a1a8ec9c257f3a894dc9b3389477f55e9}{text\-Field\-Should\-Return\-:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_loop_edit_menu_view_af91fc4ee7ce5ce8ac3b0f00e38824b04}{U\-I\-Label $\ast$ \hyperlink{interface_loop_edit_menu_view_af91fc4ee7ce5ce8ac3b0f00e38824b04}{name\-Label}}\label{interface_loop_edit_menu_view_af91fc4ee7ce5ce8ac3b0f00e38824b04}
+
+\begin{DoxyCompactList}\small\item\em The label that represents what name\-Text\-Field represents. \end{DoxyCompactList}\item 
+\hypertarget{interface_loop_edit_menu_view_a5cbc9eaf5c10f7b61fa933746ae0bb6e}{U\-I\-Text\-Field $\ast$ \hyperlink{interface_loop_edit_menu_view_a5cbc9eaf5c10f7b61fa933746ae0bb6e}{name\-Text\-Field}}\label{interface_loop_edit_menu_view_a5cbc9eaf5c10f7b61fa933746ae0bb6e}
+
+\begin{DoxyCompactList}\small\item\em The text field that contains the name of the object. \end{DoxyCompactList}\item 
+\hypertarget{interface_loop_edit_menu_view_a6fdbff14250b254546c94f76fc96d7d6}{\hyperlink{interface_loop_view}{Loop\-View} $\ast$ \hyperlink{interface_loop_edit_menu_view_a6fdbff14250b254546c94f76fc96d7d6}{object\-View}}\label{interface_loop_edit_menu_view_a6fdbff14250b254546c94f76fc96d7d6}
+
+\begin{DoxyCompactList}\small\item\em The view of the object that you are editing. \end{DoxyCompactList}\item 
+\hypertarget{interface_loop_edit_menu_view_aef6c133a316fec6f579fc8f5c041d83e}{U\-I\-Segmented\-Control $\ast$ \hyperlink{interface_loop_edit_menu_view_aef6c133a316fec6f579fc8f5c041d83e}{symbol\-Controls}}\label{interface_loop_edit_menu_view_aef6c133a316fec6f579fc8f5c041d83e}
+
+\begin{DoxyCompactList}\small\item\em The segmented control that allows the user to change the symbol. \end{DoxyCompactList}\item 
+\hypertarget{interface_loop_edit_menu_view_a9c70b5765d0c00ae39e54c929356d7f6}{U\-I\-Label $\ast$ \hyperlink{interface_loop_edit_menu_view_a9c70b5765d0c00ae39e54c929356d7f6}{symbol\-Label}}\label{interface_loop_edit_menu_view_a9c70b5765d0c00ae39e54c929356d7f6}
+
+\begin{DoxyCompactList}\small\item\em The label that represents what symbol\-Controls represents. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The view that will contain the edit menu for Loops. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_loop_edit_menu_view_ad1475d40e606d4f009f89321944e3678}{\index{Loop\-Edit\-Menu\-View@{Loop\-Edit\-Menu\-View}!init\-With\-Frame\-:view\-:@{init\-With\-Frame\-:view\-:}}
+\index{init\-With\-Frame\-:view\-:@{init\-With\-Frame\-:view\-:}!LoopEditMenuView@{Loop\-Edit\-Menu\-View}}
+\subsubsection[{init\-With\-Frame\-:view\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Frame\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Rect)}]{frame}
+\item[{view:(U\-I\-View$\ast$)}]{view}
+\end{DoxyParamCaption}
+}}\label{interface_loop_edit_menu_view_ad1475d40e606d4f009f89321944e3678}
+Initializes the view. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & the frame the view is contained within. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an id of the newly created view. 
+\end{DoxyReturn}
+\hypertarget{interface_loop_edit_menu_view_ac9394b979597f8df8e15f5abc1cc7a2e}{\index{Loop\-Edit\-Menu\-View@{Loop\-Edit\-Menu\-View}!text\-Field\-Did\-Begin\-Editing\-:@{text\-Field\-Did\-Begin\-Editing\-:}}
+\index{text\-Field\-Did\-Begin\-Editing\-:@{text\-Field\-Did\-Begin\-Editing\-:}!LoopEditMenuView@{Loop\-Edit\-Menu\-View}}
+\subsubsection[{text\-Field\-Did\-Begin\-Editing\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) text\-Field\-Did\-Begin\-Editing\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Text\-Field $\ast$)}]{text\-Field}
+\end{DoxyParamCaption}
+}}\label{interface_loop_edit_menu_view_ac9394b979597f8df8e15f5abc1cc7a2e}
+Will log when the keyboard opens up for the user to edit. 
+\begin{DoxyParams}{Parameters}
+{\em text\-Field} & the textfield that makes the call. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_loop_edit_menu_view_aa7337263d1e997c99cdc506fc61dcea3}{\index{Loop\-Edit\-Menu\-View@{Loop\-Edit\-Menu\-View}!text\-Field\-Did\-End\-Editing\-:@{text\-Field\-Did\-End\-Editing\-:}}
+\index{text\-Field\-Did\-End\-Editing\-:@{text\-Field\-Did\-End\-Editing\-:}!LoopEditMenuView@{Loop\-Edit\-Menu\-View}}
+\subsubsection[{text\-Field\-Did\-End\-Editing\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) text\-Field\-Did\-End\-Editing\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Text\-Field $\ast$)}]{text\-Field}
+\end{DoxyParamCaption}
+}}\label{interface_loop_edit_menu_view_aa7337263d1e997c99cdc506fc61dcea3}
+Will log when the keyboard closes. Cannot place event in text\-Field\-Should\-Return becuase i\-O\-S 5 does not call the method. 
+\begin{DoxyParams}{Parameters}
+{\em text\-Field} & the textfield that makes the call. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_loop_edit_menu_view_a1a8ec9c257f3a894dc9b3389477f55e9}{\index{Loop\-Edit\-Menu\-View@{Loop\-Edit\-Menu\-View}!text\-Field\-Should\-Return\-:@{text\-Field\-Should\-Return\-:}}
+\index{text\-Field\-Should\-Return\-:@{text\-Field\-Should\-Return\-:}!LoopEditMenuView@{Loop\-Edit\-Menu\-View}}
+\subsubsection[{text\-Field\-Should\-Return\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) text\-Field\-Should\-Return\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Text\-Field $\ast$)}]{text\-Field}
+\end{DoxyParamCaption}
+}}\label{interface_loop_edit_menu_view_a1a8ec9c257f3a894dc9b3389477f55e9}
+Determines whether the keyboard should close for the text field. 
+\begin{DoxyParams}{Parameters}
+{\em text\-Field} & the textfield that makes the call. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+will always be true and the keyboard will always close when the Done button is pressed. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Loop\-Edit\-Menu\-View.\-h\item 
+Group\-Modeling\-App/Loop\-Edit\-Menu\-View.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{interface_loop}{\section{Loop Class Reference}
+\label{interface_loop}\index{Loop@{Loop}}
+}
+
+
+A subclass of \hyperlink{interface_component}{Component} containing the data related to a feedback loop of a causal loop diagram. ex. In a diagram on K-\/12 school attendance, a feedback loop would occur where as \char`\"{}\-Students Desire to Go to School\char`\"{} increases so does their \char`\"{}\-Mean daily attendance rate\char`\"{} and as their \char`\"{}\-Mean Daily attendance rate\char`\"{} increases so does a \char`\"{}\-Students Desire to Go to School\char`\"{}.  
+
+
+
+
+{\ttfamily \#import $<$Loop.\-h$>$}
+
+Inheritance diagram for Loop\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_loop}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_loop_ad35655514796f99b2f95f9d97ee9cbc1}{init\-:var\-Name\-:}
+\item 
+(id) -\/ \hyperlink{interface_loop_a9755af4c66523c228c80713cab6396fe}{init\-With\-Location\-:}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_loop_a404a48142c96cacac68633e2d2c00701}{create\-Loop\-Output\-String}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_loop_a0e3597199260a059ec632e5d54adb06e}{int \hyperlink{interface_loop_a0e3597199260a059ec632e5d54adb06e}{text\-Position}}\label{interface_loop_a0e3597199260a059ec632e5d54adb06e}
+
+\begin{DoxyCompactList}\small\item\em Where the text holding the feedback loop name is located in relation to the feedback loop object. \end{DoxyCompactList}\item 
+\hypertarget{interface_loop_a73b1ecad68943855563486ea8848e95f}{\hyperlink{interface_loop_view}{Loop\-View} $\ast$ \hyperlink{interface_loop_a73b1ecad68943855563486ea8848e95f}{view}}\label{interface_loop_a73b1ecad68943855563486ea8848e95f}
+
+\begin{DoxyCompactList}\small\item\em The U\-I\-View that will contain the graphical representation of the loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A subclass of \hyperlink{interface_component}{Component} containing the data related to a feedback loop of a causal loop diagram. ex. In a diagram on K-\/12 school attendance, a feedback loop would occur where as \char`\"{}\-Students Desire to Go to School\char`\"{} increases so does their \char`\"{}\-Mean daily attendance rate\char`\"{} and as their \char`\"{}\-Mean Daily attendance rate\char`\"{} increases so does a \char`\"{}\-Students Desire to Go to School\char`\"{}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_loop_a404a48142c96cacac68633e2d2c00701}{\index{Loop@{Loop}!create\-Loop\-Output\-String@{create\-Loop\-Output\-String}}
+\index{create\-Loop\-Output\-String@{create\-Loop\-Output\-String}!Loop@{Loop}}
+\subsubsection[{create\-Loop\-Output\-String}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) create\-Loop\-Output\-String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_loop_a404a48142c96cacac68633e2d2c00701}
+Constructs the output string for a \hyperlink{interface_loop}{Loop}. The string is constructed to be readable by Vensim. Follows the string pattern\-: \mbox{[}Object Type\mbox{]},\mbox{[}Object id\mbox{]},0,\mbox{[}X Location\mbox{]},\mbox{[}Y Location\mbox{]},20,20,\mbox{[}Symbol\mbox{]},7,0,0,\mbox{[}Text Position\mbox{]},0,0,0,\mbox{[}Shape color\mbox{]},\mbox{[}Background Color\mbox{]} \mbox{[}Comment\mbox{]} \begin{DoxyReturn}{Returns}
+the string of data for the variable. 
+\end{DoxyReturn}
+\hypertarget{interface_loop_ad35655514796f99b2f95f9d97ee9cbc1}{\index{Loop@{Loop}!init\-:var\-Name\-:@{init\-:var\-Name\-:}}
+\index{init\-:var\-Name\-:@{init\-:var\-Name\-:}!Loop@{Loop}}
+\subsubsection[{init\-:var\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array$\ast$)}]{data}
+\item[{varName:(N\-S\-String$\ast$)}]{my\-Name}
+\end{DoxyParamCaption}
+}}\label{interface_loop_ad35655514796f99b2f95f9d97ee9cbc1}
+Initializes the \hyperlink{interface_loop}{Loop} when you are reading from an mdl file. 
+\begin{DoxyParams}{Parameters}
+{\em data} & an array of strings containing all of the data for the feedback loop from a Vensim mdl file. \\
+\hline
+{\em my\-Name} & the name associated with the feedback loop. Unlike Variables and Causal\-Links, \hyperlink{interface_loop}{Loop} names are located on a different line in the Vensim mdl file from the rest of the loop attributes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created \hyperlink{interface_loop}{Loop}. 
+\end{DoxyReturn}
+\hypertarget{interface_loop_a9755af4c66523c228c80713cab6396fe}{\index{Loop@{Loop}!init\-With\-Location\-:@{init\-With\-Location\-:}}
+\index{init\-With\-Location\-:@{init\-With\-Location\-:}!Loop@{Loop}}
+\subsubsection[{init\-With\-Location\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Location\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{location}
+\end{DoxyParamCaption}
+}}\label{interface_loop_a9755af4c66523c228c80713cab6396fe}
+Initizlizes the \hyperlink{interface_loop}{Loop} when you are adding a brand new variable. 
+\begin{DoxyParams}{Parameters}
+{\em location} & the location of the new object in the frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created \hyperlink{interface_loop}{Loop}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Group\-Modeling\-App/Loop.\-h\item 
+Group\-Modeling\-App/Loop.\-m\end{DoxyCompactItemize}
