@@ -1,0 +1,474 @@
+Event ID   , Event time          , Desc ID   ,                                             Description, Object ID , Details
+0          , 400120839.711924    , 69        ,                           There is internet connection!, 0         , 
+1          , 400120839.735291    , 0         ,                             The application has loaded., 0         , 
+2          , 400120839.777012    , 5         ,                  User changed the device's orientation., 0         , Landscape right
+3          , 400120842.269167    , 32        ,                                         Variable added., 1         , 
+4          , 400120842.871303    , 32        ,                                         Variable added., 2         , 
+5          , 400120844.088604    , 38        ,  User warned that they are about to create a new model., 0         , 
+6          , 400120845.061533    , 40        ,                               User created a new model., 0         , 
+7          , 400120845.799947    , 53        ,                      User has requested to open a file., 0         , 
+8          , 400120846.596129    , 1         ,      The application has been placed in the background., 0         , 
+9          , 400120847.928585    , 69        ,                           There is internet connection!, 0         , 
+10         , 400120847.931641    , 2         ,                       The application has been resumed., 0         , 
+11         , 400120847.933916    , 57        ,                  User cancelled request to open a file., 0         , 
+12         , 400120848.606798    , 5         ,                  User changed the device's orientation., 0         , Face Up
+13         , 400120848.802602    , 5         ,                  User changed the device's orientation., 0         , Landscape right
+14         , 400120848.884431    , 5         ,                  User changed the device's orientation., 0         , Face Up
+15         , 400120849.127904    , 5         ,                  User changed the device's orientation., 0         , Landscape right
+16         , 400120849.158079    , 53        ,                      User has requested to open a file., 0         , 
+17         , 400120849.927557    , 1         ,      The application has been placed in the background., 0         , 
+18         , 400120853.466127    , 69        ,                           There is internet connection!, 0         , 
+19         , 400120853.469329    , 2         ,                       The application has been resumed., 0         , 
+20         , 400120853.473446    , 56        ,                      User selected a .mdl file to open., 0         , modelbb.mdl
+21         , 400120853.905428    , 71        ,                        Imported a variable from a file., 1         , Name: New Variable Type: Boxed (383;491)
+22         , 400120853.905872    , 71        ,                        Imported a variable from a file., 2         , Name: New Variable Type: Boxed (419;229)
+23         , 400120853.906324    , 71        ,                        Imported a variable from a file., 3         , Name: New Variable Type: Boxed (788;407)
+24         , 400120853.909134    , 6         ,                     Imported a causal link from a file., 4         , Parent: New Variable (3) Child: New Variable (2) |  Polarity: + Line: Normal Time Delay: No Color: Black
+25         , 400120853.909498    , 6         ,                     Imported a causal link from a file., 5         , Parent: New Variable (1) Child: New Variable (2) |  Polarity: + Line: Normal Time Delay: No Color: Black
+26         , 400120854.150806    , 5         ,                  User changed the device's orientation., 0         , Face Up
+27         , 400120856.542732    , 79        ,                           User began moving a variable., 2         , (415;228)
+28         , 400120856.615541    , 58        ,                                  Update menu displayed., 2         , Variable
+29         , 400120857.242983    , 60        ,                                    Edit menu displayed., 2         , Variable
+30         , 400120857.466661    , 59        ,                                     Update menu closed., 2         , Variable
+31         , 400120858.741572    , 62        ,                Edit menu closed because user cancelled., 2         , Variable
+32         , 400120858.869296    , 79        ,                           User began moving a variable., 2         , (390;226)
+33         , 400120858.938053    , 58        ,                                  Update menu displayed., 2         , Variable
+34         , 400120859.603206    , 60        ,                                    Edit menu displayed., 2         , Variable
+35         , 400120859.820199    , 59        ,                                     Update menu closed., 2         , Variable
+36         , 400120860.165387    , 74        ,       User selected a new option for the variable type., 2         , Normal selected
+37         , 400120860.773535    , 74        ,       User selected a new option for the variable type., 2         , Boxed selected
+38         , 400120861.926661    , 74        ,       User selected a new option for the variable type., 2         , Normal selected
+39         , 400120862.504247    , 19        ,                                        Keyboard opened., 2         , Edit Variable name
+40         , 400120878.947993    , 73        ,                         User changed the variable type., 2         , From: Boxed To: Normal
+41         , 400120878.948514    , 72        ,                    User changed the name of a variable., 2         , From: New Variable To: Var1
+42         , 400120878.94898     , 61        ,            Edit menu closed because user saved changes., 2         , Variable
+43         , 400120879.309786    , 20        ,                                        Keyboard closed., 2         , Edit Variable name
+44         , 400120883.359883    , 15        ,                        User began moving a causal link., 4         , (615;293)
+45         , 400120883.41293     , 16        ,                           User is moving a causal link., 4         , (614;295)
+46         , 400120883.43664     , 58        ,                                  Update menu displayed., 4         , Causal link
+47         , 400120884.12154     , 63        ,    User warned that they are about to delete something., 4         , Causal link
+48         , 400120884.338578    , 59        ,                                     Update menu closed., 4         , Causal link
+49         , 400120884.932428    , 67        ,                              A causal link was deleted., 4         , 
+50         , 400120886.102434    , 79        ,                           User began moving a variable., 1         , (379;500)
+51         , 400120886.170367    , 58        ,                                  Update menu displayed., 1         , Variable
+52         , 400120886.888821    , 63        ,    User warned that they are about to delete something., 1         , Variable
+53         , 400120887.104575    , 59        ,                                     Update menu closed., 1         , Variable
+54         , 400120887.618947    , 31        ,    A deleted variable caused deletion of causal links. , 1         , Number deleted:1 | id:5 Parent: New Variable (1) Child: Var1 (2) | 
+55         , 400120887.619176    , 65        ,                                 A variable was deleted., 1         , 
+56         , 400120889.077294    , 79        ,                           User began moving a variable., 3         , (798;408)
+57         , 400120889.235091    , 80        ,                              User is moving a variable., 3         , (783;411)
+58         , 400120889.251327    , 80        ,                              User is moving a variable., 3         , (768;412)
+59         , 400120889.268258    , 80        ,                              User is moving a variable., 3         , (746;413)
+60         , 400120889.282528    , 80        ,                              User is moving a variable., 3         , (725;413)
+61         , 400120889.29873     , 80        ,                              User is moving a variable., 3         , (701;413)
+62         , 400120889.314856    , 80        ,                              User is moving a variable., 3         , (673;410)
+63         , 400120889.330272    , 80        ,                              User is moving a variable., 3         , (647;405)
+64         , 400120889.346268    , 80        ,                              User is moving a variable., 3         , (623;400)
+65         , 400120889.362698    , 80        ,                              User is moving a variable., 3         , (596;396)
+66         , 400120889.378245    , 80        ,                              User is moving a variable., 3         , (570;391)
+67         , 400120889.394541    , 80        ,                              User is moving a variable., 3         , (546;387)
+68         , 400120889.41072     , 80        ,                              User is moving a variable., 3         , (527;384)
+69         , 400120889.426241    , 80        ,                              User is moving a variable., 3         , (508;383)
+70         , 400120889.442264    , 80        ,                              User is moving a variable., 3         , (494;383)
+71         , 400120889.458744    , 80        ,                              User is moving a variable., 3         , (483;384)
+72         , 400120889.474359    , 80        ,                              User is moving a variable., 3         , (475;387)
+73         , 400120889.490281    , 80        ,                              User is moving a variable., 3         , (468;391)
+74         , 400120889.506733    , 80        ,                              User is moving a variable., 3         , (462;395)
+75         , 400120889.522271    , 80        ,                              User is moving a variable., 3         , (457;400)
+76         , 400120889.538235    , 80        ,                              User is moving a variable., 3         , (450;406)
+77         , 400120889.554678    , 80        ,                              User is moving a variable., 3         , (445;411)
+78         , 400120889.570205    , 80        ,                              User is moving a variable., 3         , (442;416)
+79         , 400120889.586186    , 80        ,                              User is moving a variable., 3         , (438;423)
+80         , 400120889.602645    , 80        ,                              User is moving a variable., 3         , (437;429)
+81         , 400120889.618174    , 80        ,                              User is moving a variable., 3         , (435;435)
+82         , 400120889.634287    , 80        ,                              User is moving a variable., 3         , (433;439)
+83         , 400120889.650637    , 80        ,                              User is moving a variable., 3         , (432;443)
+84         , 400120889.666706    , 80        ,                              User is moving a variable., 3         , (430;445)
+85         , 400120889.682251    , 80        ,                              User is moving a variable., 3         , (429;446)
+86         , 400120889.698909    , 80        ,                              User is moving a variable., 3         , (428;447)
+87         , 400120889.76214     , 81        ,                         User stopped moving a variable., 3         , (427;444)
+88         , 400120890.052301    , 79        ,                           User began moving a variable., 3         , (447;445)
+89         , 400120890.121172    , 58        ,                                  Update menu displayed., 3         , Variable
+90         , 400120890.738372    , 60        ,                                    Edit menu displayed., 3         , Variable
+91         , 400120890.953049    , 59        ,                                     Update menu closed., 3         , Variable
+92         , 400120891.994564    , 19        ,                                        Keyboard opened., 3         , Edit Variable name
+93         , 400120896.945167    , 72        ,                    User changed the name of a variable., 3         , From: New Variable To: Var2
+94         , 400120896.945337    , 61        ,            Edit menu closed because user saved changes., 3         , Variable
+95         , 400120897.305865    , 20        ,                                        Keyboard closed., 3         , Edit Variable name
+96         , 400120898.306564    , 79        ,                           User began moving a variable., 3         , (437;450)
+97         , 400120898.320129    , 80        ,                              User is moving a variable., 3         , (440;450)
+98         , 400120898.336959    , 80        ,                              User is moving a variable., 3         , (449;450)
+99         , 400120898.3522      , 80        ,                              User is moving a variable., 3         , (461;449)
+100        , 400120898.368671    , 80        ,                              User is moving a variable., 3         , (482;445)
+101        , 400120898.384243    , 80        ,                              User is moving a variable., 3         , (501;441)
+102        , 400120898.400107    , 80        ,                              User is moving a variable., 3         , (519;435)
+103        , 400120898.415842    , 80        ,                              User is moving a variable., 3         , (540;424)
+104        , 400120898.432219    , 80        ,                              User is moving a variable., 3         , (555;411)
+105        , 400120898.448079    , 80        ,                              User is moving a variable., 3         , (567;401)
+106        , 400120898.463641    , 80        ,                              User is moving a variable., 3         , (579;390)
+107        , 400120898.480153    , 80        ,                              User is moving a variable., 3         , (593;376)
+108        , 400120898.49572     , 80        ,                              User is moving a variable., 3         , (608;361)
+109        , 400120898.511987    , 80        ,                              User is moving a variable., 3         , (623;345)
+110        , 400120898.528069    , 80        ,                              User is moving a variable., 3         , (638;328)
+111        , 400120898.543706    , 80        ,                              User is moving a variable., 3         , (653;308)
+112        , 400120898.559541    , 80        ,                              User is moving a variable., 3         , (672;278)
+113        , 400120898.575955    , 80        ,                              User is moving a variable., 3         , (688;251)
+114        , 400120898.591558    , 80        ,                              User is moving a variable., 3         , (701;234)
+115        , 400120898.607539    , 80        ,                              User is moving a variable., 3         , (712;222)
+116        , 400120898.624008    , 80        ,                              User is moving a variable., 3         , (718;215)
+117        , 400120898.639562    , 80        ,                              User is moving a variable., 3         , (721;211)
+118        , 400120898.655564    , 80        ,                              User is moving a variable., 3         , (723;208)
+119        , 400120898.672033    , 80        ,                              User is moving a variable., 3         , (723;207)
+120        , 400120898.719839    , 81        ,                         User stopped moving a variable., 3         , (725;205)
+121        , 400120899.890113    , 68        ,      User selected a new option for adding new objects., 0         , Causal Link option selected
+122        , 400120900.481576    , 79        ,                           User began moving a variable., 3         , (726;199)
+123        , 400120900.732143    , 75        ,              User has begun creating a new causal link., 0         , (726;199)
+124        , 400120900.895172    , 76        ,       The causal link is in the process of being added., 0         , (725;198)
+125        , 400120900.895643    , 76        ,       The causal link is in the process of being added., 0         , (725;198)
+126        , 400120900.975425    , 76        ,       The causal link is in the process of being added., 0         , (724;197)
+127        , 400120900.991185    , 76        ,       The causal link is in the process of being added., 0         , (723;197)
+128        , 400120901.007043    , 76        ,       The causal link is in the process of being added., 0         , (718;195)
+129        , 400120901.023476    , 76        ,       The causal link is in the process of being added., 0         , (704;191)
+130        , 400120901.039159    , 76        ,       The causal link is in the process of being added., 0         , (680;184)
+131        , 400120901.055036    , 76        ,       The causal link is in the process of being added., 0         , (656;177)
+132        , 400120901.071446    , 76        ,       The causal link is in the process of being added., 0         , (628;168)
+133        , 400120901.087046    , 76        ,       The causal link is in the process of being added., 0         , (600;161)
+134        , 400120901.103046    , 76        ,       The causal link is in the process of being added., 0         , (572;154)
+135        , 400120901.118977    , 76        ,       The causal link is in the process of being added., 0         , (545;148)
+136        , 400120901.135594    , 76        ,       The causal link is in the process of being added., 0         , (520;146)
+137        , 400120901.151931    , 76        ,       The causal link is in the process of being added., 0         , (500;146)
+138        , 400120901.168346    , 76        ,       The causal link is in the process of being added., 0         , (482;147)
+139        , 400120901.183525    , 76        ,       The causal link is in the process of being added., 0         , (466;153)
+140        , 400120901.199237    , 76        ,       The causal link is in the process of being added., 0         , (452;159)
+141        , 400120901.215842    , 76        ,       The causal link is in the process of being added., 0         , (440;168)
+142        , 400120901.23099     , 76        ,       The causal link is in the process of being added., 0         , (432;173)
+143        , 400120901.246883    , 76        ,       The causal link is in the process of being added., 0         , (427;179)
+144        , 400120901.263456    , 76        ,       The causal link is in the process of being added., 0         , (424;183)
+145        , 400120901.278913    , 76        ,       The causal link is in the process of being added., 0         , (423;187)
+146        , 400120901.29494     , 76        ,       The causal link is in the process of being added., 0         , (422;191)
+147        , 400120901.311366    , 76        ,       The causal link is in the process of being added., 0         , (422;194)
+148        , 400120901.32689     , 76        ,       The causal link is in the process of being added., 0         , (422;196)
+149        , 400120901.342959    , 76        ,       The causal link is in the process of being added., 0         , (422;197)
+150        , 400120901.359578    , 76        ,       The causal link is in the process of being added., 0         , (421;199)
+151        , 400120901.37496     , 76        ,       The causal link is in the process of being added., 0         , (419;202)
+152        , 400120901.390907    , 76        ,       The causal link is in the process of being added., 0         , (418;205)
+153        , 400120901.407371    , 76        ,       The causal link is in the process of being added., 0         , (417;207)
+154        , 400120901.423367    , 76        ,       The causal link is in the process of being added., 0         , (416;208)
+155        , 400120901.439091    , 76        ,       The causal link is in the process of being added., 0         , (415;210)
+156        , 400120901.45562     , 76        ,       The causal link is in the process of being added., 0         , (414;211)
+157        , 400120901.470627    , 76        ,       The causal link is in the process of being added., 0         , (414;212)
+158        , 400120901.502988    , 76        ,       The causal link is in the process of being added., 0         , (414;213)
+159        , 400120901.51912     , 76        ,       The causal link is in the process of being added., 0         , (414;214)
+160        , 400120901.566744    , 76        ,       The causal link is in the process of being added., 0         , (414;215)
+161        , 400120902.126831    , 76        ,       The causal link is in the process of being added., 0         , (415;215)
+162        , 400120902.17624     , 77        ,                                      Causal link added., 6         , Parent: Var2 (3) Child: Var1 (2) | 
+163        , 400120902.625176    , 15        ,                        User began moving a causal link., 6         , (571;218)
+164        , 400120902.73473     , 16        ,                           User is moving a causal link., 6         , (570;213)
+165        , 400120902.751694    , 16        ,                           User is moving a causal link., 6         , (570;208)
+166        , 400120902.767068    , 16        ,                           User is moving a causal link., 6         , (569;203)
+167        , 400120902.784012    , 16        ,                           User is moving a causal link., 6         , (569;199)
+168        , 400120902.799326    , 16        ,                           User is moving a causal link., 6         , (569;194)
+169        , 400120902.814443    , 16        ,                           User is moving a causal link., 6         , (568;189)
+170        , 400120902.830448    , 16        ,                           User is moving a causal link., 6         , (568;184)
+171        , 400120902.846943    , 16        ,                           User is moving a causal link., 6         , (568;180)
+172        , 400120902.862527    , 16        ,                           User is moving a causal link., 6         , (567;175)
+173        , 400120902.878488    , 16        ,                           User is moving a causal link., 6         , (567;170)
+174        , 400120902.894924    , 16        ,                           User is moving a causal link., 6         , (567;165)
+175        , 400120902.910477    , 16        ,                           User is moving a causal link., 6         , (566;161)
+176        , 400120902.926499    , 16        ,                           User is moving a causal link., 6         , (566;156)
+177        , 400120902.942928    , 16        ,                           User is moving a causal link., 6         , (566;151)
+178        , 400120902.95859     , 16        ,                           User is moving a causal link., 6         , (565;146)
+179        , 400120902.97457     , 16        ,                           User is moving a causal link., 6         , (565;142)
+180        , 400120902.990979    , 16        ,                           User is moving a causal link., 6         , (565;137)
+181        , 400120903.00656     , 16        ,                           User is moving a causal link., 6         , (564;132)
+182        , 400120903.022553    , 16        ,                           User is moving a causal link., 6         , (564;127)
+183        , 400120903.054172    , 16        ,                           User is moving a causal link., 6         , (564;123)
+184        , 400120903.087126    , 16        ,                           User is moving a causal link., 6         , (563;118)
+185        , 400120903.134846    , 16        ,                           User is moving a causal link., 6         , (563;113)
+186        , 400120903.246146    , 17        ,                      User stopped moving a causal link., 6         , (563;113)
+187        , 400120903.584024    , 15        ,                        User began moving a causal link., 6         , (563;113)
+188        , 400120903.637475    , 58        ,                                  Update menu displayed., 6         , Causal link
+189        , 400120904.198718    , 60        ,                                    Edit menu displayed., 6         , Causal link
+190        , 400120904.431651    , 59        ,                                     Update menu closed., 6         , Causal link
+191        , 400120905.120702    , 14        ,          User selected a new option for the link color., 6         , Red selected
+192        , 400120905.921039    , 14        ,          User selected a new option for the link color., 6         , Green selected
+193        , 400120907.424224    , 14        ,          User selected a new option for the link color., 6         , Blue selected
+194        , 400120908.956718    , 7         ,                User changed the color of a causal link., 6         , From: Black To: Blue
+195        , 400120908.956837    , 61        ,            Edit menu closed because user saved changes., 6         , Causal link
+196        , 400120911.966876    , 79        ,                           User began moving a variable., 2         , (414;231)
+197        , 400120912.217651    , 75        ,              User has begun creating a new causal link., 0         , (414;231)
+198        , 400120912.555751    , 76        ,       The causal link is in the process of being added., 0         , (417;243)
+199        , 400120912.556202    , 76        ,       The causal link is in the process of being added., 0         , (417;243)
+200        , 400120912.57142     , 76        ,       The causal link is in the process of being added., 0         , (419;250)
+201        , 400120912.587643    , 76        ,       The causal link is in the process of being added., 0         , (423;259)
+202        , 400120912.603431    , 76        ,       The causal link is in the process of being added., 0         , (428;268)
+203        , 400120912.619641    , 76        ,       The causal link is in the process of being added., 0         , (434;278)
+204        , 400120912.636519    , 76        ,       The causal link is in the process of being added., 0         , (442;286)
+205        , 400120912.651958    , 76        ,       The causal link is in the process of being added., 0         , (450;293)
+206        , 400120912.668284    , 76        ,       The causal link is in the process of being added., 0         , (458;299)
+207        , 400120912.684605    , 76        ,       The causal link is in the process of being added., 0         , (465;304)
+208        , 400120912.700092    , 76        ,       The causal link is in the process of being added., 0         , (474;308)
+209        , 400120912.716062    , 76        ,       The causal link is in the process of being added., 0         , (482;310)
+210        , 400120912.732383    , 76        ,       The causal link is in the process of being added., 0         , (491;312)
+211        , 400120912.747809    , 76        ,       The causal link is in the process of being added., 0         , (501;313)
+212        , 400120912.763633    , 76        ,       The causal link is in the process of being added., 0         , (511;314)
+213        , 400120912.78013     , 76        ,       The causal link is in the process of being added., 0         , (524;314)
+214        , 400120912.79564     , 76        ,       The causal link is in the process of being added., 0         , (535;314)
+215        , 400120912.811635    , 76        ,       The causal link is in the process of being added., 0         , (549;311)
+216        , 400120912.828105    , 76        ,       The causal link is in the process of being added., 0         , (560;309)
+217        , 400120912.843612    , 76        ,       The causal link is in the process of being added., 0         , (571;304)
+218        , 400120912.859647    , 76        ,       The causal link is in the process of being added., 0         , (582;302)
+219        , 400120912.876076    , 76        ,       The causal link is in the process of being added., 0         , (591;298)
+220        , 400120912.891567    , 76        ,       The causal link is in the process of being added., 0         , (601;295)
+221        , 400120912.907643    , 76        ,       The causal link is in the process of being added., 0         , (608;293)
+222        , 400120912.924248    , 76        ,       The causal link is in the process of being added., 0         , (617;289)
+223        , 400120912.939601    , 76        ,       The causal link is in the process of being added., 0         , (623;287)
+224        , 400120912.955878    , 76        ,       The causal link is in the process of being added., 0         , (631;284)
+225        , 400120912.971474    , 76        ,       The causal link is in the process of being added., 0         , (637;280)
+226        , 400120912.987487    , 76        ,       The causal link is in the process of being added., 0         , (642;276)
+227        , 400120913.003269    , 76        ,       The causal link is in the process of being added., 0         , (647;273)
+228        , 400120913.019804    , 76        ,       The causal link is in the process of being added., 0         , (652;270)
+229        , 400120913.035622    , 76        ,       The causal link is in the process of being added., 0         , (655;268)
+230        , 400120913.051973    , 76        ,       The causal link is in the process of being added., 0         , (658;265)
+231        , 400120913.068489    , 76        ,       The causal link is in the process of being added., 0         , (661;263)
+232        , 400120913.084051    , 76        ,       The causal link is in the process of being added., 0         , (663;261)
+233        , 400120913.099925    , 76        ,       The causal link is in the process of being added., 0         , (665;260)
+234        , 400120913.116304    , 76        ,       The causal link is in the process of being added., 0         , (667;259)
+235        , 400120913.147543    , 76        ,       The causal link is in the process of being added., 0         , (667;258)
+236        , 400120913.179562    , 76        ,       The causal link is in the process of being added., 0         , (667;257)
+237        , 400120913.307839    , 76        ,       The causal link is in the process of being added., 0         , (668;257)
+238        , 400120913.323503    , 76        ,       The causal link is in the process of being added., 0         , (669;255)
+239        , 400120913.339556    , 76        ,       The causal link is in the process of being added., 0         , (672;251)
+240        , 400120913.356017    , 76        ,       The causal link is in the process of being added., 0         , (675;246)
+241        , 400120913.371183    , 76        ,       The causal link is in the process of being added., 0         , (679;240)
+242        , 400120913.387185    , 76        ,       The causal link is in the process of being added., 0         , (682;235)
+243        , 400120913.403531    , 76        ,       The causal link is in the process of being added., 0         , (686;231)
+244        , 400120913.419474    , 76        ,       The causal link is in the process of being added., 0         , (688;226)
+245        , 400120913.435543    , 76        ,       The causal link is in the process of being added., 0         , (691;223)
+246        , 400120913.452203    , 76        ,       The causal link is in the process of being added., 0         , (693;221)
+247        , 400120913.468194    , 76        ,       The causal link is in the process of being added., 0         , (694;220)
+248        , 400120913.483891    , 76        ,       The causal link is in the process of being added., 0         , (694;219)
+249        , 400120913.547743    , 76        ,       The causal link is in the process of being added., 0         , (693;220)
+250        , 400120913.563207    , 76        ,       The causal link is in the process of being added., 0         , (692;221)
+251        , 400120913.579364    , 76        ,       The causal link is in the process of being added., 0         , (691;221)
+252        , 400120913.595825    , 76        ,       The causal link is in the process of being added., 0         , (691;222)
+253        , 400120913.611356    , 76        ,       The causal link is in the process of being added., 0         , (691;223)
+254        , 400120913.627347    , 76        ,       The causal link is in the process of being added., 0         , (690;224)
+255        , 400120913.643822    , 76        ,       The causal link is in the process of being added., 0         , (690;225)
+256        , 400120913.659337    , 76        ,       The causal link is in the process of being added., 0         , (689;225)
+257        , 400120913.675373    , 76        ,       The causal link is in the process of being added., 0         , (689;226)
+258        , 400120913.803011    , 76        ,       The causal link is in the process of being added., 0         , (689;227)
+259        , 400120913.819002    , 76        ,       The causal link is in the process of being added., 0         , (689;228)
+260        , 400120913.8356      , 76        ,       The causal link is in the process of being added., 0         , (689;231)
+261        , 400120913.851763    , 76        ,       The causal link is in the process of being added., 0         , (689;234)
+262        , 400120913.867742    , 76        ,       The causal link is in the process of being added., 0         , (689;242)
+263        , 400120913.884332    , 76        ,       The causal link is in the process of being added., 0         , (689;253)
+264        , 400120913.899715    , 76        ,       The causal link is in the process of being added., 0         , (689;266)
+265        , 400120913.915737    , 76        ,       The causal link is in the process of being added., 0         , (689;276)
+266        , 400120913.931909    , 76        ,       The causal link is in the process of being added., 0         , (688;282)
+267        , 400120913.947187    , 76        ,       The causal link is in the process of being added., 0         , (688;285)
+268        , 400120913.963206    , 76        ,       The causal link is in the process of being added., 0         , (688;288)
+269        , 400120913.979874    , 76        ,       The causal link is in the process of being added., 0         , (688;289)
+270        , 400120914.107348    , 76        ,       The causal link is in the process of being added., 0         , (687;289)
+271        , 400120914.123804    , 78        ,                User cancelled adding a new causal link., 0         , 
+272        , 400120914.589241    , 79        ,                           User began moving a variable., 2         , (410;231)
+273        , 400120914.84017     , 75        ,              User has begun creating a new causal link., 0         , (410;231)
+274        , 400120915.146924    , 76        ,       The causal link is in the process of being added., 0         , (413;238)
+275        , 400120915.147368    , 76        ,       The causal link is in the process of being added., 0         , (413;238)
+276        , 400120915.162644    , 76        ,       The causal link is in the process of being added., 0         , (414;244)
+277        , 400120915.179397    , 76        ,       The causal link is in the process of being added., 0         , (418;252)
+278        , 400120915.194843    , 76        ,       The causal link is in the process of being added., 0         , (424;260)
+279        , 400120915.210932    , 76        ,       The causal link is in the process of being added., 0         , (431;267)
+280        , 400120915.227252    , 76        ,       The causal link is in the process of being added., 0         , (438;274)
+281        , 400120915.242837    , 76        ,       The causal link is in the process of being added., 0         , (448;279)
+282        , 400120915.258829    , 76        ,       The causal link is in the process of being added., 0         , (457;284)
+283        , 400120915.275255    , 76        ,       The causal link is in the process of being added., 0         , (466;288)
+284        , 400120915.290798    , 76        ,       The causal link is in the process of being added., 0         , (478;291)
+285        , 400120915.306798    , 76        ,       The causal link is in the process of being added., 0         , (497;295)
+286        , 400120915.323239    , 76        ,       The causal link is in the process of being added., 0         , (510;296)
+287        , 400120915.339056    , 76        ,       The causal link is in the process of being added., 0         , (522;296)
+288        , 400120915.354378    , 76        ,       The causal link is in the process of being added., 0         , (534;296)
+289        , 400120915.370952    , 76        ,       The causal link is in the process of being added., 0         , (544;292)
+290        , 400120915.386506    , 76        ,       The causal link is in the process of being added., 0         , (554;288)
+291        , 400120915.402801    , 76        ,       The causal link is in the process of being added., 0         , (567;282)
+292        , 400120915.419161    , 76        ,       The causal link is in the process of being added., 0         , (579;277)
+293        , 400120915.435336    , 76        ,       The causal link is in the process of being added., 0         , (594;270)
+294        , 400120915.451576    , 76        ,       The causal link is in the process of being added., 0         , (604;266)
+295        , 400120915.467723    , 76        ,       The causal link is in the process of being added., 0         , (616;261)
+296        , 400120915.483111    , 76        ,       The causal link is in the process of being added., 0         , (627;257)
+297        , 400120915.499135    , 76        ,       The causal link is in the process of being added., 0         , (637;253)
+298        , 400120915.515617    , 76        ,       The causal link is in the process of being added., 0         , (646;249)
+299        , 400120915.530606    , 76        ,       The causal link is in the process of being added., 0         , (655;245)
+300        , 400120915.546796    , 76        ,       The causal link is in the process of being added., 0         , (664;241)
+301        , 400120915.563187    , 76        ,       The causal link is in the process of being added., 0         , (672;236)
+302        , 400120915.579157    , 76        ,       The causal link is in the process of being added., 0         , (678;232)
+303        , 400120915.59474     , 76        ,       The causal link is in the process of being added., 0         , (683;228)
+304        , 400120915.611155    , 76        ,       The causal link is in the process of being added., 0         , (688;225)
+305        , 400120915.626679    , 76        ,       The causal link is in the process of being added., 0         , (692;221)
+306        , 400120915.642667    , 76        ,       The causal link is in the process of being added., 0         , (696;220)
+307        , 400120915.659153    , 76        ,       The causal link is in the process of being added., 0         , (698;218)
+308        , 400120915.674687    , 76        ,       The causal link is in the process of being added., 0         , (700;217)
+309        , 400120915.69081     , 76        ,       The causal link is in the process of being added., 0         , (701;217)
+310        , 400120915.738596    , 76        ,       The causal link is in the process of being added., 0         , (700;217)
+311        , 400120915.754817    , 77        ,                                      Causal link added., 7         , Parent: Var1 (2) Child: Var2 (3) | 
+312        , 400120916.172788    , 15        ,                        User began moving a causal link., 7         , (571;218)
+313        , 400120916.250789    , 16        ,                           User is moving a causal link., 7         , (571;222)
+314        , 400120916.267331    , 16        ,                           User is moving a causal link., 7         , (571;227)
+315        , 400120916.283886    , 16        ,                           User is moving a causal link., 7         , (572;232)
+316        , 400120916.299385    , 16        ,                           User is moving a causal link., 7         , (572;237)
+317        , 400120916.315437    , 16        ,                           User is moving a causal link., 7         , (572;241)
+318        , 400120916.331143    , 16        ,                           User is moving a causal link., 7         , (573;246)
+319        , 400120916.346477    , 16        ,                           User is moving a causal link., 7         , (573;251)
+320        , 400120916.362523    , 16        ,                           User is moving a causal link., 7         , (573;256)
+321        , 400120916.379055    , 16        ,                           User is moving a causal link., 7         , (574;260)
+322        , 400120916.394566    , 16        ,                           User is moving a causal link., 7         , (574;265)
+323        , 400120916.410481    , 16        ,                           User is moving a causal link., 7         , (574;270)
+324        , 400120916.42699     , 16        ,                           User is moving a causal link., 7         , (575;275)
+325        , 400120916.442507    , 16        ,                           User is moving a causal link., 7         , (575;279)
+326        , 400120916.458494    , 16        ,                           User is moving a causal link., 7         , (575;284)
+327        , 400120916.475052    , 16        ,                           User is moving a causal link., 7         , (576;289)
+328        , 400120916.490567    , 16        ,                           User is moving a causal link., 7         , (576;294)
+329        , 400120916.506829    , 16        ,                           User is moving a causal link., 7         , (576;298)
+330        , 400120916.523037    , 16        ,                           User is moving a causal link., 7         , (577;303)
+331        , 400120916.538597    , 16        ,                           User is moving a causal link., 7         , (577;308)
+332        , 400120916.554016    , 16        ,                           User is moving a causal link., 7         , (577;313)
+333        , 400120916.570303    , 16        ,                           User is moving a causal link., 7         , (578;317)
+334        , 400120916.586335    , 16        ,                           User is moving a causal link., 7         , (578;322)
+335        , 400120916.602335    , 16        ,                           User is moving a causal link., 7         , (578;327)
+336        , 400120916.619215    , 16        ,                           User is moving a causal link., 7         , (579;332)
+337        , 400120916.635487    , 16        ,                           User is moving a causal link., 7         , (579;336)
+338        , 400120916.666698    , 17        ,                      User stopped moving a causal link., 7         , (579;336)
+339        , 400120916.844108    , 15        ,                        User began moving a causal link., 7         , (579;336)
+340        , 400120916.930171    , 58        ,                                  Update menu displayed., 7         , Causal link
+341        , 400120917.586529    , 60        ,                                    Edit menu displayed., 7         , Causal link
+342        , 400120917.816698    , 59        ,                                     Update menu closed., 7         , Causal link
+343        , 400120918.301349    , 13        ,       User selected a new option for the link polarity., 7         , - selected
+344        , 400120918.908606    , 11        ,     User selected a new option for the link time delay., 7         , Yes
+345        , 400120920.732069    , 12        ,      User selected a new option for the link thickness., 7         , Bold selected
+346        , 400120922.251557    , 14        ,          User selected a new option for the link color., 7         , Orange selected
+347        , 400120922.792428    , 8         ,             User changed the polarity of a causal link., 7         , From: + To: -
+348        , 400120922.792529    , 9         ,            User changed the thickness of a causal link., 7         , From: Normal To: Bold
+349        , 400120922.792603    , 10        ,           User changed the time delay of a causal link., 7         , From: No To: Yes
+350        , 400120922.792742    , 7         ,                User changed the color of a causal link., 7         , From: Black To: Orange
+351        , 400120922.792839    , 61        ,            Edit menu closed because user saved changes., 7         , Causal link
+352        , 400120925.796079    , 68        ,      User selected a new option for adding new objects., 0         , Loop option selected
+353        , 400120928.090314    , 33        ,                                             Loop added., 8         , 
+354        , 400120928.666648    , 25        ,                               User began moving a loop., 8         , (593;248)
+355        , 400120928.71942     , 58        ,                                  Update menu displayed., 8         , Loop
+356        , 400120930.120232    , 60        ,                                    Edit menu displayed., 8         , Loop
+357        , 400120930.33685     , 59        ,                                     Update menu closed., 8         , Loop
+358        , 400120930.987004    , 24        ,         User selected a new option for the loop symbol., 8         , Counter clockwise selected
+359        , 400120931.44081     , 19        ,                                        Keyboard opened., 8         , Edit Loop name
+360        , 400120934.743507    , 23        ,                           User changed the loop symbol., 8         , From: Clockwise To: Counter Clockwise
+361        , 400120934.743914    , 22        ,                        User changed the name of a loop., 8         , From: TXT To: B1
+362        , 400120934.744097    , 61        ,            Edit menu closed because user saved changes., 8         , Loop
+363        , 400120935.108892    , 20        ,                                        Keyboard closed., 8         , Edit Loop name
+364        , 400120935.609514    , 25        ,                               User began moving a loop., 8         , (595;241)
+365        , 400120935.718879    , 26        ,                                  User is moving a loop., 8         , (580;231)
+366        , 400120935.734983    , 26        ,                                  User is moving a loop., 8         , (567;222)
+367        , 400120935.751664    , 26        ,                                  User is moving a loop., 8         , (560;215)
+368        , 400120935.767654    , 26        ,                                  User is moving a loop., 8         , (555;211)
+369        , 400120935.782653    , 26        ,                                  User is moving a loop., 8         , (552;208)
+370        , 400120935.799122    , 26        ,                                  User is moving a loop., 8         , (551;208)
+371        , 400120935.814226    , 26        ,                                  User is moving a loop., 8         , (550;208)
+372        , 400120935.894988    , 26        ,                                  User is moving a loop., 8         , (550;209)
+373        , 400120935.926351    , 26        ,                                  User is moving a loop., 8         , (550;210)
+374        , 400120935.942923    , 26        ,                                  User is moving a loop., 8         , (550;211)
+375        , 400120935.958259    , 26        ,                                  User is moving a loop., 8         , (551;212)
+376        , 400120935.974329    , 26        ,                                  User is moving a loop., 8         , (552;213)
+377        , 400120935.990779    , 26        ,                                  User is moving a loop., 8         , (553;215)
+378        , 400120936.005754    , 26        ,                                  User is moving a loop., 8         , (554;217)
+379        , 400120936.022405    , 26        ,                                  User is moving a loop., 8         , (555;218)
+380        , 400120936.039067    , 26        ,                                  User is moving a loop., 8         , (556;221)
+381        , 400120936.054193    , 26        ,                                  User is moving a loop., 8         , (558;222)
+382        , 400120936.070172    , 26        ,                                  User is moving a loop., 8         , (560;224)
+383        , 400120936.086647    , 26        ,                                  User is moving a loop., 8         , (560;225)
+384        , 400120936.10221     , 26        ,                                  User is moving a loop., 8         , (562;226)
+385        , 400120936.118177    , 26        ,                                  User is moving a loop., 8         , (563;226)
+386        , 400120936.134678    , 26        ,                                  User is moving a loop., 8         , (564;226)
+387        , 400120936.150455    , 26        ,                                  User is moving a loop., 8         , (565;226)
+388        , 400120936.166494    , 26        ,                                  User is moving a loop., 8         , (565;227)
+389        , 400120936.182867    , 26        ,                                  User is moving a loop., 8         , (566;227)
+390        , 400120936.198206    , 26        ,                                  User is moving a loop., 8         , (568;227)
+391        , 400120936.214233    , 26        ,                                  User is moving a loop., 8         , (569;227)
+392        , 400120936.246203    , 26        ,                                  User is moving a loop., 8         , (569;226)
+393        , 400120936.326401    , 26        ,                                  User is moving a loop., 8         , (568;226)
+394        , 400120936.341756    , 27        ,                             User stopped moving a loop., 8         , (566;225)
+395        , 400120937.416177    , 42        ,          User pressed the create image of model button., 0         , 
+396        , 400120938.797754    , 43        ,                                   Image of model saved., 0         , 
+397        , 400120938.797795    , 46        ,                 User notified that the image was saved., 0         , 
+398        , 400120940.130282    , 47        ,                User confirmed that the image was saved., 0         , 
+399        , 400120942.708657    , 1         ,      The application has been placed in the background., 0         , 
+400        , 400120962.012528    , 69        ,                           There is internet connection!, 0         , 
+401        , 400120962.015733    , 2         ,                       The application has been resumed., 0         , 
+402        , 400120962.019028    , 5         ,                  User changed the device's orientation., 0         , Landscape right
+403        , 400120962.50223     , 5         ,                  User changed the device's orientation., 0         , Face Up
+404        , 400120974.566703    , 49        ,                     User pressed the save model button., 0         , 
+405        , 400120974.821105    , 51        ,               The save model options window has opened., 0         , 
+406        , 400120977.444362    , 52        ,          The save model options window has been closed., 0         , 
+407        , 400120977.666609    , 34        ,                                  User begins scrolling., 0         , (0;0)
+408        , 400120977.681547    , 35        ,                                    Window is scrolling., 0         , (1;0)
+409        , 400120977.698198    , 35        ,                                    Window is scrolling., 0         , (3;1)
+410        , 400120977.713308    , 35        ,                                    Window is scrolling., 0         , (4;2)
+411        , 400120977.729277    , 35        ,                                    Window is scrolling., 0         , (6;3)
+412        , 400120977.745732    , 35        ,                                    Window is scrolling., 0         , (7;5)
+413        , 400120977.761301    , 35        ,                                    Window is scrolling., 0         , (8;5)
+414        , 400120977.777625    , 35        ,                                    Window is scrolling., 0         , (10;6)
+415        , 400120977.793712    , 35        ,                                    Window is scrolling., 0         , (12;8)
+416        , 400120977.809244    , 35        ,                                    Window is scrolling., 0         , (14;10)
+417        , 400120977.82525     , 35        ,                                    Window is scrolling., 0         , (17;11)
+418        , 400120977.841741    , 35        ,                                    Window is scrolling., 0         , (22;14)
+419        , 400120977.857396    , 35        ,                                    Window is scrolling., 0         , (25;15)
+420        , 400120977.873252    , 35        ,                                    Window is scrolling., 0         , (27;17)
+421        , 400120977.889744    , 35        ,                                    Window is scrolling., 0         , (30;19)
+422        , 400120977.905259    , 35        ,                                    Window is scrolling., 0         , (32;20)
+423        , 400120977.921221    , 35        ,                                    Window is scrolling., 0         , (33;20)
+424        , 400120977.937714    , 35        ,                                    Window is scrolling., 0         , (35;21)
+425        , 400120977.953313    , 35        ,                                    Window is scrolling., 0         , (36;21)
+426        , 400120977.969304    , 35        ,                                    Window is scrolling., 0         , (37;22)
+427        , 400120978.161108    , 35        ,                                    Window is scrolling., 0         , (38;22)
+428        , 400120978.321537    , 35        ,                                    Window is scrolling., 0         , (39;22)
+429        , 400120978.353084    , 35        ,                                    Window is scrolling., 0         , (39;21)
+430        , 400120978.369549    , 35        ,                                    Window is scrolling., 0         , (39;20)
+431        , 400120978.385158    , 35        ,                                    Window is scrolling., 0         , (40;18)
+432        , 400120978.401365    , 35        ,                                    Window is scrolling., 0         , (41;14)
+433        , 400120978.417786    , 35        ,                                    Window is scrolling., 0         , (43;7)
+434        , 400120978.433493    , 35        ,                                    Window is scrolling., 0         , (47;-2)
+435        , 400120978.449371    , 35        ,                                    Window is scrolling., 0         , (49;-7)
+436        , 400120978.46578     , 35        ,                                    Window is scrolling., 0         , (51;-10)
+437        , 400120978.481005    , 35        ,                                    Window is scrolling., 0         , (52;-14)
+438        , 400120978.497056    , 35        ,                                    Window is scrolling., 0         , (54;-16)
+439        , 400120978.51374     , 35        ,                                    Window is scrolling., 0         , (56;-19)
+440        , 400120978.529038    , 35        ,                                    Window is scrolling., 0         , (56;-21)
+441        , 400120978.545013    , 35        ,                                    Window is scrolling., 0         , (58;-23)
+442        , 400120978.561463    , 35        ,                                    Window is scrolling., 0         , (59;-25)
+443        , 400120978.577016    , 35        ,                                    Window is scrolling., 0         , (60;-27)
+444        , 400120978.593006    , 35        ,                                    Window is scrolling., 0         , (61;-28)
+445        , 400120978.609585    , 35        ,                                    Window is scrolling., 0         , (61;-31)
+446        , 400120978.625168    , 35        ,                                    Window is scrolling., 0         , (62;-31)
+447        , 400120978.641034    , 35        ,                                    Window is scrolling., 0         , (63;-33)
+448        , 400120978.688889    , 35        ,                                    Window is scrolling., 0         , (63;-34)
+449        , 400120978.705453    , 35        ,                                    Window is scrolling., 0         , (64;-34)
+450        , 400120978.960686    , 36        ,                                 User stopped scrolling., 0         , (64;-34)
+451        , 400120978.964462    , 35        ,                                    Window is scrolling., 0         , (64;-33)
+452        , 400120978.981086    , 35        ,                                    Window is scrolling., 0         , (64;-29)
+453        , 400120978.997892    , 35        ,                                    Window is scrolling., 0         , (64;-25)
+454        , 400120979.014547    , 35        ,                                    Window is scrolling., 0         , (64;-22)
+455        , 400120979.031222    , 35        ,                                    Window is scrolling., 0         , (64;-19)
+456        , 400120979.047869    , 35        ,                                    Window is scrolling., 0         , (64;-16)
+457        , 400120979.06452     , 35        ,                                    Window is scrolling., 0         , (64;-14)
+458        , 400120979.081183    , 35        ,                                    Window is scrolling., 0         , (64;-12)
+459        , 400120979.097873    , 35        ,                                    Window is scrolling., 0         , (64;-10)
+460        , 400120979.114525    , 35        ,                                    Window is scrolling., 0         , (64;-9)
+461        , 400120979.131082    , 35        ,                                    Window is scrolling., 0         , (65;-8)
+462        , 400120979.147857    , 35        ,                                    Window is scrolling., 0         , (65;-6)
+463        , 400120979.181212    , 35        ,                                    Window is scrolling., 0         , (65;-5)
+464        , 400120979.197829    , 35        ,                                    Window is scrolling., 0         , (65;-4)
+465        , 400120979.214547    , 35        ,                                    Window is scrolling., 0         , (65;-3)
+466        , 400120979.264527    , 35        ,                                    Window is scrolling., 0         , (65;-2)
+467        , 400120979.314509    , 35        ,                                    Window is scrolling., 0         , (65;-1)
+468        , 400120979.431058    , 35        ,                                    Window is scrolling., 0         , (65;0)
+469        , 400120979.432432    , 37        ,                        Scrolling window stopped moving., 0         , (65;0)
+470        , 400120980.258809    , 49        ,                     User pressed the save model button., 0         , 
+471        , 400120980.269468    , 51        ,               The save model options window has opened., 0         , 
+472        , 400120980.880912    , 50        ,           Redirecting to external application to save. , 0         , com.getdropbox.Dropbox
