@@ -1,7 +1,7 @@
 GroupModeling
 =============
 
-This iOS application allows users to create causal loop diagram models using system dynamics concepts.  This app was designed as a method for Group Model Building.
+This iOS application allows users to create causal loop diagram models using system dynamics concepts.  This app was designed as a method for Group Model Building. 
 
 
 In order to use the app you will need the following accounts:
@@ -23,3 +23,5 @@ In order to use the app you will need the following accounts:
   </ul>
 
 Note: This app has been tested on iOS 5 and iOS6. This app has not been tested or used with iOS 7.  Additionally, this app has not been submitted to the iTunes store for approval.
+
+Please view the license before using this code. The only code not authored by Matt Burch (mdburch) is the MFSideMenu which can be used in accordance with the licese found here (https://github.com/mikefrederick/MFSideMenu).  
