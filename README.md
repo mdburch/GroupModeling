@@ -1,7 +1,7 @@
 GroupModeling
 =============
 
-This iOS application allows users to create causal loop diagram models using system dynamics concepts.  This app was designed as a method for Group Model Building. 
+This iOS application allows users to create causal loop diagram models using system dynamics concepts.  This app was designed as a method for Group Model Building. Please view the README_Files folder for information on how data stored in the Parse database is set up what metrics I gather.  More information on the Python scripts can be found in the PythonScripts folder.
 
 
 In order to use the app you will need the following accounts:
