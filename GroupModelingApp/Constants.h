@@ -284,14 +284,15 @@ enum LineThickness
 };
 
 // Constants for FileIO
-#define EVENTS_EXPORT_FILE         @"eventLogging.csv"  // File name to save the event logging results.
-#define CLASS_NAME                 @"EventLogger"       // The name of the class that Parse will store the event logging data.
-#define USER_ID                    @"UserID"            // The name of the column that contains the unique user id.
-#define STARTING_HASH              @"StartingHash"      // The name of the column that contains the starting hash of the file.
-#define ENDING_HASH                @"EndingHash"        // The name of the column that contains the ending hash of the file.
-#define EVENT_LOG                  @"EventLog"          // The name of the column that contains the event log file.
-#define MODEL_FILE                 @"ModelFile"         // The name of the column that contains the model file.
-#define GID                        @"gid"               // The name of the column that contains the unique file id for user file combination.
+#define EVENTS_EXPORT_FILE         @"eventLogging.csv"             // File name to save the event logging results.
+#define CLASS_NAME                 @"EventLogger"                  // The name of the class that Parse will store the event logging data.
+#define USER_ID                    @"UserID"                       // The name of the column that contains the unique user id.
+#define STARTING_HASH              @"StartingHash"                 // The name of the column that contains the starting hash of the file.
+#define ENDING_HASH                @"EndingHash"                   // The name of the column that contains the ending hash of the file.
+#define EVENT_LOG                  @"EventLog"                     // The name of the column that contains the event log file.
+#define MODEL_FILE                 @"ModelFile"                    // The name of the column that contains the model file.
+#define GID                        @"gid"                          // The name of the column that contains the unique file id for user file combination.
+#define EMPTY_MODEL_HASH           @"ltEdSngfjGsLG7ttO+fLWgv6YN8=" // The hash value of an empty model.
 
 // Strings that specifiy where in the Vensim mdl file certain aspects of the model are located.
 #define  COMPONENT_PREFIX          @"\\\\\\"   // The beginning of the line in the Vensim file that starts the component definitions.

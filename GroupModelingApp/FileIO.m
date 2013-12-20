@@ -184,6 +184,17 @@ NSString* MODEL_EXPORT_FILE = @"model.mdl";
     
     // Set the ending hash.
     NSData* hash = [FileIO sha1:[[NSFileManager defaultManager]contentsAtPath:docsDir]];
+
+    // Ensure that the model attempting to be save is the empty model. If it is, append a random number
+    // so there isn't conflicts in the Parse database for tracking user model sessions.
+    /// @todo probably want a more robust way of handling users saving blank files first.
+    if([[FileIO base64forData:hash] isEqualToString: EMPTY_MODEL_HASH])
+    {
+        [file addObject:[NSString stringWithFormat:@"%d", arc4random() % 10000000]];
+        [[file componentsJoinedByString:@"\n"] writeToFile:docsDir atomically:NO encoding:NSUTF8StringEncoding error:&error];
+        hash = [FileIO sha1:[[NSFileManager defaultManager]contentsAtPath:docsDir]];
+    }
+    
     [[Model sharedModel] setEndingHash:hash];
 
     // Return the url to the file so that Dropbox can use it.
