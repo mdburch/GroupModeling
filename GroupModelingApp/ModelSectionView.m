@@ -99,6 +99,11 @@
             Variable* newVar = [[Variable alloc]initWithLocation:touchLoc];
             [[Model sharedModel] addComponent:newVar];
             [[EventLogger sharedEventLogger]addEvent:[[Event alloc] initWithDescID: ADD_VARIABLE andObjectID:newVar.idNum]];
+            
+            // Let the edit menu appear when a new variable is added.
+            ModelSectionViewController* vc = (ModelSectionViewController*) [[Model sharedModel] getViewController];
+            vc.selectedView = newVar.view;
+            [vc createEditMenu:newVar.view];
             break;
         }
         case LOOP_INDEX:
