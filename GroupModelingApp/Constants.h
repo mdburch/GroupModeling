@@ -380,7 +380,7 @@ enum LineThickness
 
 
 // Constants for LoopView.
-#define DEFAULT_LOOP_NAME       @"TXT"               // The default name of the loop when it is created.
+#define DEFAULT_LOOP_NAME       @""                  // The default name of the loop when it is created.
 #define ARROWHEAD_HEIGHT        15                   // The height of the arrowhead.
 #define ARROWHEAD_WIDTH         10                   // The width of the arrowhead.
 #define BUFFER_SPACE            5                    // The amount of space between the edge of the frame and the loop.
